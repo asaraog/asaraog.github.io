@@ -20,7 +20,8 @@ A blog (a truncation of "weblog") is an informational website published on the W
             el: '#vcomment' ,
             appId: 'G6EeVcyN7NoVkKDfIa7RP05Z-MdYXbMMI',
             appKey: '9s1pti9cxv64ejg6lAn8NLnR',
-            lang: 'en'
+            lang: 'en',
+            serverURLs: 'https://g6eevcyn.api.lncldglobal.com'
         });
     </script>
 </body>
