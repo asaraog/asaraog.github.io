@@ -1105,9 +1105,9 @@ enableEmoji = true
         clientSecret = ""
       # Valine comment config (https://github.com/xCss/Valine)
       [params.page.comment.valine]
-        enable = false
-        appId = ""
-        appKey = ""
+        enable = true
+        appId = "G6EeVcyN7NoVkKDfIa7RP05Z-MdYXbMMI"
+        appKey = "9s1pti9cxv64ejg6lAn8NLnR"
         placeholder = ""
         avatar = "mp"
         meta = ""
@@ -1118,7 +1118,7 @@ enableEmoji = true
         recordIP = true
         highlight = true
         enableQQ = false
-        serverURLs = ""
+        serverURLs = "https://g6eevcyn.api.lncldglobal.com"
         # emoji data file name, default is "google.yml"
         # ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
         # located in "themes/FixIt/assets/lib/valine/emoji/" directory
