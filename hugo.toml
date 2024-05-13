@@ -11,17 +11,22 @@
 # -------------------------------------------------------------------------------------
 
 # website title
-title = ""
+
 # Hostname (and path) to the root
-baseURL = ""
+baseURL = "/"
 # theme list
 theme = "FixIt"
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "en"
 # language code ["en", "zh-CN", "fr", "pl", ...]
-languageCode = "en"
-# language name ["English", "简体中文", "Français", "Polski", ...]
-languageName = "English"
+[languages]
+  [languages.en]
+  # language name ["English", "简体中文", "Français", "Polski", ...]
+  languageName = "English"
+  title = "A. Saraogee"
+  [languages.hi]
+  languageName = "हिंदी"
+  title = "अ. सरवगी"
 # whether to include Chinese/Japanese/Korean
 hasCJKLanguage = false
 # default amount of posts in each pages
@@ -42,16 +47,16 @@ enableEmoji = true
 
 [menu]
   [[menu.main]]
-    identifier = "archives"
+    identifier = "biomolecules"
     parent = ""
     # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
-    name = "Archives"
-    url = "/archives/"
+    name = "Biomolecules"
+    url = "/biomolecules/"
     # title will be shown when you hover on this menu link
-    title = ""
+    title = "Biomolecules"
     weight = 1
     # FixIt 0.2.14 | NEW add user-defined content to menu items
     [menu.main.params]
@@ -60,31 +65,112 @@ enableEmoji = true
       # whether set as a draft menu item whose function is similar to a draft post/page
       draft = false
       # FixIt 0.2.16 | NEW add fontawesome icon to a specific menu item
-      icon = "fa-solid fa-archive"
+      icon = "fa-solid fa-layer-group"
       # FixIt 0.2.16 | NEW set menu item type, optional values: ["mobile", "desktop"]
       type = ""
   [[menu.main]]
-    identifier = "categories"
+    identifier = "datascience"
     parent = ""
     pre = ""
     post = ""
-    name = "Categories"
-    url = "/categories/"
-    title = ""
+    name = "Data Science"
+    url = "/datascience/"
+    title = "Data Science"
     weight = 2
     [menu.main.params]
-      icon = "fa-solid fa-folder-tree"
+      icon = "fa-solid fa-layer-group"
   [[menu.main]]
-    identifier = "tags"
+    identifier = "neuroimaging"
     parent = ""
     pre = ""
     post = ""
-    name = "Tags"
-    url = "/tags/"
-    title = ""
+    name = "Neuroimaging"
+    url = "/neuroimaging/"
+    title = "Neuroimaging"
     weight = 3
     [menu.main.params]
-      icon = "fa-solid fa-tags"
+      icon = "fa-solid fa-layer-group"
+  [[menu.main]]
+    identifier = "COVID-19"
+    parent = "biomolecules"
+    pre = ""
+    post = ""
+    name = "COVID-19"
+    url = "/covid19/"
+    title = "COVID-19"
+    weight = 1
+  [[menu.main]]
+    identifier = "DNA"
+    parent = "biomolecules"
+    pre = ""
+    post = ""
+    name = "DNA"
+    url = "/dna/"
+    title = "DNA"
+    weight = 2
+  [[menu.main]]
+    identifier = "proteins"
+    parent = "biomolecules"
+    pre = ""
+    post = ""
+    name = "Proteins"
+    url = "/proteins/"
+    title = "Proteins"
+    weight = 3
+  [[menu.main]]
+    identifier = "autism"
+    parent = "neuroimaging"
+    pre = ""
+    post = ""
+    name = "Autism"
+    url = "/autism/"
+    title = "Autism"
+    weight = 1
+  [[menu.main]]
+    identifier = "olfaction"
+    parent = "neuroimaging"
+    pre = ""
+    post = ""
+    name = "Olfaction"
+    url = "/olfaction/"
+    title = "Olfaction"
+    weight = 2
+  [[menu.main]]
+    identifier = "neurodegeneration"
+    parent = "neuroimaging"
+    pre = ""
+    post = ""
+    name = "Neurodegeneration"
+    url = "/neurodegeneration/"
+    title = "Neurodegeneration"
+    weight = 3
+  [[menu.main]]
+    identifier = "Golang"
+    parent = "datascience"
+    pre = ""
+    post = ""
+    name = "Golang"
+    url = "/golang/"
+    title = "Golang"
+    weight = 1
+  [[menu.main]]
+    identifier = "analyzingopendata"
+    parent = "datascience"
+    pre = ""
+    post = ""
+    name = "Analyzing Open Data"
+    url = "/analyzeopendata/"
+    title = "Analyze Open Data"
+    weight = 2
+  [[menu.main]]
+    identifier = "datainsociety"
+    parent = "datascience"
+    pre = ""
+    post = ""
+    name = "Data in Society"
+    url = "/datainsociety/"
+    title = "Data in Society"
+    weight = 3
 
 # -------------------------------------------------------------------------------------
 # Related content Configuration
@@ -277,7 +363,7 @@ enableEmoji = true
 # -------------------------------------------------------------------------------------
 
 [taxonomies]
-  category = "categories"
+  category = "neuroimaging"
   tag = "tags"
   collection = "collections"
 
@@ -330,7 +416,7 @@ enableEmoji = true
   # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
   [params.gitInfo]
     # e.g. "https://github.com/hugo-fixit/docs"
-    repo = ""
+    repo = "https://github.com/asaraog/asaraog.github.io"
     branch = "main"
     # the content directory path relative to the root of the repository
     dir = "content"
@@ -357,7 +443,7 @@ enableEmoji = true
 
   # Search config
   [params.search]
-    enable = false
+    enable = true
     # type of search engine ["algolia", "fuse"]
     type = "fuse"
     # max index length of the chunked content
@@ -696,12 +782,12 @@ enableEmoji = true
 
   # Analytics config
   [params.analytics]
-    enable = false
+    enable = true
     # Google Analytics
     [params.analytics.google]
-      id = ""
+      id = "G-LHKB07PB3M"
       # whether to anonymize IP
-      anonymizeIP = true
+      anonymizeIP = false
     # Fathom Analytics
     [params.analytics.fathom]
       id = ""
@@ -733,8 +819,8 @@ enableEmoji = true
 
   # FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
   [params.githubCorner]
-    enable = false
-    permalink = "https://github.com/hugo-fixit/FixIt"
+    enable = true
+    permalink = "https://github.com/asaraog/asaraog.github.io"
     title = "View source on GitHub"
     position = "right" # ["left", "right"]
 
