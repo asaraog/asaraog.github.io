@@ -2,6 +2,24 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
+      <loc>//localhost:1313/hi/biomolecules/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="//localhost:1313/biomolecules/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="hi"
+          href="//localhost:1313/hi/biomolecules/"
+          /></url><url>
+      <loc>//localhost:1313/hi/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="//localhost:1313/categories/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="hi"
+          href="//localhost:1313/hi/categories/"
+          /></url><url>
       <loc>//localhost:1313/hi/collections/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="en"
@@ -10,6 +28,15 @@
           rel="alternate"
           hreflang="hi"
           href="//localhost:1313/hi/collections/"
+          /></url><url>
+      <loc>//localhost:1313/hi/datascience/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="//localhost:1313/datascience/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="hi"
+          href="//localhost:1313/hi/datascience/"
           /></url><url>
       <loc>//localhost:1313/hi/neuroimaging/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"

@@ -23,10 +23,10 @@ defaultContentLanguage = "en"
   [languages.en]
   # language name ["English", "简体中文", "Français", "Polski", ...]
   languageName = "English"
-  title = "A. Saraogee"
+  title = "Home"
   [languages.hi]
   languageName = "हिंदी"
-  title = "अ. सरवगी"
+  title = "घर"
 # whether to include Chinese/Japanese/Korean
 hasCJKLanguage = false
 # default amount of posts in each pages
@@ -96,7 +96,7 @@ enableEmoji = true
     pre = ""
     post = ""
     name = "COVID-19"
-    url = "/covid19/"
+    url = "/biomolecules/covid19/"
     title = "COVID-19"
     weight = 1
   [[menu.main]]
@@ -105,7 +105,7 @@ enableEmoji = true
     pre = ""
     post = ""
     name = "DNA"
-    url = "/dna/"
+    url = "/biomolecules/dna/"
     title = "DNA"
     weight = 2
   [[menu.main]]
@@ -114,7 +114,7 @@ enableEmoji = true
     pre = ""
     post = ""
     name = "Proteins"
-    url = "/proteins/"
+    url = "/biomolecules/proteins/"
     title = "Proteins"
     weight = 3
   [[menu.main]]
@@ -123,7 +123,7 @@ enableEmoji = true
     pre = ""
     post = ""
     name = "Autism"
-    url = "/autism/"
+    url = "/neuroimaging/autism/"
     title = "Autism"
     weight = 1
   [[menu.main]]
@@ -132,7 +132,7 @@ enableEmoji = true
     pre = ""
     post = ""
     name = "Olfaction"
-    url = "/olfaction/"
+    url = "/neuroimaging/olfaction/"
     title = "Olfaction"
     weight = 2
   [[menu.main]]
@@ -141,7 +141,7 @@ enableEmoji = true
     pre = ""
     post = ""
     name = "Neurodegeneration"
-    url = "/neurodegeneration/"
+    url = "/neuroimaging/neurodegeneration/"
     title = "Neurodegeneration"
     weight = 3
   [[menu.main]]
@@ -150,7 +150,7 @@ enableEmoji = true
     pre = ""
     post = ""
     name = "Golang"
-    url = "/golang/"
+    url = "/datascience/golang/"
     title = "Golang"
     weight = 1
   [[menu.main]]
@@ -159,7 +159,7 @@ enableEmoji = true
     pre = ""
     post = ""
     name = "Analyzing Open Data"
-    url = "/analyzeopendata/"
+    url = "/datascience/analyzeopendata/"
     title = "Analyze Open Data"
     weight = 2
   [[menu.main]]
@@ -168,7 +168,7 @@ enableEmoji = true
     pre = ""
     post = ""
     name = "Data in Society"
-    url = "/datainsociety/"
+    url = "/datascience/datainsociety/"
     title = "Data in Society"
     weight = 3
 
@@ -273,7 +273,7 @@ enableEmoji = true
 
 [Permalinks]
   # posts = ":year/:month/:filename"
-  posts = "posts/:slugorfilename"
+  posts = "/:slugorfilename"
 
 # -------------------------------------------------------------------------------------
 # Privacy Configuration
@@ -363,9 +363,12 @@ enableEmoji = true
 # -------------------------------------------------------------------------------------
 
 [taxonomies]
-  category = "neuroimaging"
+  category = "categories"
   tag = "tags"
   collection = "collections"
+  datascience = "datascience"
+  biomolecule = "biomolecules"
+  neuroimaging = "neuroimaging"
 
 # -------------------------------------------------------------------------------------
 # Theme Core Configuration
@@ -427,7 +430,7 @@ enableEmoji = true
   # App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "FixIt"
+    title = "ASaraogee"
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
@@ -485,7 +488,7 @@ enableEmoji = true
       # URL of the LOGO
       logo = ""
       # title name
-      name = ""
+      name = "Home"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
@@ -501,7 +504,7 @@ enableEmoji = true
 
   # FixIt 0.2.18 | NEW Breadcrumb config
   [params.breadcrumb]
-    enable = false
+    enable = true
     sticky = false
     showHome = false
 
@@ -589,7 +592,7 @@ enableEmoji = true
     rss = 10
     # Home page profile
     [params.home.profile]
-      enable = false
+      enable = true
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
@@ -597,9 +600,9 @@ enableEmoji = true
       # FixIt 0.2.17 | NEW identifier of avatar menu link
       avatarMenu = ""
       # title shown in home page (HTML format is supported)
-      title = ""
+      title = "Apoorv Saraogee"
       # subtitle shown in home page
-      subtitle = ""
+      subtitle = "Work in progress"
       # whether to use typeit animation for subtitle
       typeit = true
       # whether to show social links
@@ -610,12 +613,12 @@ enableEmoji = true
     [params.home.posts]
       enable = true
       # special amount of posts in each home posts page
-      paginate = 6
+      paginate = 3
 
   # FixIt 0.2.16 | CHANGED Social config about the author
   [params.social]
-    GitHub = ""
-    Linkedin = ""
+    GitHub = "https://github.com/asaraog"
+    Linkedin = "https://www.linkedin.com/in/apoorv-saraogee-126b9a266/"
     Twitter = ""
     Instagram = ""
     Facebook = ""
@@ -699,8 +702,8 @@ enableEmoji = true
     Douyin = ""
     TikTok = ""
     Phone = ""
-    Email = ""
-    RSS = true
+    Email = "saraogeeapoorv@outlook.com"
+    RSS = false
     # custom social links like the following
     # [params.social.twitter]
     #   id = "lruihao"
@@ -819,7 +822,7 @@ enableEmoji = true
 
   # FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
   [params.githubCorner]
-    enable = true
+    enable = false
     permalink = "https://github.com/asaraog/asaraog.github.io"
     title = "View source on GitHub"
     position = "right" # ["left", "right"]
@@ -906,13 +909,13 @@ enableEmoji = true
     # whether to enable the fontawesome extended syntax
     fontawesome = true
     # license info (HTML format is supported)
-    license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
+    license = '<a rel="license external nofollow noopener noreferrer" href="https://github.com/asaraog/asaraog.github.io/blob/main/LICENSE" target="_blank">BSD-3-Clause</a>'
     # whether to show link to Raw Markdown content of the post
     linkToMarkdown = true
     # FixIt 0.3.0 | NEW whether to show link to view source code of the post
     linkToSource = true
     # FixIt 0.3.0 | NEW whether to show link to edit the post
-    linkToEdit = true
+    linkToEdit = false
     # FixIt 0.3.0 | NEW whether to show link to report issue for the post
     linkToReport = true
     # whether to show the full text content in RSS
@@ -1038,14 +1041,14 @@ enableEmoji = true
     # social share links in post page
     [params.page.share]
       enable = true
-      Twitter = true
-      Facebook = true
-      Linkedin = false
+      Twitter = false
+      Facebook = false
+      Linkedin = true
       Whatsapp = false
       Pinterest = false
       Tumblr = false
       HackerNews = false
-      Reddit = false
+      Reddit = true
       VK = false
       Buffer = false
       Xing = false
@@ -1053,7 +1056,7 @@ enableEmoji = true
       Instapaper = false
       Pocket = false
       Flipboard = false
-      Weibo = true
+      Weibo = false
       Myspace = false
       Blogger = false
       Baidu = false
@@ -1064,7 +1067,7 @@ enableEmoji = true
       Mix = false
     # FixIt 0.2.15 | CHANGED Comment config
     [params.page.comment]
-      enable = false
+      enable = true
       # FixIt 0.2.13 | NEW Artalk comment config (https://artalk.js.org/)
       [params.page.comment.artalk]
         enable = false
@@ -1109,14 +1112,14 @@ enableEmoji = true
         appId = "G6EeVcyN7NoVkKDfIa7RP05Z-MdYXbMMI"
         appKey = "9s1pti9cxv64ejg6lAn8NLnR"
         placeholder = ""
-        avatar = "mp"
+        avatar = ""
         meta = ""
         requiredFields = ""
         pageSize = 10
         lang = "en"
-        visitor = true
+        visitor = false
         recordIP = true
-        highlight = true
+        highlight = false
         enableQQ = false
         serverURLs = "https://g6eevcyn.api.lncldglobal.com"
         # emoji data file name, default is "google.yml"

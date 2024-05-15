@@ -17,7 +17,9 @@ A blog (a truncation of &#34;weblog&#34;) is an informational website published 
             appId: &#39;G6EeVcyN7NoVkKDfIa7RP05Z-MdYXbMMI&#39;,
             appKey: &#39;9s1pti9cxv64ejg6lAn8NLnR&#39;,
             lang: &#39;en&#39;,
-            serverURLs: &#39;https://g6eevcyn.api.lncldglobal.com&#39;
+            serverURLs: &#39;https://g6eevcyn.api.lncldglobal.com&#39;,
+            recordIP: true,
+            requiredFields: [&#39;nick&#39;,&#39;mail&#39;]
         });
     &lt;/script&gt;
 &lt;/body&gt;
