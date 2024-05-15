@@ -22,8 +22,8 @@
           hreflang="en"
           href="//localhost:1313/"
           /></url><url>
-      <loc>//localhost:1313/neuroimaging/first_post/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>//localhost:1313/first_post/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/first_post2/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>//localhost:1313/neuroimaging/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="hi"

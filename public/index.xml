@@ -6,6 +6,14 @@
     <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 20 Feb 2023 20:14:22 &#43;0800</lastBuildDate>
       <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+  <title>My First Post2</title>
+  <link>//localhost:1313/first_post2/</link>
+  <pubDate>Mon, 20 Feb 2023 20:14:22 &#43;0800</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/first_post2/</guid>
+  <description><![CDATA[A blog (a truncation of &ldquo;weblog&rdquo;) is an informational website published on the World Wide Web consisting of discrete, often informal diary-style text entries (posts). Posts are typically displayed in reverse chronological order so that the most recent post appears first, at the top of the web page. Until 2009, blogs were usually the work of a single individual,[citation needed] occasionally of a small group, and often covered a single subject or topic.]]></description>
+</item>
+<item>
   <title>My First Post</title>
   <link>//localhost:1313/first_post/</link>
   <pubDate>Mon, 20 Feb 2023 20:14:22 &#43;0800</pubDate>
