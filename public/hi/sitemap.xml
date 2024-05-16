@@ -2,14 +2,14 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
-      <loc>//localhost:1313/hi/biomolecules/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+      <loc>//localhost:1313/hi/biomolecule/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="en"
-            href="//localhost:1313/biomolecules/"
+            href="//localhost:1313/biomolecule/"
             /><xhtml:link
           rel="alternate"
           hreflang="hi"
-          href="//localhost:1313/hi/biomolecules/"
+          href="//localhost:1313/hi/biomolecule/"
           /></url><url>
       <loc>//localhost:1313/hi/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"

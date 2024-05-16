@@ -21,12 +21,103 @@ defaultContentLanguage = "en"
 # language code ["en", "zh-CN", "fr", "pl", ...]
 [languages]
   [languages.en]
-  # language name ["English", "简体中文", "Français", "Polski", ...]
   languageName = "English"
-  title = "Home"
+  title = "Asaraog"
   [languages.hi]
   languageName = "हिंदी"
-  title = "घर"
+  title = "असरावग"
+    [languages.hi.params.home.profile]
+      title ="अपूर्व सरवगी"
+      subtitle = "कार्य प्रगति पर"
+      typeit = true
+    [[languages.hi.menu.main]]
+        identifier = "biomolecules"
+        name = "जैविक अणुओं"
+        url = "/biomolecules/"
+        title = "जैविक अणुओं"
+        weight = 1
+      [languages.hi.menu.main.params]
+        icon = "fa-solid fa-folder-tree"
+    [[languages.hi.menu.main]]
+        identifier = "datascience"
+        name = "डेटा विज्ञान"
+        url = "/datascience/"
+        title = "डेटा विज्ञान"
+        weight = 2
+      [languages.hi.menu.main.params]
+          icon = "fa-solid fa-folder-tree"
+    [[languages.hi.menu.main]]
+        identifier = "neuroimaging"
+        name = "तंत्रिका-इमेजिंग"
+        url = "/neuroimaging/"
+        title = "तंत्रिका-इमेजिंग"
+        weight = 3
+      [languages.hi.menu.main.params]
+          icon = "fa-solid fa-folder-tree"
+    [[languages.hi.menu.main]]
+        identifier = "COVID-19"
+        parent = "biomolecules"
+        name = "कोविड-19"
+        url = "/biomolecules/covid19/"
+        title = "कोविड-19"
+        weight = 1
+    [[languages.hi.menu.main]]
+        identifier = "DNA"
+        parent = "biomolecules"
+        name = "डीएनए"
+        url = "/biomolecules/dna/"
+        title = "डीएनए"
+        weight = 2
+    [[languages.hi.menu.main]]
+        identifier = "proteins"
+        parent = "biomolecules"
+        name = "प्रोटीन्स"
+        url = "/biomolecules/proteins/"
+        title = "प्रोटीन्स"
+        weight = 3
+    [[languages.hi.menu.main]]
+        identifier = "autism"
+        parent = "neuroimaging"
+        name = "ऑटिज्म"
+        url = "/neuroimaging/autism/"
+        title = "ऑटिज्म"
+        weight = 1
+    [[languages.hi.menu.main]]
+        identifier = "olfaction"
+        parent = "neuroimaging"
+        name = "घ्राण"
+        url = "/neuroimaging/olfaction/"
+        title = "घ्राण"
+        weight = 2
+    [[languages.hi.menu.main]]
+        identifier = "neurodegeneration"
+        parent = "neuroimaging"
+        name = "तंत्रिका अपविकास"
+        url = "/neuroimaging/neurodegeneration/"
+        title = "तंत्रिका अपविकास"
+        weight = 3
+    [[languages.hi.menu.main]]
+        identifier = "Golang"
+        parent = "datascience"
+        name = "गोलांग"
+        url = "/datascience/golang/"
+        title = "गोलांग"
+        weight = 1
+    [[languages.hi.menu.main]]
+        identifier = "analyzingopendata"
+        parent = "datascience"
+        name = "खुले डेटा का विश्लेषण"
+        url = "/datascience/analyzeopendata/"
+        title = "खुले डेटा का विश्लेषण"
+        weight = 2
+    [[languages.hi.menu.main]]
+        identifier = "datainsociety"
+        parent = "datascience"
+        name = "समाज में डेटा"
+        url = "/datascience/datainsociety/"
+        title = "समाज में डेटा"
+        weight = 3
+
 # whether to include Chinese/Japanese/Korean
 hasCJKLanguage = false
 # default amount of posts in each pages
@@ -44,7 +135,6 @@ enableEmoji = true
 # Menu Configuration
 # See: https://fixit.lruihao.cn/documentation/basics/#menu-configuration
 # -------------------------------------------------------------------------------------
-
 [menu]
   [[menu.main]]
     identifier = "biomolecules"
@@ -65,7 +155,7 @@ enableEmoji = true
       # whether set as a draft menu item whose function is similar to a draft post/page
       draft = false
       # FixIt 0.2.16 | NEW add fontawesome icon to a specific menu item
-      icon = "fa-solid fa-layer-group"
+      icon = "fa-solid fa-folder-tree"
       # FixIt 0.2.16 | NEW set menu item type, optional values: ["mobile", "desktop"]
       type = ""
   [[menu.main]]
@@ -78,7 +168,7 @@ enableEmoji = true
     title = "Data Science"
     weight = 2
     [menu.main.params]
-      icon = "fa-solid fa-layer-group"
+      icon = "fa-solid fa-folder-tree"
   [[menu.main]]
     identifier = "neuroimaging"
     parent = ""
@@ -89,7 +179,7 @@ enableEmoji = true
     title = "Neuroimaging"
     weight = 3
     [menu.main.params]
-      icon = "fa-solid fa-layer-group"
+      icon = "fa-solid fa-folder-tree"
   [[menu.main]]
     identifier = "COVID-19"
     parent = "biomolecules"
@@ -367,8 +457,12 @@ enableEmoji = true
   tag = "tags"
   collection = "collections"
   datascience = "datascience"
-  biomolecule = "biomolecules"
+  biomolecule = "biomolecule"
   neuroimaging = "neuroimaging"
+
+
+
+
 
 # -------------------------------------------------------------------------------------
 # Theme Core Configuration
@@ -484,13 +578,14 @@ enableEmoji = true
     # FixIt 0.2.13 | CHANGED mobile header mode ["sticky", "normal", "auto"]
     mobileMode = "auto"
     # Header title config
+
     [params.header.title]
       # URL of the LOGO
       logo = ""
       # title name
       name = "Home"
       # you can add extra information before the name (HTML format is supported), such as icons
-      pre = ""
+      pre = "<i class='fas fa-home'></i>"
       # you can add extra information after the name (HTML format is supported), such as icons
       post = ""
       # whether to use typeit animation for title name
@@ -1225,3 +1320,4 @@ enableEmoji = true
       [params.page.seo.publisher]
         name = ""
         logoUrl = ""
+

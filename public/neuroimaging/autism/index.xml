@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Autism - neuroimaging - Home</title>
+    <title>Autism - neuroimaging - Asaraog</title>
     <link>//localhost:1313/neuroimaging/autism/</link>
-    <description>Autism - neuroimaging | Home</description>
+    <description>Autism - neuroimaging | Asaraog</description>
     <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 20 Feb 2023 20:14:22 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/neuroimaging/autism/" rel="self" type="application/rss+xml" /><item>
   <title>My First Post</title>
   <link>//localhost:1313/first_post/</link>

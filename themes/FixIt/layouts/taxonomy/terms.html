@@ -20,7 +20,7 @@
       {{- with $termsIcon -}}
         {{- dict "Class" (add . " fa-fw me-1") | partial "plugin/icon.html" -}}
       {{- end -}}
-      {{- .Params.Title | default (T $taxonomies) | default $taxonomies | dict "Some" | T "allSome" }} <sup>{{ len .Data.Terms.ByCount }}</sup>
+    
     </h1>
     {{- /* Render miscellaneous terms */ -}}
     {{- .Render (add "terms/" $taxonomies) -}}

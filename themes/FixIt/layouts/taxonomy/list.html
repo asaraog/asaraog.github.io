@@ -17,7 +17,7 @@
     {{- else if eq $taxonomy "collection" -}}
       {{- $termIcon = "fa-solid fa-layer-group" -}}
     {{- else -}}
-      {{- $termTitle = printf "%v - %v" (T $taxonomy | default $taxonomy) .Title -}}
+      {{- $termTitle = printf "%v" .Title -}}
     {{- end -}}
     <h1 class="single-title animate__animated animate__pulse animate__faster">
       {{- with $termIcon -}}
