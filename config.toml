@@ -692,7 +692,7 @@ enableEmoji = true
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = "images/saraogeeapoorv.png"
+      avatarURL = "/images/saraogeeapoorv.png"
       # FixIt 0.2.17 | NEW identifier of avatar menu link
       avatarMenu = "neuroimaging"
       # title shown in home page (HTML format is supported)
