@@ -692,9 +692,9 @@ enableEmoji = true
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = ""
+      avatarURL = "images/saraogeeapoorv.png"
       # FixIt 0.2.17 | NEW identifier of avatar menu link
-      avatarMenu = ""
+      avatarMenu = "neuroimaging"
       # title shown in home page (HTML format is supported)
       title = "Apoorv Saraogee"
       # subtitle shown in home page
@@ -895,7 +895,7 @@ enableEmoji = true
 
   # Cookie consent config
   [params.cookieconsent]
-    enable = true
+    enable = false
     # text strings used for Cookie consent banner
     [params.cookieconsent.content]
       message = ""
