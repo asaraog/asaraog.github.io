@@ -2,7 +2,24 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
-      <loc>//localhost:1313/first_post2/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/first_post3/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            rel="alternate"
+            hreflang="hi"
+            href="//localhost:1313/hi/first_post3/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="//localhost:1313/first_post3/"
+          /></url><url>
+      <loc>//localhost:1313/first_post2/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            rel="alternate"
+            hreflang="hi"
+            href="//localhost:1313/hi/first_post2/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="//localhost:1313/first_post2/"
+          /></url><url>
       <loc>//localhost:1313/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
@@ -13,6 +30,15 @@
           href="//localhost:1313/"
           /></url><url>
       <loc>//localhost:1313/neuroimaging/autism/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/biomolecules/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            rel="alternate"
+            hreflang="hi"
+            href="//localhost:1313/hi/biomolecules/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="//localhost:1313/biomolecules/"
+          /></url><url>
       <loc>//localhost:1313/datascience/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
@@ -22,8 +48,17 @@
           hreflang="en"
           href="//localhost:1313/datascience/"
           /></url><url>
+      <loc>//localhost:1313/biomolecules/DNA/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>//localhost:1313/datascience/golang/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/first_post/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/first_post/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            rel="alternate"
+            hreflang="hi"
+            href="//localhost:1313/hi/first_post/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="//localhost:1313/first_post/"
+          /></url><url>
       <loc>//localhost:1313/neuroimaging/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
@@ -33,15 +68,14 @@
           hreflang="en"
           href="//localhost:1313/neuroimaging/"
           /></url><url>
-      <loc>//localhost:1313/posts/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/biomolecule/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+      <loc>//localhost:1313/posts/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
-            href="//localhost:1313/hi/biomolecule/"
+            href="//localhost:1313/hi/posts/"
             /><xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//localhost:1313/biomolecule/"
+          href="//localhost:1313/posts/"
           /></url><url>
       <loc>//localhost:1313/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"

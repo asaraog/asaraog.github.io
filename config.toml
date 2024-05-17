@@ -11,7 +11,7 @@
 # -------------------------------------------------------------------------------------
 
 # website title
-
+disablePathToLower = true
 # Hostname (and path) to the root
 baseURL = "/"
 # theme list
@@ -20,6 +20,7 @@ theme = "FixIt"
 defaultContentLanguage = "en"
 # language code ["en", "zh-CN", "fr", "pl", ...]
 [languages]
+  
   [languages.en]
   languageName = "English"
   title = "Asaraog"
@@ -58,63 +59,63 @@ defaultContentLanguage = "en"
         identifier = "COVID-19"
         parent = "biomolecules"
         name = "कोविड-19"
-        url = "/biomolecules/covid19/"
+        url = "/biomolecules/कोविड-19/"
         title = "कोविड-19"
         weight = 1
     [[languages.hi.menu.main]]
         identifier = "DNA"
         parent = "biomolecules"
         name = "डीएनए"
-        url = "/biomolecules/dna/"
+        url = "/biomolecules/डीएनए/"
         title = "डीएनए"
         weight = 2
     [[languages.hi.menu.main]]
         identifier = "proteins"
         parent = "biomolecules"
         name = "प्रोटीन्स"
-        url = "/biomolecules/proteins/"
+        url = "/biomolecules/प्रोटीन्स/"
         title = "प्रोटीन्स"
         weight = 3
     [[languages.hi.menu.main]]
         identifier = "autism"
         parent = "neuroimaging"
-        name = "ऑटिज्म"
-        url = "/neuroimaging/autism/"
-        title = "ऑटिज्म"
+        name = "ऑटिज़्म"
+        url = "/neuroimaging/ऑटिज़्म/"
+        title = "ऑटिज़्म"
         weight = 1
     [[languages.hi.menu.main]]
         identifier = "olfaction"
         parent = "neuroimaging"
         name = "घ्राण"
-        url = "/neuroimaging/olfaction/"
+        url = "/neuroimaging/घ्राण/"
         title = "घ्राण"
         weight = 2
     [[languages.hi.menu.main]]
         identifier = "neurodegeneration"
         parent = "neuroimaging"
         name = "तंत्रिका अपविकास"
-        url = "/neuroimaging/neurodegeneration/"
+        url = "/neuroimaging/तंत्रिका-अपविकास/"
         title = "तंत्रिका अपविकास"
         weight = 3
     [[languages.hi.menu.main]]
         identifier = "Golang"
         parent = "datascience"
         name = "गोलांग"
-        url = "/datascience/golang/"
+        url = "/datascience/गोलांग/"
         title = "गोलांग"
         weight = 1
     [[languages.hi.menu.main]]
         identifier = "analyzingopendata"
         parent = "datascience"
         name = "खुले डेटा का विश्लेषण"
-        url = "/datascience/analyzeopendata/"
+        url = "/datascience/खुले-डेटा-का-विश्लेषण/"
         title = "खुले डेटा का विश्लेषण"
         weight = 2
     [[languages.hi.menu.main]]
         identifier = "datainsociety"
         parent = "datascience"
         name = "समाज में डेटा"
-        url = "/datascience/datainsociety/"
+        url = "/datascience/समाज-में-डेटा/"
         title = "समाज में डेटा"
         weight = 3
 
@@ -186,7 +187,7 @@ enableEmoji = true
     pre = ""
     post = ""
     name = "COVID-19"
-    url = "/biomolecules/covid19/"
+    url = "/biomolecules/covid-19/"
     title = "COVID-19"
     weight = 1
   [[menu.main]]
@@ -457,7 +458,7 @@ enableEmoji = true
   tag = "tags"
   collection = "collections"
   datascience = "datascience"
-  biomolecule = "biomolecule"
+  biomolecules = "biomolecules"
   neuroimaging = "neuroimaging"
 
 
@@ -713,7 +714,7 @@ enableEmoji = true
   # FixIt 0.2.16 | CHANGED Social config about the author
   [params.social]
     GitHub = "https://github.com/asaraog"
-    Linkedin = "https://www.linkedin.com/in/apoorv-saraogee-126b9a266/"
+    Linkedin = "apoorv-saraogee-126b9a266/"
     Twitter = ""
     Instagram = ""
     Facebook = ""

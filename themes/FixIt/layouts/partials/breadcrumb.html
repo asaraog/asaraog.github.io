@@ -6,7 +6,13 @@
           <li class="breadcrumb-item"><a href="{{ .RelPermalink }}" title="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage | and .Summary }}{{ .Summary }}{{ else }}{{ title .LinkTitle }}{{ end }}{{ end }}">{{ cond (and .Site.Params.breadcrumb.showHome .IsHome) (T "single.home") ((lower .LinkTitle | T) | default (title .LinkTitle)) }}</a></li>
         {{- end -}}
       {{- end -}}
-      <li class="breadcrumb-item active" aria-current="page">{{ title .LinkTitle }}</li>
+      <li class="breadcrumb-item active" aria-current="page"> 
+      {{- if .IsNode -}}
+        {{ T (printf "taxonomy.%s" .Title) | default (title .LinkTitle) }}
+      {{- else -}}
+        {{ title .LinkTitle }}
+      {{- end -}}
+      </li>
     </ol>
   </nav>
 {{- end -}}

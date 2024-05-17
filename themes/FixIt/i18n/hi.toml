@@ -22,6 +22,42 @@ noscript = "फिक्सइट थीम जावास्क्रिप्
 [archives]
 other = "अभिलेखागार"
 
+[neuroimaging]
+other = "तंत्रिका-इमेजिंग"
+
+[taxonomy.neuroimaging.autism]
+other = "ऑटिज्म"
+
+[taxonomy.neuroimaging.olfaction]
+other = "घ्राण"
+
+[taxonomy.neuroimaging.neurodegeneration]
+other = "तंत्रिका अपविकास"
+
+[taxonomy.biomolecules.dna]
+other = "डीएनए"
+
+[taxonomy.biomolecules.proteins]
+other = "ऑटिज्म"
+
+[taxonomy.biomolecules.covid19]
+other = "कोविड-19"
+
+[taxonomy.datascience.golang]
+other = "गोलांग"
+
+[taxonomy.datascience.datainsociety]
+other = "समाज में डेटा"
+
+[taxonomy.datascience.analyzingopendata]
+other = "खुले डेटा का विश्लेषण"
+
+[biomolecules]
+other = "जैविक अणुओं"
+
+[datascience]
+other = "डेटा विज्ञान"
+
 [allSome]
 other = "सभी {{ .Some }}"
 

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="hi">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Golang - डेटा विज्ञान - असरावग</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="" />
+  <meta itemprop="name" content="Golang">
+  <meta itemprop="dateModified" content="2023-02-20T20:14:22+08:00"><meta property="og:url" content="//localhost:1313/hi/datascience/golang/">
+  <meta property="og:site_name" content="असरावग">
+  <meta property="og:title" content="Golang">
+  <meta property="og:locale" content="hi">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Golang">
+<meta name="twitter:description" content="">
+<meta name="application-name" content="ASaraogee">
+<meta name="apple-mobile-web-app-title" content="ASaraogee"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="//localhost:1313/hi/datascience/golang/" /><link rel="alternate" href="/hi/datascience/golang/index.xml" type="application/rss+xml" title="असरावग">
+  <link rel="feed" href="/hi/datascience/golang/index.xml" type="application/rss+xml" title="असरावग"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/hi/" title="map[logo: name:Home post: pre:&lt;i class=&#39;fas fa-home&#39;&gt;&lt;/i&gt; typeit:false]"><span class="header-title-pre"><i class='fas fa-home'></i></span><span class="header-title-text">Home</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item has-children">
+              <a
+                class="menu-link"
+                href="/hi/biomolecules/"
+                title="जैविक अणुओं"
+                
+              ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> जैविक अणुओं</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/biomolecules/%E0%A4%95%E0%A5%8B%E0%A4%B5%E0%A4%BF%E0%A4%A1-19/"
+                          title="कोविड-19"
+                          
+                        >कोविड-19</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/biomolecules/%E0%A4%A1%E0%A5%80%E0%A4%8F%E0%A4%A8%E0%A4%8F/"
+                          title="डीएनए"
+                          
+                        >डीएनए</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/biomolecules/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%9F%E0%A5%80%E0%A4%A8%E0%A5%8D%E0%A4%B8/"
+                          title="प्रोटीन्स"
+                          
+                        >प्रोटीन्स</a>
+                      </li></ul></li><li class="menu-item has-children">
+              <a
+                class="menu-link"
+                href="/hi/datascience/"
+                title="डेटा विज्ञान"
+                
+              ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> डेटा विज्ञान</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/datascience/%E0%A4%97%E0%A5%8B%E0%A4%B2%E0%A4%BE%E0%A4%82%E0%A4%97/"
+                          title="गोलांग"
+                          
+                        >गोलांग</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/datascience/%E0%A4%96%E0%A5%81%E0%A4%B2%E0%A5%87-%E0%A4%A1%E0%A5%87%E0%A4%9F%E0%A4%BE-%E0%A4%95%E0%A4%BE-%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%B2%E0%A5%87%E0%A4%B7%E0%A4%A3/"
+                          title="खुले डेटा का विश्लेषण"
+                          
+                        >खुले डेटा का विश्लेषण</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/datascience/%E0%A4%B8%E0%A4%AE%E0%A4%BE%E0%A4%9C-%E0%A4%AE%E0%A5%87%E0%A4%82-%E0%A4%A1%E0%A5%87%E0%A4%9F%E0%A4%BE/"
+                          title="समाज में डेटा"
+                          
+                        >समाज में डेटा</a>
+                      </li></ul></li><li class="menu-item has-children">
+              <a
+                class="menu-link"
+                href="/hi/neuroimaging/"
+                title="तंत्रिका-इमेजिंग"
+                
+              ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> तंत्रिका-इमेजिंग</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/neuroimaging/%E0%A4%91%E0%A4%9F%E0%A4%BF%E0%A4%9C%E0%A4%BC%E0%A5%8D%E0%A4%AE/"
+                          title="ऑटिज़्म"
+                          
+                        >ऑटिज़्म</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/neuroimaging/%E0%A4%98%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%A3/"
+                          title="घ्राण"
+                          
+                        >घ्राण</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/neuroimaging/%E0%A4%A4%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%BF%E0%A4%95%E0%A4%BE-%E0%A4%85%E0%A4%AA%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BE%E0%A4%B8/"
+                          title="तंत्रिका अपविकास"
+                          
+                        >तंत्रिका अपविकास</a>
+                      </li></ul></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="शीर्षक या सामग्री खोजें ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="खोज">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="साफ़ करें">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="थीम बदलें">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li><li class="menu-item language-switch">
+            <span role="button" aria-label="भाषा चुने" title="भाषा चुने"><i class="fa-solid fa-language fa-fw" aria-hidden="true"></i></span>
+            <ul class="sub-menu"><li class="menu-item">
+                      <a href="/datascience/golang/" class="menu-link" title="English">English</a>
+                    </li><li class="menu-item">
+                      <span class="menu-link text-secondary" title="हिंदी">हिंदी</span>
+                    </li></ul>
+          </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/hi/" title="असरावग"><span class="header-title-pre"><i class='fas fa-home'></i></span><span class="header-title-text">Home</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="शीर्षक या सामग्री खोजें ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="खोज">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="साफ़ करें">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              रद्द करें
+            </a>
+          </li><li
+              class="menu-item"
+            ><span class="nested-item">
+                  <a
+                    class="menu-link"
+                    href="/hi/biomolecules/"
+                    title="जैविक अणुओं"
+                    
+                  ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> जैविक अणुओं</a>
+                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/biomolecules/%E0%A4%95%E0%A5%8B%E0%A4%B5%E0%A4%BF%E0%A4%A1-19/"
+                          title="कोविड-19"
+                          
+                        >कोविड-19</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/biomolecules/%E0%A4%A1%E0%A5%80%E0%A4%8F%E0%A4%A8%E0%A4%8F/"
+                          title="डीएनए"
+                          
+                        >डीएनए</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/biomolecules/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%9F%E0%A5%80%E0%A4%A8%E0%A5%8D%E0%A4%B8/"
+                          title="प्रोटीन्स"
+                          
+                        >प्रोटीन्स</a>
+                      </li></ul></li><li
+              class="menu-item"
+            ><span class="nested-item">
+                  <a
+                    class="menu-link"
+                    href="/hi/datascience/"
+                    title="डेटा विज्ञान"
+                    
+                  ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> डेटा विज्ञान</a>
+                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/datascience/%E0%A4%97%E0%A5%8B%E0%A4%B2%E0%A4%BE%E0%A4%82%E0%A4%97/"
+                          title="गोलांग"
+                          
+                        >गोलांग</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/datascience/%E0%A4%96%E0%A5%81%E0%A4%B2%E0%A5%87-%E0%A4%A1%E0%A5%87%E0%A4%9F%E0%A4%BE-%E0%A4%95%E0%A4%BE-%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%B2%E0%A5%87%E0%A4%B7%E0%A4%A3/"
+                          title="खुले डेटा का विश्लेषण"
+                          
+                        >खुले डेटा का विश्लेषण</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/datascience/%E0%A4%B8%E0%A4%AE%E0%A4%BE%E0%A4%9C-%E0%A4%AE%E0%A5%87%E0%A4%82-%E0%A4%A1%E0%A5%87%E0%A4%9F%E0%A4%BE/"
+                          title="समाज में डेटा"
+                          
+                        >समाज में डेटा</a>
+                      </li></ul></li><li
+              class="menu-item"
+            ><span class="nested-item">
+                  <a
+                    class="menu-link"
+                    href="/hi/neuroimaging/"
+                    title="तंत्रिका-इमेजिंग"
+                    
+                  ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> तंत्रिका-इमेजिंग</a>
+                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/neuroimaging/%E0%A4%91%E0%A4%9F%E0%A4%BF%E0%A4%9C%E0%A4%BC%E0%A5%8D%E0%A4%AE/"
+                          title="ऑटिज़्म"
+                          
+                        >ऑटिज़्म</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/neuroimaging/%E0%A4%98%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%A3/"
+                          title="घ्राण"
+                          
+                        >घ्राण</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/neuroimaging/%E0%A4%A4%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%BF%E0%A4%95%E0%A4%BE-%E0%A4%85%E0%A4%AA%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BE%E0%A4%B8/"
+                          title="तंत्रिका अपविकास"
+                          
+                        >तंत्रिका अपविकास</a>
+                      </li></ul></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="थीम बदलें"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span><span class="menu-system-item language-switch">
+              <span role="button" aria-label="भाषा चुने" title="भाषा चुने">हिंदी<i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i></span>
+              <select class="language-select" onchange="location = this.value;"><option value="/datascience/golang/">English</option><option value="/hi/datascience/golang/" selected disabled>हिंदी</option></select>
+            </span></li>
+      </ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><nav aria-label="breadcrumb" class="breadcrumb-container">
+    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/hi/datascience/" title="Datascience">डेटा विज्ञान</a></li><li class="breadcrumb-item active" aria-current="page">Golang</li>
+    </ol>
+  </nav><main class="container"><div class="page archive"><h2 class="group-title"><i class="fa-regular fa-calendar fa-fw me-1" aria-hidden="true"></i>2023</h2><article class="archive-item">
+            <a href="/hi/first_post2/" class="archive-item-link">My First Post2</a>
+            <span class="archive-item-date" title='2023-02-20 20:14:22'>02-20</span>
+          </article></div></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered"><a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.125.7"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> के द्वारा संचालित | थीम - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.3.6"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">
+              <a href="/hi/"></a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="वापस शीर्ष पर"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">फिक्सइट थीम जावास्क्रिप्ट सक्षम होने पर सबसे अच्छा काम करता है।</div>
+  </noscript>
+</div><link rel="preload" href="/lib/katex/katex.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/katex/katex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script>window.config={"code":{"copyTitle":"क्लिपबोर्ड पर कॉपी करें","editLockTitle":"संपादन योग्य कोड ब्लॉक को लॉक करें","editUnLockTitle":"संपादन योग्य कोड ब्लॉक को अनलॉक करें","editable":true,"maxShownLines":10},"cookieconsent":{"content":{"dismiss":"समझ गया!","link":"और अधिक जानें","message":"यह वेबसाइट आपके अनुभव को बेहतर बनाने के लिए कुकीज़ का उपयोग करती है।"},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/hi/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"कोई परिणाम नहीं मिला","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"version":"v0.3.6"};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

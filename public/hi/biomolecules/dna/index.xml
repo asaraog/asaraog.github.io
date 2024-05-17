@@ -1,0 +1,7 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>DNA - जैविक अणुओं - असरावग</title>
+    <link>//localhost:1313/hi/biomolecules/dna/</link>
+    <description>DNA - जैविक अणुओं | असरावग</description>
+    <generator>Hugo -- gohugo.io</generator><language>hi</language><atom:link href="//localhost:1313/hi/biomolecules/dna/" rel="self" type="application/rss+xml" /></channel>
+</rss>
