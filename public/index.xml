@@ -3,9 +3,18 @@
     <title>Asaraog</title>
     <link>//localhost:1313/</link>
     <description>Asaraog</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 20 Feb 2023 20:14:22 &#43;0800</lastBuildDate>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 10 Jul 2023 00:09:00 -0600</lastBuildDate>
       <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+  <title>Using Golang to build a website</title>
+  <link>//localhost:1313/Week3/</link>
+  <pubDate>Mon, 10 Jul 2023 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/Week3/</guid>
+  <description><![CDATA[Why? Golang is a compiled language designed for today&rsquo;s multi-processor, scalable, high-performance systems. Known for efficient real-time data processing, Uber uses Golang on the backend. Static site generators such as Hugo were developed recently using Golang. Other platforms have inherited dependency chains that can lead to infeasible build times. For example, Cloudfare recently migrated from Gatsby.
+Demo I created a demo website using the Hugo Winston theme. This theme does have a Live Demo which made it simple to deploy from Github onto Netlify.]]></description>
+</item>
+<item>
   <title>My First Post3</title>
   <link>//localhost:1313/first_post3/</link>
   <pubDate>Mon, 20 Feb 2023 20:14:22 &#43;0800</pubDate>
@@ -28,6 +37,55 @@
   <author>Author</author>
   <guid>//localhost:1313/first_post/</guid>
   <description><![CDATA[A blog (a truncation of &ldquo;weblog&rdquo;) is an informational website published on the World Wide Web consisting of discrete, often informal diary-style text entries (posts). Posts are typically displayed in reverse chronological order so that the most recent post appears first, at the top of the web page. Until 2009, blogs were usually the work of a single individual,[citation needed] occasionally of a small group, and often covered a single subject or topic.]]></description>
+</item>
+<item>
+  <title></title>
+  <link>//localhost:1313/Week10/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/Week10/</guid>
+  <description><![CDATA[Image Classification towards an OCR pipeline Project Summary This project aims to build an image processing demonstraion using Go looking to implement an OCR pipeline from image capture to recognition using classification. For this demonstration, classification is performed using random forests(randomForest) employed on The Modified National Institute of Standards and Technology (MNIST) dataset using the GoMNIST driver. MNIST comprises of 60 thousand training observations and 10 thousand test observations of handwritten digits.]]></description>
+</item>
+<item>
+  <title></title>
+  <link>//localhost:1313/Week2/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/Week2/</guid>
+  <description><![CDATA[Evaluating Go Project Summary Go will be help power our backend web and database servers and distributed service offerings on the cloud. However, data science operations remain a key concern as Python/R remain popular. This project aims to implement least squares regression of the Anscombe Quartet (1973) in Go using the stats package. The Go implementation is benchmarked for runtime with a previous implementation by Miller (2015) in Python/R as a reference.]]></description>
+</item>
+<item>
+  <title></title>
+  <link>//localhost:1313/Week4/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/Week4/</guid>
+  <description><![CDATA[Command-Line Applications and Interface Project Summary Go will be help power our backend web and database servers and distributed service offerings on the cloud. However, data science operations remain a key concern as Python/R remain popular. This project aims to implement basic summary statistics of the California Housing Prices (Miller 2015) in Go using the stats package. The Go implementation is benchmarked for runtime using &rsquo;time&rsquo; before commands in the command line to compare with Python&rsquo;s pandas.]]></description>
+</item>
+<item>
+  <title></title>
+  <link>//localhost:1313/Week5/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/Week5/</guid>
+  <description><![CDATA[Crawling and Scraping the Web Project Summary Go will be help power our backend web and database servers and distributed service offerings on the cloud. However, data science operations remain a key concern as Python remain popular. This project aims to implement web crawling and scraping of Wikipedia (described by Chanda 2021) webpages in Go using Colly. The Go implementation is benchmarked for runtime using &rsquo;time&rsquo; before commands in the command line to compare with Python&rsquo;s implementation for the same 10 webpages using scrapy.]]></description>
+</item>
+<item>
+  <title></title>
+  <link>//localhost:1313/Week6/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/Week6/</guid>
+  <description><![CDATA[Concurrency and Machine Learning Project Summary This project aims to evaluate Go&rsquo;s concurrent programming framework for training and testing machine learning models namely linear regression. In particular, this project uses the Boston Housing Study (1970), commonly used by statisticians to predict housing prices by others (Brownlee 2020). This dataset was modified by others (Miller 1999) to remove the feature &lsquo;B&rsquo; encoding racial segregation.
+Machine learning models will utilize the gonum library.]]></description>
+</item>
+<item>
+  <title></title>
+  <link>//localhost:1313/Week7/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/Week7/</guid>
+  <description><![CDATA[Isolation Forests Project Summary This project aims to compare Go with Python and R in training isolation forests, an unsupervised learning method to identify anomalies or outliers. It was introduced by Liu 2008 by observing that path lengths for anomalies were significantly SHORTER by averaging over many trees. He introduces an anomaly score to normalize comparisons with HIGHER scores indicating more abnormality. This project will utilize the The Modified National Institute of Standards and Technology (MNIST) dataset which comprises of 60 thousand training observations and 10 thousand test observations of handwritten digits.]]></description>
 </item>
 </channel>
 </rss>

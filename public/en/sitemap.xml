@@ -2,6 +2,7 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
+      <loc>//localhost:1313/Week3/</loc><lastmod>2023-07-10T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>//localhost:1313/first_post3/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
@@ -20,7 +21,7 @@
           hreflang="en"
           href="//localhost:1313/first_post2/"
           /></url><url>
-      <loc>//localhost:1313/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+      <loc>//localhost:1313/</loc><lastmod>2023-07-10T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
             href="//localhost:1313/hi/"
@@ -28,6 +29,25 @@
           rel="alternate"
           hreflang="en"
           href="//localhost:1313/"
+          /></url><url>
+      <loc>//localhost:1313/datascience/</loc><lastmod>2023-07-10T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            rel="alternate"
+            hreflang="hi"
+            href="//localhost:1313/hi/datascience/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="//localhost:1313/datascience/"
+          /></url><url>
+      <loc>//localhost:1313/datascience/golang/</loc><lastmod>2023-07-10T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/posts/</loc><lastmod>2023-07-10T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            rel="alternate"
+            hreflang="hi"
+            href="//localhost:1313/hi/posts/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="//localhost:1313/posts/"
           /></url><url>
       <loc>//localhost:1313/neuroimaging/autism/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>//localhost:1313/biomolecules/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
@@ -39,17 +59,7 @@
           hreflang="en"
           href="//localhost:1313/biomolecules/"
           /></url><url>
-      <loc>//localhost:1313/datascience/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-            rel="alternate"
-            hreflang="hi"
-            href="//localhost:1313/hi/datascience/"
-            /><xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="//localhost:1313/datascience/"
-          /></url><url>
       <loc>//localhost:1313/biomolecules/DNA/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/datascience/golang/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>//localhost:1313/first_post/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
@@ -68,15 +78,14 @@
           hreflang="en"
           href="//localhost:1313/neuroimaging/"
           /></url><url>
-      <loc>//localhost:1313/posts/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-            rel="alternate"
-            hreflang="hi"
-            href="//localhost:1313/hi/posts/"
-            /><xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="//localhost:1313/posts/"
-          /></url><url>
+      <loc>//localhost:1313/Week10/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/Week2/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/Week4/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/Week5/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/Week6/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/Week7/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/Week8/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/Week9/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>//localhost:1313/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
