@@ -2,7 +2,16 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
-      <loc>//localhost:1313/Week3/</loc><lastmod>2023-07-10T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/PythonRGo/</loc><lastmod>2024-05-08T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+      <loc>//localhost:1313/Week2/</loc><lastmod>2024-05-08T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+            rel="alternate"
+            hreflang="hi"
+            href="//localhost:1313/hi/Week2/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="//localhost:1313/Week2/"
+          /></url><url>
       <loc>//localhost:1313/first_post3/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
@@ -12,16 +21,17 @@
           hreflang="en"
           href="//localhost:1313/first_post3/"
           /></url><url>
-      <loc>//localhost:1313/first_post2/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+      <loc>//localhost:1313/Website/</loc><lastmod>2024-05-01T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/Week3/</loc><lastmod>2024-05-01T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
-            href="//localhost:1313/hi/first_post2/"
+            href="//localhost:1313/hi/Week3/"
             /><xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//localhost:1313/first_post2/"
+          href="//localhost:1313/Week3/"
           /></url><url>
-      <loc>//localhost:1313/</loc><lastmod>2023-07-10T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+      <loc>//localhost:1313/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
             href="//localhost:1313/hi/"
@@ -30,7 +40,17 @@
           hreflang="en"
           href="//localhost:1313/"
           /></url><url>
-      <loc>//localhost:1313/datascience/</loc><lastmod>2023-07-10T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+      <loc>//localhost:1313/Goroutines/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+      <loc>//localhost:1313/Week6/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
+            rel="alternate"
+            hreflang="hi"
+            href="//localhost:1313/hi/Week6/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="//localhost:1313/Week6/"
+          /></url><url>
+      <loc>//localhost:1313/datascience/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
             href="//localhost:1313/hi/datascience/"
@@ -39,8 +59,13 @@
           hreflang="en"
           href="//localhost:1313/datascience/"
           /></url><url>
-      <loc>//localhost:1313/datascience/golang/</loc><lastmod>2023-07-10T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/posts/</loc><lastmod>2023-07-10T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+      <loc>//localhost:1313/Week8/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+      <loc>//localhost:1313/Front-end_Applications/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+      <loc>//localhost:1313/datascience/golang/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+      <loc>//localhost:1313/MNIST/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+      <loc>//localhost:1313/Week7/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+      <loc>//localhost:1313/datascience/opendata/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+      <loc>//localhost:1313/posts/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
             href="//localhost:1313/hi/posts/"
@@ -79,13 +104,6 @@
           href="//localhost:1313/neuroimaging/"
           /></url><url>
       <loc>//localhost:1313/Week10/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/Week2/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/Week4/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/Week5/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/Week6/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/Week7/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/Week8/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/Week9/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>//localhost:1313/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="hi"

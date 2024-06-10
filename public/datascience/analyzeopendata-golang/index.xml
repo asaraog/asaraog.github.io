@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Analyzeopendata, Golang - datascience - Asaraog</title>
+    <link>//localhost:1313/datascience/analyzeopendata-golang/</link>
+    <description>Analyzeopendata, Golang - datascience | Asaraog</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 15 May 2024 00:09:00 -0600</lastBuildDate><atom:link href="//localhost:1313/datascience/analyzeopendata-golang/" rel="self" type="application/rss+xml" /><item>
+  <title>MNIST Dataset</title>
+  <link>//localhost:1313/Week7/</link>
+  <pubDate>Wed, 15 May 2024 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/Week7/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/mnnist.png" alt="MNIST Dataset" title="MNIST Dataset" referrerpolicy="no-referrer"/></div>MNIST Dataset This project will utilize the The Modified National Institute of Standards and Technology (MNIST) dataset which comprises of 60 thousand training observations and 10 thousand test observations of handwritten digits.
+Image classification using neural networks with Python Identifying anomalies using isolation forests with Golang, Python and R See my Github repository for further details.
+Isolation forests are used as an unsupervised learning method to identify anomalies or outliers. It was introduced by Liu 2008 by observing that path lengths for anomalies were significantly SHORTER by averaging over many trees.]]></description>
+</item>
+</channel>
+</rss>

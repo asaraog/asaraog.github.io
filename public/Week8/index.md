@@ -1,51 +1,51 @@
-# 
+# Front-End Development With Golang
 
-# Assisted Writing Application
 
-## Project Summary
-This project aims to produce a prototype for an assisted writing application based on [Vale](https://vale.sh/), an exisiting command line interface with a backend in Go. The prototype is developed using [Wails](https://wails.io/) and [Svelte](https://svelte.dev/repl/hello-world). It aims to accept plain text files (.txt or .md) as user input and a preference for style as a text input. Two style preferences are supported in the application with a focus on the word &#39;data&#39; as either a [singular](./styles/singular) or [plural](./styles/plural) noun. It only captures simple cases for the verbs &#39;is/are&#39;, &#39;was/were&#39;, &#39;show/shows&#39;, &#39;suggest/suggests&#39;, &#39;indicate/indicates&#39;. However, more complex NLP tools for parts of speech tagging can be included from Python such as [spaCy with Vale](https://github.com/errata-ai/vale/issues/356). The output is displayed in the application with support for errors such as invalid user preference, invalid type of text file or insufficient length of text. 
+## What?
 
-The application prototype is succesful during development (wails dev) in linking Vale CLI output with user input and displaying errors when for example an image file is read in or incorrect preference is registered like 3 or 4. Although Vale is not able to integrate with Wails during build (wails build) and does not output correctly in the built application, style preferences are captured with correct warnings using the testing text file when using the Vale CLI directly. Future implemntations would explore other prose linters that do not require command line dependencies.
+Analogous to [Rails](https://rubyonrails.org/) for Ruby, Golang has [Wails](https://wails.io/) for front-end application development. Popular front-end frameworks for JavaScript such as [React, Angular and Vue](https://wails.io/docs/community/templates/) can be used with Wails. Built on Golang, Wails uses the native rendering engine rather than an embedded browser (https://www.electronjs.org/)
 
-## Important files
+[Svelte](https://svelte.dev/repl/hello-world) is a lighter and beginner-friendly front-end framework. Wails and Svelte are used for two projects:
+- Assisted Writing Application
+- Chatbot 
 
-**app.go:** Backend &#39;brain&#39; of application. Lint function takes in user preference and a user-specified text file to output a processed string of the Vale CLI output. ProcessRaw takes the Vale CLI output and processes it for the application frontend. A test unit function is written in app_test.go.
-
-**frontend/src/App.Svelte:** Frontend specifications. Binding of user input for preference to backend code. Displays output of Vale CLI in the application after clicking button.
-
-**./build/bin/Week8.app** Executable application for MacOS.
-
-**.vale.ini**, **styles/singular/singular.yml:** Configuration for singular noun preference and tokens specified
-
-**_vale.ini**, **styles/plural/plural.yml:** Configuration for plural noun preference and tokens specified
-
-**test.txt:** Test file including both &#39;Data are here&#39; and &#39;Data is here&#39; with an error produced depending on user preference. There is some prose generated using ChatGPT with the prompt &#39;cats 200 words&#39;.
-
-## Installation and Running
-
-First install Vale and Wails onto your machine. Note to substitute brew with your package installer to get Vale.
+To install Wails onto your machine:
 ```
 xcode-select --install
 go install github.com/wailsapp/wails/v2/cmd/wails@latest
-brew install vale
 ```
 
-Download or git clone this project onto your local machine and test using vale CLI before running the development application:
+## Assisted Writing Application
+See my [Github repository](https://github.com/asaraog/msds431week8)&lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt; for further details.
+
+This project produces a prototype for an assisted writing application based on [Vale](https://vale.sh/) (an exisiting command line interface written in Golang).  It accepts plain text files (.txt or .md) as user input and a style preference as a text input. The output is displayed in the application with support for errors such as invalid user preference, invalid type of text file or insufficient length of text.The application prototype is succesful during development (wails dev) in linking Vale CLI output with user input and displaying errors. However, Wails is unable to integrate with command line applications during build (wails build) for this application. Future implemntations would explore other prose linters that do not require command line dependencies.
+
+To run locally, download or git clone this project:
 ```
 git clone https://github.com/asaraog/msds431week8.git
 cd msds431week8
-
-vale sync
-vale test.txt --config=.vale.ini
-vale test.txt --config=_vale.ini
-
 wails dev
 ```
-Input 1 or 2 to indicate singular or plural respectively. Try entering 3 to generate the appropriate error message. If correctly input, clicking the &#39;Lint it&#39; button will prompt a file dialog to open. Select the appropriate text file (test.txt). Output should be identical to using the CLI. Check with build version by running the application directly:
+
+## Chatbot
+See my [Github repository](https://github.com/asaraog/msds431week9)&lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt; for further details.
+
+This project produces a prototype for a desktop chatbot application. It accepts a single word query as a plain text input and output answers from a knowledge base([by others](https://github.com/ThomasWMiller/jump-start-sqlite/blob/main/QandA.csv)) represented with [Go&#39;s SQL](https://github.com/mattn/go-sqlite3) driver. The prototype is capable of integrating NLP concepts such as [term frequency-inverse document frequency (TF-IDF)](https://yi-wang-2005.medium.com/nlp-in-sql-word-vectors-82dffc908423). It also includes support for errors such as too many words, no input and no matches. The application prototype is succesful during development AND build in providing the correct answers to user input questions. Further development of the application would first continue in SQL by adding a TF-IDF representation to calculate similarity scores. We can then add &#39;fuzzy matching&#39; and tokenization/lemmatization of the corpus and query. This will have the simplest development process with no dependency required. The single word query is highly amenable to using word2vec.
+
+To run locally, download or git clone this project:
 ```
-cd ./build/bin/
-open Week8.app
+git clone https://github.com/asaraog/msds431week9.git
+cd msds431week9/build/bin
+open Week9.app
 ```
+Before clicking &#39;Query&#39;, input nothing, &#39;break&#39;, &#39;test&#39; and &#39;break test&#39; in the text box to check for correct application behavior.
+
+## References
+
+Miller, Tom. &#34;Desktop Applications,&#34;. MSDS 431: Data Engineering with Go. Course at Northwestern University, Chicago, IL, June 19, 2023.
+
+Miller, Tom. &#34;Natural Language Processing,&#34;. MSDS 431: Data Engineering with Go. Course at Northwestern University, Chicago, IL, June 19, 2023.
+https://github.com/ThomasWMiller/jump-start-sqlite
 
 ---
 

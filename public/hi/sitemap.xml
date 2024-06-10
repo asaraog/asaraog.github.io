@@ -2,6 +2,15 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
+      <loc>//localhost:1313/hi/Week2/</loc><lastmod>2024-05-08T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="//localhost:1313/Week2/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="hi"
+          href="//localhost:1313/hi/Week2/"
+          /></url><url>
       <loc>//localhost:1313/hi/first_post3/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="en"
@@ -11,15 +20,52 @@
           hreflang="hi"
           href="//localhost:1313/hi/first_post3/"
           /></url><url>
-      <loc>//localhost:1313/hi/first_post2/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+      <loc>//localhost:1313/hi/Week3/</loc><lastmod>2024-05-01T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="en"
-            href="//localhost:1313/first_post2/"
+            href="//localhost:1313/Week3/"
             /><xhtml:link
           rel="alternate"
           hreflang="hi"
-          href="//localhost:1313/hi/first_post2/"
+          href="//localhost:1313/hi/Week3/"
           /></url><url>
+      <loc>//localhost:1313/hi/Week6/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="//localhost:1313/Week6/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="hi"
+          href="//localhost:1313/hi/Week6/"
+          /></url><url>
+      <loc>//localhost:1313/hi/datascience/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="//localhost:1313/datascience/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="hi"
+          href="//localhost:1313/hi/datascience/"
+          /></url><url>
+      <loc>//localhost:1313/hi/posts/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="//localhost:1313/posts/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="hi"
+          href="//localhost:1313/hi/posts/"
+          /></url><url>
+      <loc>//localhost:1313/hi/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="//localhost:1313/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="hi"
+          href="//localhost:1313/hi/"
+          /></url><url>
+      <loc>//localhost:1313/hi/datascience/%E0%A4%97%E0%A5%8B%E0%A4%B2%E0%A4%BE%E0%A4%82%E0%A4%97/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
       <loc>//localhost:1313/hi/biomolecules/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="en"
@@ -28,15 +74,6 @@
           rel="alternate"
           hreflang="hi"
           href="//localhost:1313/hi/biomolecules/"
-          /></url><url>
-      <loc>//localhost:1313/hi/datascience/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-            rel="alternate"
-            hreflang="en"
-            href="//localhost:1313/datascience/"
-            /><xhtml:link
-          rel="alternate"
-          hreflang="hi"
-          href="//localhost:1313/hi/datascience/"
           /></url><url>
       <loc>//localhost:1313/hi/first_post/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
@@ -56,26 +93,7 @@
           hreflang="hi"
           href="//localhost:1313/hi/neuroimaging/"
           /></url><url>
-      <loc>//localhost:1313/hi/posts/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-            rel="alternate"
-            hreflang="en"
-            href="//localhost:1313/posts/"
-            /><xhtml:link
-          rel="alternate"
-          hreflang="hi"
-          href="//localhost:1313/hi/posts/"
-          /></url><url>
-      <loc>//localhost:1313/hi/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-            rel="alternate"
-            hreflang="en"
-            href="//localhost:1313/"
-            /><xhtml:link
-          rel="alternate"
-          hreflang="hi"
-          href="//localhost:1313/hi/"
-          /></url><url>
       <loc>//localhost:1313/hi/neuroimaging/%E0%A4%91%E0%A4%9F%E0%A4%BF%E0%A4%9C%E0%A4%BC%E0%A5%8D%E0%A4%AE/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/hi/datascience/%E0%A4%97%E0%A5%8B%E0%A4%B2%E0%A4%BE%E0%A4%82%E0%A4%97/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>//localhost:1313/hi/biomolecules/%E0%A4%A1%E0%A5%80%E0%A4%8F%E0%A4%A8%E0%A4%8F/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>//localhost:1313/hi/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"

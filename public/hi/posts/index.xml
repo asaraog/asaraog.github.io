@@ -3,7 +3,16 @@
     <title>सभी पदों - असरावग</title>
     <link>//localhost:1313/hi/posts/</link>
     <description>सभी पदों | असरावग</description>
-    <generator>Hugo -- gohugo.io</generator><language>hi</language><lastBuildDate>Mon, 20 Feb 2023 20:14:22 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/hi/posts/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>hi</language><lastBuildDate>Wed, 15 May 2024 00:09:00 -0600</lastBuildDate><atom:link href="//localhost:1313/hi/posts/" rel="self" type="application/rss+xml" /><item>
+  <title>Comparing Golang with Python/R</title>
+  <link>//localhost:1313/hi/Week2/</link>
+  <pubDate>Wed, 08 May 2024 00:09:00 -0600</pubDate>
+  <author>रचयिता</author>
+  <guid>//localhost:1313/hi/Week2/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/comparing.png" alt="Comparing Golang with Python/R" title="Comparing Golang with Python/R" referrerpolicy="no-referrer"/></div>Image credit: R logo, Gopher Evaluating Go Golang is a compiled language that is more verbose but is said to run faster compared to R/Python. Here, Golang&rsquo;s performance and runtime is benchmarked against Python and/or R with various cases:
+Performing least squares regression of the Anscombe Quartet (1973) Computing summary statistics of the California Housing Prices (Miller 2015) Web crawling and scraping of Wikipedia Identify anomalies in the MNIST dataset Least squares regression with Python and R See Github repository for further details.]]></description>
+</item>
+<item>
   <title>My First Post3</title>
   <link>//localhost:1313/hi/first_post3/</link>
   <pubDate>Mon, 20 Feb 2023 20:14:22 &#43;0800</pubDate>
@@ -12,12 +21,21 @@
   <description><![CDATA[A blog (a truncation of &ldquo;weblog&rdquo;) is an informational website published on the World Wide Web consisting of discrete, often informal diary-style text entries (posts). Posts are typically displayed in reverse chronological order so that the most recent post appears first, at the top of the web page. Until 2009, blogs were usually the work of a single individual,[citation needed] occasionally of a small group, and often covered a single subject or topic.]]></description>
 </item>
 <item>
-  <title>My First Post2</title>
-  <link>//localhost:1313/hi/first_post2/</link>
-  <pubDate>Mon, 20 Feb 2023 20:14:22 &#43;0800</pubDate>
+  <title>Building this website with Hugo</title>
+  <link>//localhost:1313/hi/Week3/</link>
+  <pubDate>Wed, 01 May 2024 00:09:00 -0600</pubDate>
   <author>रचयिता</author>
-  <guid>//localhost:1313/hi/first_post2/</guid>
-  <description><![CDATA[A blog (a truncation of &ldquo;weblog&rdquo;) is an informational website published on the World Wide Web consisting of discrete, often informal diary-style text entries (posts). Posts are typically displayed in reverse chronological order so that the most recent post appears first, at the top of the web page. Until 2009, blogs were usually the work of a single individual,[citation needed] occasionally of a small group, and often covered a single subject or topic.]]></description>
+  <guid>//localhost:1313/hi/Week3/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/hugo-preview.png" alt="Building this website with Hugo" title="Building this website with Hugo" referrerpolicy="no-referrer"/></div>Partial image credit Why? Golang is a compiled language designed for today&rsquo;s multi-processor, scalable, high-performance systems. Known for concurrent data processing, Uber uses Golang on the backend. Static site generators such as Hugo were developed recently using Golang. Other platforms have inherited dependency chains that can lead to infeasible build times. For example, Cloudfare recently migrated from Gatsby.
+Demo I first created a demo website using the Hugo Winston theme.]]></description>
+</item>
+<item>
+  <title>Concurrency with Golang</title>
+  <link>//localhost:1313/hi/Week6/</link>
+  <pubDate>Wed, 15 May 2024 00:09:00 -0600</pubDate>
+  <author>रचयिता</author>
+  <guid>//localhost:1313/hi/Week6/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/concurrent.png" alt="Concurrency with Golang" title="Concurrency with Golang" referrerpolicy="no-referrer"/></div>Image credit: R logo, Gopher What? Concurrency is breaking up a single process into independent components and then making a plan on how they will compute. It is based on the idea of CSP or Communicating Sequential Processes (Brookes, Hoare, and Roscoe 1984). The paradigm here is shifted towards communication and splitting of independent processes instead of sharing memory in parallel processing. To communicate between different processes, Golang utilizes goroutines, which are similar to channels as described in CSP.]]></description>
 </item>
 <item>
   <title>My First Post</title>

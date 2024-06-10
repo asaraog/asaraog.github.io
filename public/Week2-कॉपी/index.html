@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Comparing Golang With Python/R - Asaraog</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="Image credit: R logo, Gopher Evaluating Go Golang is a compiled language that is more verbose but is said to run faster compared to R/Python. Here, Golang&rsquo;s performance and runtime is benchmarked against Python and/or R with various cases:
+Performing least squares regression of the Anscombe Quartet (1973) Computing summary statistics of the California Housing Prices (Miller 2015) Web crawling and scraping of Wikipedia Identify anomalies in the MNIST dataset Least squares regression with Python and R See Github repository for further details." />
+  <meta itemprop="name" content="Comparing Golang with Python/R">
+  <meta itemprop="description" content="Image credit: R logo, Gopher Evaluating Go Golang is a compiled language that is more verbose but is said to run faster compared to R/Python. Here, Golang&rsquo;s performance and runtime is benchmarked against Python and/or R with various cases:
+Performing least squares regression of the Anscombe Quartet (1973) Computing summary statistics of the California Housing Prices (Miller 2015) Web crawling and scraping of Wikipedia Identify anomalies in the MNIST dataset Least squares regression with Python and R See Github repository for further details.">
+  <meta itemprop="datePublished" content="2024-05-08T00:09:00-06:00">
+  <meta itemprop="dateModified" content="2024-05-08T00:09:00-06:00">
+  <meta itemprop="wordCount" content="705">
+  <meta itemprop="keywords" content="Golang"><meta property="og:url" content="//localhost:1313/Week2-%E0%A4%95%E0%A5%89%E0%A4%AA%E0%A5%80/">
+  <meta property="og:site_name" content="Asaraog">
+  <meta property="og:title" content="Comparing Golang with Python/R">
+  <meta property="og:description" content="Image credit: R logo, Gopher Evaluating Go Golang is a compiled language that is more verbose but is said to run faster compared to R/Python. Here, Golang’s performance and runtime is benchmarked against Python and/or R with various cases:
+Performing least squares regression of the Anscombe Quartet (1973) Computing summary statistics of the California Housing Prices (Miller 2015) Web crawling and scraping of Wikipedia Identify anomalies in the MNIST dataset Least squares regression with Python and R See Github repository for further details.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-05-08T00:09:00-06:00">
+    <meta property="article:modified_time" content="2024-05-08T00:09:00-06:00">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Comparing Golang with Python/R">
+<meta name="twitter:description" content="Image credit: R logo, Gopher Evaluating Go Golang is a compiled language that is more verbose but is said to run faster compared to R/Python. Here, Golang&rsquo;s performance and runtime is benchmarked against Python and/or R with various cases:
+Performing least squares regression of the Anscombe Quartet (1973) Computing summary statistics of the California Housing Prices (Miller 2015) Web crawling and scraping of Wikipedia Identify anomalies in the MNIST dataset Least squares regression with Python and R See Github repository for further details.">
+<meta name="application-name" content="ASaraogee">
+<meta name="apple-mobile-web-app-title" content="ASaraogee"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="//localhost:1313/Week2-%E0%A4%95%E0%A5%89%E0%A4%AA%E0%A5%80/" /><link rel="prev" href="//localhost:1313/Week2/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Comparing Golang with Python/R",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "\/\/localhost:1313\/Week2-%E0%A4%95%E0%A5%89%E0%A4%AA%E0%A5%80\/"
+    },"genre": "posts","wordcount":  705 ,
+    "url": "\/\/localhost:1313\/Week2-%E0%A4%95%E0%A5%89%E0%A4%AA%E0%A5%80\/","datePublished": "2024-05-08T00:09:00-06:00","dateModified": "2024-05-08T00:09:00-06:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Author"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="map[logo: name:Home post: pre:&lt;i class=&#39;fas fa-home&#39;&gt;&lt;/i&gt; typeit:false]"><span class="header-title-pre"><i class='fas fa-home'></i></span><span class="header-title-text">Home</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item has-children">
+              <a
+                class="menu-link"
+                href="/biomolecules/"
+                title="Biomolecules"
+                
+              ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Biomolecules</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/biomolecules/covid-19/"
+                          title="COVID-19"
+                          
+                        >COVID-19</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/biomolecules/dna/"
+                          title="DNA"
+                          
+                        >DNA</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/biomolecules/proteins/"
+                          title="Proteins"
+                          
+                        >Proteins</a>
+                      </li></ul></li><li class="menu-item has-children">
+              <a
+                class="menu-link"
+                href="/datascience/"
+                title="Data Science"
+                
+              ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Data Science</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/datascience/golang/"
+                          title="Golang"
+                          
+                        >Golang</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/datascience/analyzeopendata/"
+                          title="Analyze Open Data"
+                          
+                        >Analyzing Open Data</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/datascience/datainsociety/"
+                          title="Data in Society"
+                          
+                        >Data in Society</a>
+                      </li></ul></li><li class="menu-item has-children">
+              <a
+                class="menu-link"
+                href="/neuroimaging/"
+                title="Neuroimaging"
+                
+              ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Neuroimaging</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/neuroimaging/autism/"
+                          title="Autism"
+                          
+                        >Autism</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/neuroimaging/olfaction/"
+                          title="Olfaction"
+                          
+                        >Olfaction</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/neuroimaging/neurodegeneration/"
+                          title="Neurodegeneration"
+                          
+                        >Neurodegeneration</a>
+                      </li></ul></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li><li class="menu-item language-switch">
+            <span role="button" aria-label="Select Language" title="Select Language"><i class="fa-solid fa-language fa-fw" aria-hidden="true"></i></span>
+            <ul class="sub-menu"><li class="menu-item">No more translations</li></ul>
+          </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="Asaraog"><span class="header-title-pre"><i class='fas fa-home'></i></span><span class="header-title-text">Home</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li
+              class="menu-item"
+            ><span class="nested-item">
+                  <a
+                    class="menu-link"
+                    href="/biomolecules/"
+                    title="Biomolecules"
+                    
+                  ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Biomolecules</a>
+                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/biomolecules/covid-19/"
+                          title="COVID-19"
+                          
+                        >COVID-19</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/biomolecules/dna/"
+                          title="DNA"
+                          
+                        >DNA</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/biomolecules/proteins/"
+                          title="Proteins"
+                          
+                        >Proteins</a>
+                      </li></ul></li><li
+              class="menu-item"
+            ><span class="nested-item">
+                  <a
+                    class="menu-link"
+                    href="/datascience/"
+                    title="Data Science"
+                    
+                  ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Data Science</a>
+                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/datascience/golang/"
+                          title="Golang"
+                          
+                        >Golang</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/datascience/analyzeopendata/"
+                          title="Analyze Open Data"
+                          
+                        >Analyzing Open Data</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/datascience/datainsociety/"
+                          title="Data in Society"
+                          
+                        >Data in Society</a>
+                      </li></ul></li><li
+              class="menu-item"
+            ><span class="nested-item">
+                  <a
+                    class="menu-link"
+                    href="/neuroimaging/"
+                    title="Neuroimaging"
+                    
+                  ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Neuroimaging</a>
+                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/neuroimaging/autism/"
+                          title="Autism"
+                          
+                        >Autism</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/neuroimaging/olfaction/"
+                          title="Olfaction"
+                          
+                        >Olfaction</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/neuroimaging/neurodegeneration/"
+                          title="Neurodegeneration"
+                          
+                        >Neurodegeneration</a>
+                      </li></ul></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span><span class="menu-system-item language-switch">
+              <span role="button" aria-label="Select Language" title="Select Language">English<i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i></span>
+              <select class="language-select" onchange="location = this.value;"><option disabled>No more translations</option></select>
+            </span></li>
+      </ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><nav aria-label="breadcrumb" class="breadcrumb-container">
+    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/posts/" title="Posts">Posts</a></li><li class="breadcrumb-item active" aria-current="page">Comparing Golang With Python/R</li>
+    </ol>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="Collections"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Comparing Golang With Python/R</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line">
+        </div><div class="post-meta-line"><span title="published on 2024-05-08 00:09:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2024-05-08">2024-05-08</time></span>&nbsp;<span title="705 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 800 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>4 minutes</span>&nbsp;</div>
+    </div><div class="featured-image"><img loading="lazy" src="/images/comparing.png" alt="/images/comparing.png" data-title="/images/comparing.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#evaluating-go">Evaluating Go</a>
+      <ul>
+        <li><a href="#least-squares-regression-with-python-and-r">Least squares regression with Python and R</a></li>
+        <li><a href="#summary-statistics-with-python-and-r">Summary statistics with Python and R</a></li>
+        <li><a href="#web-crawling-and-scraping-with-python">Web crawling and scraping with Python</a></li>
+        <li><a href="#identifying-anomalies-using-isolation-forests-with-python-and-r">Identifying anomalies using isolation forests with Python and R</a></li>
+      </ul>
+    </li>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p><font size="1"> Image credit: <a href="https://www.r-project.org/logo/"target="_blank" rel="external nofollow noopener noreferrer">R logo</a>, <a href="https://go.dev/doc/gopher/README"target="_blank" rel="external nofollow noopener noreferrer">Gopher</a> </font></p>
+<h2 id="evaluating-go" class="heading-element"><span>Evaluating Go</span>
+  <a href="#evaluating-go" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p><a href="https://go.dev/"target="_blank" rel="external nofollow noopener noreferrer">Golang</a> is a compiled language that is more verbose but is said to run faster compared to R/Python. Here, Golang&rsquo;s performance and runtime is benchmarked against Python and/or R with various cases:</p>
+<ol>
+<li>Performing least squares regression of the <a href="https://www.sjsu.edu/faculty/gerstman/StatPrimer/anscombe1973.pdf"target="_blank" rel="external nofollow noopener noreferrer">Anscombe Quartet (1973)</a></li>
+<li>Computing summary statistics of the <a href="https://github.com/mtpa/mtpa/tree/master/MTPA_Chapter_10"target="_blank" rel="external nofollow noopener noreferrer">California Housing Prices (Miller 2015)</a></li>
+<li>Web crawling and scraping of <a href="https://en.wikipedia.org/"target="_blank" rel="external nofollow noopener noreferrer">Wikipedia</a></li>
+<li>Identify anomalies in the <a href="http://yann.lecun.com/exdb/mnist/"target="_blank" rel="external nofollow noopener noreferrer">MNIST dataset</a></li>
+</ol>
+<h3 id="least-squares-regression-with-python-and-r" class="heading-element"><span>Least squares regression with Python and R</span>
+  <a href="#least-squares-regression-with-python-and-r" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>See <a href="https://github.com/asaraog/msds431week2"target="_blank" rel="external nofollow noopener noreferrer">Github repository</a> for further details.</p>
+<p>The Golang implementation is benchmarked for runtime with a <a href="https://github.com/mtpa/mtpa/tree/master/MTPA_Chapter_1"target="_blank" rel="external nofollow noopener noreferrer">previous implementation by Miller (2015)</a> in Python/R as a reference. Least squares regression is implemented in Golang using the <a href="https://github.com/montanaflynn/stats"target="_blank" rel="external nofollow noopener noreferrer">stats package</a>. Python was significantly slower compared to R and Go implementations with runtimes of 1.36s, 0.04s, 0.173s for Python, R and Go. While R was less verbose and a bit faster than Go, Go&rsquo;s testing package ensured identitcal least squares coefficients of 0.5 and 3 for each Anscombe dataset during development.</p>
+<h3 id="summary-statistics-with-python-and-r" class="heading-element"><span>Summary statistics with Python and R</span>
+  <a href="#summary-statistics-with-python-and-r" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>See <a href="https://github.com/asaraog/msds431week4"target="_blank" rel="external nofollow noopener noreferrer">Github repository</a> for further details.</p>
+<p>The Golang implementation is done using the <a href="https://github.com/montanaflynn/stats"target="_blank" rel="external nofollow noopener noreferrer">stats package</a>. Runtimes are compared using &rsquo;time&rsquo; before commands in the command line to compare with Python&rsquo;s pandas.describe() and R&rsquo;s summary functions. The operations are run 100 times for each implementation. Python was significantly faster compared to R and Go implementations with &lsquo;real&rsquo; runtimes of 2.27s, 4.10s, 5.02s for Python, R and Go respectively. While Python and R were less verbose and a bit faster than Go, Go&rsquo;s testing package ensured similar summary statistics as Python for each of the seven variables (value, income, age, rooms, bedrooms, pop, hh) during development.</p>
+<h3 id="web-crawling-and-scraping-with-python" class="heading-element"><span>Web crawling and scraping with Python</span>
+  <a href="#web-crawling-and-scraping-with-python" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>See <a href="https://github.com/asaraog/msds431week5"target="_blank" rel="external nofollow noopener noreferrer">Github repository</a> for further details.</p>
+<p>This project implemented web crawling and scraping of Wikipedia <a href="https://www.scrapingbee.com/blog/web-scraping-go/#building-a-basic-scraper"target="_blank" rel="external nofollow noopener noreferrer">(described by Chanda 2021)</a> webpages in Golang using <a href="https://go-colly.org/"target="_blank" rel="external nofollow noopener noreferrer">Colly</a>. The Go implementation is benchmarked for runtime using &rsquo;time&rsquo; before commands in the command line to compare with Python&rsquo;s implementation for the same 10 webpages using <a href="https://github.com/scrapy/scrapy"target="_blank" rel="external nofollow noopener noreferrer">scrapy</a>. Python was significantly slower compared Go implementations with &lsquo;real&rsquo; runtimes of 15.9s and 0.6s for Python and Go respectively. While Python was less verbose than Go, Go is more scalable and has concurrency support to allow for even faster processing using <a href="https://go-colly.org/docs/examples/parallel/"target="_blank" rel="external nofollow noopener noreferrer">Colly</a>.</p>
+<h3 id="identifying-anomalies-using-isolation-forests-with-python-and-r" class="heading-element"><span>Identifying anomalies using isolation forests with Python and R</span>
+  <a href="#identifying-anomalies-using-isolation-forests-with-python-and-r" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>See <a href="https://github.com/asaraog/msds431week7"target="_blank" rel="external nofollow noopener noreferrer">Github repository</a> for further details.</p>
+<p>Isolation forests are used as an unsupervised learning method to identify anomalies or outliers. It was introduced by <a href="https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/icdm08b.pdf"target="_blank" rel="external nofollow noopener noreferrer">Liu 2008</a> by observing that path lengths for anomalies were significantly SHORTER by averaging over many trees. He introduces an anomaly score to normalize comparisons with HIGHER scores indicating more abnormality. Hyperparameters were kept the same across languages with 1000 trees and 256 samples. The <a href="https://github.com/e-XpertSolutions/go-iforest"target="_blank" rel="external nofollow noopener noreferrer">go-iforest</a> package was used for the analysis in Go. Comparison code for R and Python was adapted from <a href="https://github.com/ThomasWMiller/jump-start-mnist-iforest"target="_blank" rel="external nofollow noopener noreferrer">Miller 2023</a>.
+Runtimes were significantly lower in Golang with runtimes of 5.66s, 19.02s, and 1m 42.87s for Golang, R and Python respectively. This is likely due to the goroutines utilized in the go-iforest package.</p>
+<h2 id="overview" class="heading-element"><span>Overview</span>
+  <a href="#overview" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Programs written using Golang had similar performances to Python/R in basic statistical learning applications such as least squares regression and summary statistics. Efficient results were obtained utilizing test-driven development. In applications with more scalability, Golang performed very well. For both web scraping/crawling and identifying anomalies, Golang performs more than 10 times faster than Python. This could be attributed to Golang&rsquo;s concurrency support with goroutines.</p>
+<h2 id="references" class="heading-element"><span>References</span>
+  <a href="#references" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Anscombe, F. J. 1973. “Graphs in Statistical Analysis.” The American Statistician 27 (1): 17–21. <a href="https://doi.org/10.2307/2682899"target="_blank" rel="external nofollow noopener noreferrer">https://doi.org/10.2307/2682899</a>.</p>
+<p>Chanda, Subha. 2021. “Web Scraping with Go.” ScrapingBee. 2021. <a href="https://www.scrapingbee.com/blog/web-scraping-go/"target="_blank" rel="external nofollow noopener noreferrer">https://www.scrapingbee.com/blog/web-scraping-go/</a>.</p>
+<p>Liu, Fei Tony, Kai Ming Ting, and Zhi-Hua Zhou. 2008. <a href="https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/icdm08b.pdf"target="_blank" rel="external nofollow noopener noreferrer">“Isolation Forest.”</a>. In ICDM &lsquo;08: Proceedings of the 2008 Eighth IEEE International Conference on Data Mining, December 2008, 413–422.</p>
+<p>Miller, Tom. &ldquo;Testing Go for Statistics,&rdquo;. MSDS 431: Data Engineering with Go. Course at Northwestern University, Chicago, IL, June 19, 2023.</p>
+<p>Miller, Tom. &ldquo;Working with Data Frames,&rdquo;. MSDS 431: Data Engineering with Go. Course at Northwestern University, Chicago, IL, June 19, 2023.</p>
+<p>Miller, Tom. &ldquo;Command-Line Applications,&rdquo;. MSDS 431: Data Engineering with Go. Course at Northwestern University, Chicago, IL, July 1, 2023.</p>
+<p>Miller, Tom. &ldquo;Crawling and Scraping the Web,&rdquo;. MSDS 431: Data Engineering with Go. Course at Northwestern University, Chicago, IL, July 2, 2023.</p>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="Updated on 2024-05-08 00:09:00">Updated on 2024-05-08&nbsp;</span>
+      </div><div class="post-info-license">
+            <span><a rel="license external nofollow noopener noreferrer" href="https://github.com/asaraog/asaraog.github.io/blob/main/LICENSE" target="_blank">BSD-3-Clause</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/Week2-%E0%A4%95%E0%A5%89%E0%A4%AA%E0%A5%80/index.md" title="Read Markdown" class="link-to-markdown">Read Markdown</a></span><span><a href="https://github.com/asaraog/asaraog.github.io/blob/main/content/posts/Week2%20%e0%a4%95%e0%a5%89%e0%a4%aa%e0%a5%80.md?plain=1" title="View source"target="_blank" rel="external nofollow noopener noreferrer" class="link-to-source">View source</a></span><span><a href="https://github.com/asaraog/asaraog.github.io/issues/new?title=[BUG]%20Comparing&#43;Golang&#43;with&#43;Python%2FR&amp;body=%7cField%7cValue%7c%0A%7c-%7c-%7c%0A%7cTitle%7cComparing&#43;Golang&#43;with&#43;Python%2FR%7c%0A%7cURL%7c//localhost:1313/Week2-%E0%A4%95%E0%A5%89%E0%A4%AA%E0%A5%80/%7c%0A%7cFilename%7chttps://github.com/asaraog/asaraog.github.io/blob/main/content/posts/Week2%20%e0%a4%95%e0%a5%89%e0%a4%aa%e0%a5%80.md?plain=1%7c" title="Report issue"target="_blank" rel="external nofollow noopener noreferrer" class="link-to-report">Report issue</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="//localhost:1313/Week2-%E0%A4%95%E0%A5%89%E0%A4%AA%E0%A5%80/"><i class="fa-brands fa-linkedin fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="//localhost:1313/Week2-%E0%A4%95%E0%A5%89%E0%A4%AA%E0%A5%80/"><i class="fa-brands fa-reddit fa-fw" aria-hidden="true"></i></a>
+  </span>
+        </div>
+      </div></div>
+
+  <div class="post-info-more">
+    <section class="post-tags"></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/Week2/" class="post-nav-item" rel="prev" title="Comparing Golang With Python/R"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Comparing Golang With Python/R</a></div>
+</div>
+</article>
+
+  <aside class="toc" id="toc-auto" aria-label="Contents"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.125.7"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.3.6"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">Theme FixIt works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="preload" href="/lib/katex/katex.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/katex/katex.min.css"></noscript><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":false},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"version":"v0.3.6"};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

@@ -5,40 +5,41 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title> - Asaraog</title><meta name="author" content="">
+    <title>Concurrency With Golang - Asaraog</title><meta name="author" content="">
 <meta name="author-link" content="">
-<meta name="description" content="Concurrency and Machine Learning Project Summary This project aims to evaluate Go&rsquo;s concurrent programming framework for training and testing machine learning models namely linear regression. In particular, this project uses the Boston Housing Study (1970), commonly used by statisticians to predict housing prices by others (Brownlee 2020). This dataset was modified by others (Miller 1999) to remove the feature &lsquo;B&rsquo; encoding racial segregation.
-Machine learning models will utilize the gonum library." />
-  <meta itemprop="name" content="Asaraog">
-  <meta itemprop="description" content="Concurrency and Machine Learning Project Summary This project aims to evaluate Go&rsquo;s concurrent programming framework for training and testing machine learning models namely linear regression. In particular, this project uses the Boston Housing Study (1970), commonly used by statisticians to predict housing prices by others (Brownlee 2020). This dataset was modified by others (Miller 1999) to remove the feature &lsquo;B&rsquo; encoding racial segregation.
-Machine learning models will utilize the gonum library.">
-  <meta itemprop="wordCount" content="366"><meta property="og:url" content="//localhost:1313/Week6/">
+<meta name="description" content="What? Concurrency is breaking up a single process into independent components and then making a plan on how they will compute. It is based on the idea of CSP or Communicating Sequential Processes (Brookes, Hoare, and Roscoe 1984). The paradigm here is shifted towards communication and splitting of independent processes instead of sharing memory in parallel processing. To communicate between different processes, Golang utilizes goroutines, which are similar to channels as described in CSP." />
+  <meta itemprop="name" content="Concurrency with Golang">
+  <meta itemprop="description" content="What? Concurrency is breaking up a single process into independent components and then making a plan on how they will compute. It is based on the idea of CSP or Communicating Sequential Processes (Brookes, Hoare, and Roscoe 1984). The paradigm here is shifted towards communication and splitting of independent processes instead of sharing memory in parallel processing. To communicate between different processes, Golang utilizes goroutines, which are similar to channels as described in CSP.">
+  <meta itemprop="datePublished" content="2024-05-15T00:09:00-06:00">
+  <meta itemprop="dateModified" content="2024-05-15T00:09:00-06:00">
+  <meta itemprop="wordCount" content="303">
+  <meta itemprop="keywords" content="Golang"><meta property="og:url" content="//localhost:1313/Week6/">
   <meta property="og:site_name" content="Asaraog">
-  <meta property="og:title" content="Asaraog">
-  <meta property="og:description" content="Concurrency and Machine Learning Project Summary This project aims to evaluate Go’s concurrent programming framework for training and testing machine learning models namely linear regression. In particular, this project uses the Boston Housing Study (1970), commonly used by statisticians to predict housing prices by others (Brownlee 2020). This dataset was modified by others (Miller 1999) to remove the feature ‘B’ encoding racial segregation.
-Machine learning models will utilize the gonum library.">
+  <meta property="og:title" content="Concurrency with Golang">
+  <meta property="og:description" content="What? Concurrency is breaking up a single process into independent components and then making a plan on how they will compute. It is based on the idea of CSP or Communicating Sequential Processes (Brookes, Hoare, and Roscoe 1984). The paradigm here is shifted towards communication and splitting of independent processes instead of sharing memory in parallel processing. To communicate between different processes, Golang utilizes goroutines, which are similar to channels as described in CSP.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="">
-<meta name="twitter:description" content="Concurrency and Machine Learning Project Summary This project aims to evaluate Go&rsquo;s concurrent programming framework for training and testing machine learning models namely linear regression. In particular, this project uses the Boston Housing Study (1970), commonly used by statisticians to predict housing prices by others (Brownlee 2020). This dataset was modified by others (Miller 1999) to remove the feature &lsquo;B&rsquo; encoding racial segregation.
-Machine learning models will utilize the gonum library.">
+    <meta property="article:published_time" content="2024-05-15T00:09:00-06:00">
+    <meta property="article:modified_time" content="2024-05-15T00:09:00-06:00">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Concurrency with Golang">
+<meta name="twitter:description" content="What? Concurrency is breaking up a single process into independent components and then making a plan on how they will compute. It is based on the idea of CSP or Communicating Sequential Processes (Brookes, Hoare, and Roscoe 1984). The paradigm here is shifted towards communication and splitting of independent processes instead of sharing memory in parallel processing. To communicate between different processes, Golang utilizes goroutines, which are similar to channels as described in CSP.">
 <meta name="application-name" content="ASaraogee">
 <meta name="apple-mobile-web-app-title" content="ASaraogee"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="//localhost:1313/Week6/" /><link rel="prev" href="//localhost:1313/Week7/" /><link rel="next" href="//localhost:1313/Week5/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="//localhost:1313/Week6/" /><link rel="prev" href="//localhost:1313/Week8/" /><link rel="next" href="//localhost:1313/Goroutines/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
-    "headline": "",
+    "headline": "Concurrency with Golang",
     "inLanguage": "en",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "\/\/localhost:1313\/Week6\/"
-    },"genre": "posts","wordcount":  366 ,
-    "url": "\/\/localhost:1313\/Week6\/","publisher": {
+    },"genre": "posts","wordcount":  303 ,
+    "url": "\/\/localhost:1313\/Week6\/","datePublished": "2024-05-15T00:09:00-06:00","dateModified": "2024-05-15T00:09:00-06:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
@@ -60,15 +61,6 @@ Machine learning models will utilize the gonum library.">
               ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Biomolecules</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
                 <ul class="sub-menu">
                   <li
-                        class="menu-item"
-                      >
-                        <a
-                          class="menu-link"
-                          href="/biomolecules/covid-19/"
-                          title="COVID-19"
-                          
-                        >COVID-19</a>
-                      </li><li
                         class="menu-item"
                       >
                         <a
@@ -108,19 +100,10 @@ Machine learning models will utilize the gonum library.">
                       >
                         <a
                           class="menu-link"
-                          href="/datascience/analyzeopendata/"
-                          title="Analyze Open Data"
+                          href="/datascience/opendata/"
+                          title="Open Data"
                           
                         >Analyzing Open Data</a>
-                      </li><li
-                        class="menu-item"
-                      >
-                        <a
-                          class="menu-link"
-                          href="/datascience/datainsociety/"
-                          title="Data in Society"
-                          
-                        >Data in Society</a>
                       </li></ul></li><li class="menu-item has-children">
               <a
                 class="menu-link"
@@ -147,15 +130,6 @@ Machine learning models will utilize the gonum library.">
                           title="Olfaction"
                           
                         >Olfaction</a>
-                      </li><li
-                        class="menu-item"
-                      >
-                        <a
-                          class="menu-link"
-                          href="/neuroimaging/neurodegeneration/"
-                          title="Neurodegeneration"
-                          
-                        >Neurodegeneration</a>
                       </li></ul></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
             <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
             <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
@@ -171,7 +145,11 @@ Machine learning models will utilize the gonum library.">
           <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
         </li><li class="menu-item language-switch">
             <span role="button" aria-label="Select Language" title="Select Language"><i class="fa-solid fa-language fa-fw" aria-hidden="true"></i></span>
-            <ul class="sub-menu"><li class="menu-item">No more translations</li></ul>
+            <ul class="sub-menu"><li class="menu-item">
+                      <a href="/hi/Week6/" class="menu-link" title="हिंदी">हिंदी</a>
+                    </li><li class="menu-item">
+                      <span class="menu-link text-secondary" title="English">English</span>
+                    </li></ul>
           </li></ul>
     </nav>
   </div>
@@ -218,15 +196,6 @@ Machine learning models will utilize the gonum library.">
                       >
                         <a
                           class="menu-link"
-                          href="/biomolecules/covid-19/"
-                          title="COVID-19"
-                          
-                        >COVID-19</a>
-                      </li><li
-                        class="menu-item"
-                      >
-                        <a
-                          class="menu-link"
                           href="/biomolecules/dna/"
                           title="DNA"
                           
@@ -266,19 +235,10 @@ Machine learning models will utilize the gonum library.">
                       >
                         <a
                           class="menu-link"
-                          href="/datascience/analyzeopendata/"
-                          title="Analyze Open Data"
+                          href="/datascience/opendata/"
+                          title="Open Data"
                           
                         >Analyzing Open Data</a>
-                      </li><li
-                        class="menu-item"
-                      >
-                        <a
-                          class="menu-link"
-                          href="/datascience/datainsociety/"
-                          title="Data in Society"
-                          
-                        >Data in Society</a>
                       </li></ul></li><li
               class="menu-item"
             ><span class="nested-item">
@@ -309,19 +269,10 @@ Machine learning models will utilize the gonum library.">
                           title="Olfaction"
                           
                         >Olfaction</a>
-                      </li><li
-                        class="menu-item"
-                      >
-                        <a
-                          class="menu-link"
-                          href="/neuroimaging/neurodegeneration/"
-                          title="Neurodegeneration"
-                          
-                        >Neurodegeneration</a>
                       </li></ul></li><li class="menu-item menu-system">
           <span class="menu-system-item theme-switch" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span><span class="menu-system-item language-switch">
               <span role="button" aria-label="Select Language" title="Select Language">English<i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i></span>
-              <select class="language-select" onchange="location = this.value;"><option disabled>No more translations</option></select>
+              <select class="language-select" onchange="location = this.value;"><option value="/hi/Week6/">हिंदी</option><option value="/Week6/" selected disabled>English</option></select>
             </span></li>
       </ul>
     </nav>
@@ -332,56 +283,47 @@ Machine learning models will utilize the gonum library.">
   <div class="search-dropdown mobile">
     <div id="search-dropdown-mobile"></div>
   </div><nav aria-label="breadcrumb" class="breadcrumb-container">
-    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/posts/" title="Posts">Posts</a></li><li class="breadcrumb-item active" aria-current="page"></li>
+    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/posts/" title="Posts">Posts</a></li><li class="breadcrumb-item active" aria-current="page">Concurrency With Golang</li>
     </ol>
   </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="Collections"></aside>
 
   <article class="page single">
-    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span></span>
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Concurrency With Golang</span>
       </h1></div><div class="post-meta">
       <div class="post-meta-line">
-        </div><div class="post-meta-line"><span title="published on 0001-01-01 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="0001-01-01">0001-01-01</time></span>&nbsp;<span title="366 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 400 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>2 minutes</span>&nbsp;</div>
-    </div><div class="details toc" id="toc-static" data-kept="false">
+        </div><div class="post-meta-line"><span title="published on 2024-05-15 00:09:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2024-05-15">2024-05-15</time></span>&nbsp;<span title="303 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 400 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>2 minutes</span>&nbsp;</div>
+    </div><div class="featured-image"><img loading="lazy" src="/images/concurrent.png" alt="/images/concurrent.png" data-title="/images/concurrent.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></div><div class="details toc" id="toc-static" data-kept="false">
         <div class="details-summary toc-title">
           <span>Contents</span>
           <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
         </div>
         <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#project-summary">Project Summary</a></li>
-    <li><a href="#files">Files</a></li>
-    <li><a href="#installation">Installation</a></li>
+    <li><a href="#what">What?</a></li>
+    <li><a href="#linear-regression">Linear Regression</a>
+      <ul>
+        <li><a href="#running-the-demo-locally">Running the demo locally</a></li>
+      </ul>
+    </li>
     <li><a href="#references">References</a></li>
   </ul>
 </nav></div>
-      </div><div class="content" id="content"><h1 id="concurrency-and-machine-learning" class="heading-element"><span>Concurrency and Machine Learning</span>
-  <a href="#concurrency-and-machine-learning" class="heading-mark">
+      </div><div class="content" id="content"><h2 id="what" class="heading-element"><span>What?</span>
+  <a href="#what" class="heading-mark">
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
   </a>
-</h1><h2 id="project-summary" class="heading-element"><span>Project Summary</span>
-  <a href="#project-summary" class="heading-mark">
+</h2><p>Concurrency is breaking up a single process into independent components and then making a plan on how they will compute. It is based on the idea of CSP or Communicating Sequential Processes (Brookes, Hoare, and Roscoe 1984). The paradigm here is shifted towards communication and splitting of independent processes instead of sharing memory in parallel processing. To communicate between different processes, Golang utilizes goroutines, which are similar to channels as described in CSP. These are different from threads and more lightweight.</p>
+<h2 id="linear-regression" class="heading-element"><span>Linear Regression</span>
+  <a href="#linear-regression" class="heading-mark">
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
   </a>
-</h2><p>This project aims to evaluate Go&rsquo;s concurrent programming framework for training and testing machine learning models namely linear regression. In particular, this project uses the <a href="http://lib.stat.cmu.edu/datasets/boston"target="_blank" rel="external nofollow noopener noreferrer">Boston Housing Study (1970)</a>, commonly used by statisticians to predict housing prices by others (Brownlee 2020). This dataset was modified by others (Miller 1999) to remove the feature &lsquo;B&rsquo; encoding racial segregation.</p>
-<p>Machine learning models will utilize the <a href="https://pkg.go.dev/gonum.org/v1/gonum"target="_blank" rel="external nofollow noopener noreferrer">gonum library</a>. The Go implementation will test linear regression models with varying regulization and/or concurrency. The data will be split approximately 80/20 with 80% (400/506) observations used for training and 20% (106/506) of the data for testing. RMSE and R<sup>2</sup> values are reported for each model tested with alpha=0.000001 (close to no regularization) and alpha=0.51 (optimized regularization level by Brownlee 2020).</p>
-<p>All models are benchmarked for runtime using &rsquo;time&rsquo; before commands in the command line and the concurrency flag 0 or 1. Concurrency significantly reduced runtime with runtimes of 0.016s and 0.042s with and without regularization respectively. Models are trained 100 times. The models with alpha=0.000001 performed better than with alpha = 0.51. Note that the data is resampled every time the program is run and results in differing results when run. In one run, the RMSE and R<sup>2</sup> was 61.5, 0.625 and 51.5, 0.737 for models with and without regularization respectively showing lower RMSE and higher R<sup>2</sup> score.</p>
-<h2 id="files" class="heading-element"><span>Files</span>
-  <a href="#files" class="heading-mark">
+</h2><p>See my <a href="https://github.com/asaraog/msds431week6"target="_blank" rel="external nofollow noopener noreferrer">Github repository</a> for further details.</p>
+<p>This project evaluated Go&rsquo;s concurrent programming framework for training and testing linear regression models. Machine learning models will utilize the <a href="https://pkg.go.dev/gonum.org/v1/gonum"target="_blank" rel="external nofollow noopener noreferrer">gonum library</a>. The Go implementation tested linear regression models with varying regulization and/or concurrency using the <a href="http://lib.stat.cmu.edu/datasets/boston"target="_blank" rel="external nofollow noopener noreferrer">Boston Housing Study (1970)</a>, commonly used by statisticians to predict housing prices by others (Brownlee 2020). This dataset was modified by others (Miller 1999) to remove the feature &lsquo;B&rsquo; encoding racial segregation. All models were run 100 times and benchmarked for runtime using &rsquo;time&rsquo; before commands in the command line and the concurrency flag 0 or 1. Concurrency significantly increased speed with a runtime of 0.009s compared to 0.279s without concurrency.</p>
+<h3 id="running-the-demo-locally" class="heading-element"><span>Running the demo locally</span>
+  <a href="#running-the-demo-locally" class="heading-mark">
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
   </a>
-</h2><p><em>saraogeeweek6.go:</em> <br>
-Main routine loads boston.csv file and uses flag &lsquo;-concurrency&rsquo; to select OFF (0) or ON (1) as an integer.</p>
-<p><em>saraogeeweek6_test.go:</em> <br>
-Unit test for regression ensuring dimensionality. It also tests if R<sup>2</sup> values are within reasonalbe limits of 0 and 1.</p>
-<p><em>boston.csv</em> <br>
-Input file for Boston housing data from Miller 1999.</p>
-<p><em>Week6</em> <br>
-Unix executable file of cross-compiled Go code for Mac/Windows.</p>
-<h2 id="installation" class="heading-element"><span>Installation</span>
-  <a href="#installation" class="heading-mark">
-    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
-  </a>
-</h2><p>Download or git clone this project onto local machine into folder on local machine.</p>
+</h3><p>Download or git clone this project onto local machine into folder on local machine.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -399,17 +341,18 @@ Unix executable file of cross-compiled Go code for Mac/Windows.</p>
   <a href="#references" class="heading-mark">
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
   </a>
-</h2><p>Brownlee, Jason. 2020. “How to Develop Ridge Regression Models in Python.” MachineLearningMastery.Com (blog). October 8, 2020. <a href="https://machinelearningmastery.com/ridge-regression-with-python/"target="_blank" rel="external nofollow noopener noreferrer">https://machinelearningmastery.com/ridge-regression-with-python/</a>.</p>
+</h2><p>Brookes, S. D., C. A. R. Hoare, and A. W. Roscoe. 1984. “A Theory of Communicating Sequential Processes.” Journal of the ACM 31 (3): 560–99. <a href="https://doi.org/10.1145/828.833"target="_blank" rel="external nofollow noopener noreferrer">https://doi.org/10.1145/828.833</a>.</p>
+<p>Brownlee, Jason. 2020. “How to Develop Ridge Regression Models in Python.” MachineLearningMastery.Com (blog). October 8, 2020. <a href="https://machinelearningmastery.com/ridge-regression-with-python/"target="_blank" rel="external nofollow noopener noreferrer">https://machinelearningmastery.com/ridge-regression-with-python/</a>.</p>
 <p>Miller, Thomas W. 1999. &ldquo;The Boston splits: Sample size requirements for modern regression.&rdquo; 1999 Proceedings of the Statistical Computing Section of the American Statistical Association, 210–215.</p>
 </div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
-        <span title="Updated on 0001-01-01 00:00:00">Updated on 0001-01-01&nbsp;</span>
+        <span title="Updated on 2024-05-15 00:09:00">Updated on 2024-05-15&nbsp;</span>
       </div><div class="post-info-license">
             <span><a rel="license external nofollow noopener noreferrer" href="https://github.com/asaraog/asaraog.github.io/blob/main/LICENSE" target="_blank">BSD-3-Clause</a></span>
           </div></div><div class="post-info-line">
-        <div class="post-info-md"><span><a href="/Week6/index.md" title="Read Markdown" class="link-to-markdown">Read Markdown</a></span><span><a href="https://github.com/asaraog/asaraog.github.io/blob/main/content/posts/Week6.md?plain=1" title="View source"target="_blank" rel="external nofollow noopener noreferrer" class="link-to-source">View source</a></span><span><a href="https://github.com/asaraog/asaraog.github.io/issues/new?title=[BUG]%20&amp;body=%7cField%7cValue%7c%0A%7c-%7c-%7c%0A%7cTitle%7c%7c%0A%7cURL%7c//localhost:1313/Week6/%7c%0A%7cFilename%7chttps://github.com/asaraog/asaraog.github.io/blob/main/content/posts/Week6.md?plain=1%7c" title="Report issue"target="_blank" rel="external nofollow noopener noreferrer" class="link-to-report">Report issue</a></span></div>
+        <div class="post-info-md"><span><a href="/Week6/index.md" title="Read Markdown" class="link-to-markdown">Read Markdown</a></span><span><a href="https://github.com/asaraog/asaraog.github.io/blob/main/content/posts/Week6.md?plain=1" title="View source"target="_blank" rel="external nofollow noopener noreferrer" class="link-to-source">View source</a></span><span><a href="https://github.com/asaraog/asaraog.github.io/issues/new?title=[BUG]%20Concurrency&#43;with&#43;Golang&amp;body=%7cField%7cValue%7c%0A%7c-%7c-%7c%0A%7cTitle%7cConcurrency&#43;with&#43;Golang%7c%0A%7cURL%7c//localhost:1313/Week6/%7c%0A%7cFilename%7chttps://github.com/asaraog/asaraog.github.io/blob/main/content/posts/Week6.md?plain=1%7c" title="Report issue"target="_blank" rel="external nofollow noopener noreferrer" class="link-to-report">Report issue</a></span></div>
         <div class="post-info-share">
           <span><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="//localhost:1313/Week6/"><i class="fa-brands fa-linkedin fa-fw" aria-hidden="true"></i></a>
   <a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="//localhost:1313/Week6/"><i class="fa-brands fa-reddit fa-fw" aria-hidden="true"></i></a>
@@ -424,8 +367,8 @@ Unix executable file of cross-compiled Go code for Mac/Windows.</p>
     </section>
   </div>
 
-  <div class="post-nav"><a href="/Week7/" class="post-nav-item" rel="prev" title=""><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i></a>
-      <a href="/Week5/" class="post-nav-item" rel="next" title=""><i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+  <div class="post-nav"><a href="/Week8/" class="post-nav-item" rel="prev" title="Front-End Development With Golang"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Front-End Development With Golang</a>
+      <a href="/Goroutines/" class="post-nav-item" rel="next" title="Concurrency With Golang">Concurrency With Golang<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article>
 

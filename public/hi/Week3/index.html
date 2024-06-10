@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="hi">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Building This Website With Hugo - असरावग</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="Partial image credit Why? Golang is a compiled language designed for today&rsquo;s multi-processor, scalable, high-performance systems. Known for concurrent data processing, Uber uses Golang on the backend. Static site generators such as Hugo were developed recently using Golang. Other platforms have inherited dependency chains that can lead to infeasible build times. For example, Cloudfare recently migrated from Gatsby.
+Demo I first created a demo website using the Hugo Winston theme." />
+  <meta itemprop="name" content="Building this website with Hugo">
+  <meta itemprop="description" content="Partial image credit Why? Golang is a compiled language designed for today&rsquo;s multi-processor, scalable, high-performance systems. Known for concurrent data processing, Uber uses Golang on the backend. Static site generators such as Hugo were developed recently using Golang. Other platforms have inherited dependency chains that can lead to infeasible build times. For example, Cloudfare recently migrated from Gatsby.
+Demo I first created a demo website using the Hugo Winston theme.">
+  <meta itemprop="datePublished" content="2024-05-01T00:09:00-06:00">
+  <meta itemprop="dateModified" content="2024-05-01T00:09:00-06:00">
+  <meta itemprop="wordCount" content="286">
+  <meta itemprop="keywords" content="गोलांग"><meta property="og:url" content="//localhost:1313/hi/Week3/">
+  <meta property="og:site_name" content="असरावग">
+  <meta property="og:title" content="Building this website with Hugo">
+  <meta property="og:description" content="Partial image credit Why? Golang is a compiled language designed for today’s multi-processor, scalable, high-performance systems. Known for concurrent data processing, Uber uses Golang on the backend. Static site generators such as Hugo were developed recently using Golang. Other platforms have inherited dependency chains that can lead to infeasible build times. For example, Cloudfare recently migrated from Gatsby.
+Demo I first created a demo website using the Hugo Winston theme.">
+  <meta property="og:locale" content="hi">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-05-01T00:09:00-06:00">
+    <meta property="article:modified_time" content="2024-05-01T00:09:00-06:00">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Building this website with Hugo">
+<meta name="twitter:description" content="Partial image credit Why? Golang is a compiled language designed for today&rsquo;s multi-processor, scalable, high-performance systems. Known for concurrent data processing, Uber uses Golang on the backend. Static site generators such as Hugo were developed recently using Golang. Other platforms have inherited dependency chains that can lead to infeasible build times. For example, Cloudfare recently migrated from Gatsby.
+Demo I first created a demo website using the Hugo Winston theme.">
+<meta name="application-name" content="ASaraogee">
+<meta name="apple-mobile-web-app-title" content="ASaraogee"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="//localhost:1313/hi/Week3/" /><link rel="prev" href="//localhost:1313/hi/Week6/" /><link rel="next" href="//localhost:1313/hi/first_post3/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Building this website with Hugo",
+    "inLanguage": "hi",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "\/\/localhost:1313\/hi\/Week3\/"
+    },"genre": "posts","wordcount":  286 ,
+    "url": "\/\/localhost:1313\/hi\/Week3\/","datePublished": "2024-05-01T00:09:00-06:00","dateModified": "2024-05-01T00:09:00-06:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "रचयिता"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/hi/" title="map[logo: name:Home post: pre:&lt;i class=&#39;fas fa-home&#39;&gt;&lt;/i&gt; typeit:false]"><span class="header-title-pre"><i class='fas fa-home'></i></span><span class="header-title-text">Home</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item has-children">
+              <a
+                class="menu-link"
+                href="/hi/biomolecules/"
+                title="जैविक अणुओं"
+                
+              ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> जैविक अणुओं</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/biomolecules/%E0%A4%A1%E0%A5%80%E0%A4%8F%E0%A4%A8%E0%A4%8F/"
+                          title="डीएनए"
+                          
+                        >डीएनए</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/biomolecules/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%9F%E0%A5%80%E0%A4%A8%E0%A5%8D%E0%A4%B8/"
+                          title="प्रोटीन्स"
+                          
+                        >प्रोटीन्स</a>
+                      </li></ul></li><li class="menu-item has-children">
+              <a
+                class="menu-link"
+                href="/hi/datascience/"
+                title="डेटा विज्ञान"
+                
+              ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> डेटा विज्ञान</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/datascience/%E0%A4%97%E0%A5%8B%E0%A4%B2%E0%A4%BE%E0%A4%82%E0%A4%97/"
+                          title="गोलांग"
+                          
+                        >गोलांग</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/datascience/%E0%A4%96%E0%A5%81%E0%A4%B2%E0%A5%87-%E0%A4%A1%E0%A5%87%E0%A4%9F%E0%A4%BE-%E0%A4%95%E0%A4%BE-%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%B2%E0%A5%87%E0%A4%B7%E0%A4%A3/"
+                          title="खुले डेटा का विश्लेषण"
+                          
+                        >खुले डेटा का विश्लेषण</a>
+                      </li></ul></li><li class="menu-item has-children">
+              <a
+                class="menu-link"
+                href="/hi/neuroimaging/"
+                title="तंत्रिका-इमेजिंग"
+                
+              ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> तंत्रिका-इमेजिंग</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/neuroimaging/%E0%A4%91%E0%A4%9F%E0%A4%BF%E0%A4%9C%E0%A4%BC%E0%A5%8D%E0%A4%AE/"
+                          title="ऑटिज़्म"
+                          
+                        >ऑटिज़्म</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/neuroimaging/%E0%A4%98%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%A3/"
+                          title="घ्राण"
+                          
+                        >घ्राण</a>
+                      </li></ul></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="शीर्षक या सामग्री खोजें ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="खोज">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="साफ़ करें">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="थीम बदलें">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li><li class="menu-item language-switch">
+            <span role="button" aria-label="भाषा चुने" title="भाषा चुने"><i class="fa-solid fa-language fa-fw" aria-hidden="true"></i></span>
+            <ul class="sub-menu"><li class="menu-item">कोई और अनुवाद नहीं</li></ul>
+          </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/hi/" title="असरावग"><span class="header-title-pre"><i class='fas fa-home'></i></span><span class="header-title-text">Home</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="शीर्षक या सामग्री खोजें ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="खोज">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="साफ़ करें">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              रद्द करें
+            </a>
+          </li><li
+              class="menu-item"
+            ><span class="nested-item">
+                  <a
+                    class="menu-link"
+                    href="/hi/biomolecules/"
+                    title="जैविक अणुओं"
+                    
+                  ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> जैविक अणुओं</a>
+                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/biomolecules/%E0%A4%A1%E0%A5%80%E0%A4%8F%E0%A4%A8%E0%A4%8F/"
+                          title="डीएनए"
+                          
+                        >डीएनए</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/biomolecules/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%9F%E0%A5%80%E0%A4%A8%E0%A5%8D%E0%A4%B8/"
+                          title="प्रोटीन्स"
+                          
+                        >प्रोटीन्स</a>
+                      </li></ul></li><li
+              class="menu-item"
+            ><span class="nested-item">
+                  <a
+                    class="menu-link"
+                    href="/hi/datascience/"
+                    title="डेटा विज्ञान"
+                    
+                  ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> डेटा विज्ञान</a>
+                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/datascience/%E0%A4%97%E0%A5%8B%E0%A4%B2%E0%A4%BE%E0%A4%82%E0%A4%97/"
+                          title="गोलांग"
+                          
+                        >गोलांग</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/datascience/%E0%A4%96%E0%A5%81%E0%A4%B2%E0%A5%87-%E0%A4%A1%E0%A5%87%E0%A4%9F%E0%A4%BE-%E0%A4%95%E0%A4%BE-%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%B2%E0%A5%87%E0%A4%B7%E0%A4%A3/"
+                          title="खुले डेटा का विश्लेषण"
+                          
+                        >खुले डेटा का विश्लेषण</a>
+                      </li></ul></li><li
+              class="menu-item"
+            ><span class="nested-item">
+                  <a
+                    class="menu-link"
+                    href="/hi/neuroimaging/"
+                    title="तंत्रिका-इमेजिंग"
+                    
+                  ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> तंत्रिका-इमेजिंग</a>
+                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/neuroimaging/%E0%A4%91%E0%A4%9F%E0%A4%BF%E0%A4%9C%E0%A4%BC%E0%A5%8D%E0%A4%AE/"
+                          title="ऑटिज़्म"
+                          
+                        >ऑटिज़्म</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/hi/neuroimaging/%E0%A4%98%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%A3/"
+                          title="घ्राण"
+                          
+                        >घ्राण</a>
+                      </li></ul></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="थीम बदलें"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span><span class="menu-system-item language-switch">
+              <span role="button" aria-label="भाषा चुने" title="भाषा चुने">हिंदी<i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i></span>
+              <select class="language-select" onchange="location = this.value;"><option disabled>कोई और अनुवाद नहीं</option></select>
+            </span></li>
+      </ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><nav aria-label="breadcrumb" class="breadcrumb-container">
+    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/hi/posts/" title="Posts">पदों</a></li><li class="breadcrumb-item active" aria-current="page">Building This Website With Hugo</li>
+    </ol>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="संग्रह"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Building This Website With Hugo</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line">
+        </div><div class="post-meta-line"><span title="2024-05-01 00:09:00 पर प्रकाशित"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2024-05-01">2024-05-01</time></span>&nbsp;<span title="286 शब्द "><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>लगभग 300 शब्द</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>2 मिनट</span>&nbsp;</div>
+    </div><div class="featured-image"><img loading="lazy" src="/images/hugo-preview.png" alt="/images/hugo-preview.png" data-title="/images/hugo-preview.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>सामग्री</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#why">Why?</a>
+      <ul>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#saraogeecom">Saraogee.com</a></li>
+      </ul>
+    </li>
+    <li><a href="#running-the-website-locally">Running the website locally</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p><font size="1"> <a href="https://github.com/Lruihao/hugo-blog/blob/main/assets/images/blog-flow.png"target="_blank" rel="external nofollow noopener noreferrer">Partial image credit</a> </font></p>
+<h2 id="why" class="heading-element"><span>Why?</span>
+  <a href="#why" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p><a href="https://go.dev/"target="_blank" rel="external nofollow noopener noreferrer">Golang</a> is a compiled language designed for today&rsquo;s multi-processor, scalable, high-performance systems. Known for concurrent data processing, <a href="https://github.com/uber-go/guide"target="_blank" rel="external nofollow noopener noreferrer">Uber</a> uses Golang on the backend. Static site generators such as <a href="https://gohugo.io"target="_blank" rel="external nofollow noopener noreferrer">Hugo</a> were developed recently using Golang. Other platforms have inherited dependency chains that can lead to infeasible build times. For example, <a href="https://blog.cloudflare.com/new-dev-docs"target="_blank" rel="external nofollow noopener noreferrer">Cloudfare</a> recently migrated from Gatsby.</p>
+<h3 id="demo" class="heading-element"><span>Demo</span>
+  <a href="#demo" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>I first created a <a href="autonotes.netlify.app">demo website</a> using the <a href="https://themes.gohugo.io/themes/hugo-winston-theme/"target="_blank" rel="external nofollow noopener noreferrer">Hugo Winston theme</a>. This theme does have a <a href="https://hugo-winston.netlify.app/"target="_blank" rel="external nofollow noopener noreferrer">Live Demo</a> which made it simple to deploy from <a href="https://github.com/asaraog/msds431week3"target="_blank" rel="external nofollow noopener noreferrer">Github</a> onto <a href="https://www.netlify.com/"target="_blank" rel="external nofollow noopener noreferrer">Netlify</a>. All descriptions are fictional and generated using <a href="https://chat.openai.com/"target="_blank" rel="external nofollow noopener noreferrer">ChatGPT</a>.</p>
+<h3 id="saraogeecom" class="heading-element"><span>Saraogee.com</span>
+  <a href="#saraogeecom" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>I had several requirements in mind for my website:</p>
+<ul>
+<li>Public Comments such as <a href="https://valine.js.org/en/"target="_blank" rel="external nofollow noopener noreferrer">Valine</a></li>
+<li>Site Analytics such as <a href="https://developers.google.com/analytics/"target="_blank" rel="external nofollow noopener noreferrer">Google Analytics</a></li>
+<li>Search such as <a href="https://www.fusejs.io/"target="_blank" rel="external nofollow noopener noreferrer">Fuse.js</a></li>
+</ul>
+<p>The <a href="https://themes.gohugo.io/themes/fixit/"target="_blank" rel="external nofollow noopener noreferrer">FixIt</a> theme was a great starting point for my website. I made some changes to the categories in the layout and added support for <a href="https://github.com/hugo-fixit/FixIt/commit/dfeaf0e9a7c2a34e32b259e41dd4d48dfdb61ae7"target="_blank" rel="external nofollow noopener noreferrer">Hindi</a>. The website continuously deploys from updates I make in the file directory via <a href="https://github.com/asaraog/asaraog.github.io/deployments"target="_blank" rel="external nofollow noopener noreferrer">Github Pages</a>.</p>
+<h2 id="running-the-website-locally" class="heading-element"><span>Running the website locally</span>
+  <a href="#running-the-website-locally" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p><strong>1. Install Hugo</strong></p>
+<p>Please follow the official <a href="https://gohugo.io/getting-started/installing/"target="_blank" rel="external nofollow noopener noreferrer">installation guide</a>.</p>
+<p><strong>2. Import Hugo site locally</strong></p>
+<p>Download or git clone this project onto local machine into folder on local machine.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone https://github.com/asaraog/msds431week3.git
+</span></span><span class="line"><span class="cl">cd msds431week3
+</span></span><span class="line"><span class="cl">cd exampleSite
+</span></span><span class="line"><span class="cl">hugo server</span></span></code></pre></td></tr></table>
+</div>
+</div><p>or</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone https://github.com/asaraog/asaraog.github.io.git
+</span></span><span class="line"><span class="cl">cd asaraog.github.io
+</span></span><span class="line"><span class="cl">hugo server</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>3. Deploy it</strong></p>
+<p>Now enter <a href="http://localhost:1313"target="_blank" rel="external nofollow noopener noreferrer"><code>localhost:1313</code></a> in the address bar of your browser. Files can then be changed and then committed/pushed when complete to git. Once pushed to git, the website can be deployed.</p>
+<h2 id="references" class="heading-element"><span>References</span>
+  <a href="#references" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Jain, Atishay. 2022. Hugo in Action: Static Sites and Dynamic Jamstack Apps. <a href="https://learning.oreilly.com/library/view/hugo-in-action/9781617297007/"target="_blank" rel="external nofollow noopener noreferrer">https://learning.oreilly.com/library/view/hugo-in-action/9781617297007/</a>.</p>
+<p>Miller, Tom. &ldquo;Setting Up a Website,&rdquo;. MSDS 431: Data Engineering with Go. Course at Northwestern University, Chicago, IL, June 27, 2023.</p>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="2024-05-01 00:09:00 पर अपडेट">2024-05-01 पर अपडेट&nbsp;</span>
+      </div><div class="post-info-license">
+            <span><a rel="license external nofollow noopener noreferrer" href="https://github.com/asaraog/asaraog.github.io/blob/main/LICENSE" target="_blank">BSD-3-Clause</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/hi/Week3/index.md" title="मार्कडाउन पढ़ें" class="link-to-markdown">मार्कडाउन पढ़ें</a></span><span><a href="https://github.com/asaraog/asaraog.github.io/blob/main/content/posts/Week3.hi.md?plain=1" title="स्रोत देखें"target="_blank" rel="external nofollow noopener noreferrer" class="link-to-source">स्रोत देखें</a></span><span><a href="https://github.com/asaraog/asaraog.github.io/issues/new?title=[BUG]%20Building&#43;this&#43;website&#43;with&#43;Hugo&amp;body=%7cField%7cValue%7c%0A%7c-%7c-%7c%0A%7cTitle%7cBuilding&#43;this&#43;website&#43;with&#43;Hugo%7c%0A%7cURL%7c//localhost:1313/hi/Week3/%7c%0A%7cFilename%7chttps://github.com/asaraog/asaraog.github.io/blob/main/content/posts/Week3.hi.md?plain=1%7c" title="समस्या की रिपोर्ट करें"target="_blank" rel="external nofollow noopener noreferrer" class="link-to-report">समस्या की रिपोर्ट करें</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title=" शेयर करें Linkedin" data-sharer="linkedin" data-url="//localhost:1313/hi/Week3/"><i class="fa-brands fa-linkedin fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title=" शेयर करें Reddit" data-sharer="reddit" data-url="//localhost:1313/hi/Week3/"><i class="fa-brands fa-reddit fa-fw" aria-hidden="true"></i></a>
+  </span>
+        </div>
+      </div></div>
+
+  <div class="post-info-more">
+    <section class="post-tags"></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">पीछे</a></span>&nbsp;|&nbsp;<span><a href="/hi/">घर</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/hi/Week6/" class="post-nav-item" rel="prev" title="Concurrency With Golang"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Concurrency With Golang</a>
+      <a href="/hi/first_post3/" class="post-nav-item" rel="next" title="My First Post3">My First Post3<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article>
+
+  <aside class="toc" id="toc-auto" aria-label="सामग्री"><h2 class="toc-title">सामग्री&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered"><a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.125.7"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> के द्वारा संचालित | थीम - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.3.6"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">
+              <a href="/hi/"></a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="वापस शीर्ष पर"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">फिक्सइट थीम जावास्क्रिप्ट सक्षम होने पर सबसे अच्छा काम करता है।</div>
+  </noscript>
+</div><link rel="preload" href="/lib/katex/katex.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/katex/katex.min.css"></noscript><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script>window.config={"code":{"copyTitle":"क्लिपबोर्ड पर कॉपी करें","editLockTitle":"संपादन योग्य कोड ब्लॉक को लॉक करें","editUnLockTitle":"संपादन योग्य कोड ब्लॉक को अनलॉक करें","editable":true,"maxShownLines":10},"comment":{"enable":false},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/hi/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"कोई परिणाम नहीं मिला","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"version":"v0.3.6"};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

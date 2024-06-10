@@ -56,13 +56,6 @@ defaultContentLanguage = "en"
       [languages.hi.menu.main.params]
           icon = "fa-solid fa-folder-tree"
     [[languages.hi.menu.main]]
-        identifier = "COVID-19"
-        parent = "biomolecules"
-        name = "कोविड-19"
-        url = "/biomolecules/कोविड-19/"
-        title = "कोविड-19"
-        weight = 1
-    [[languages.hi.menu.main]]
         identifier = "DNA"
         parent = "biomolecules"
         name = "डीएनए"
@@ -91,13 +84,6 @@ defaultContentLanguage = "en"
         title = "घ्राण"
         weight = 2
     [[languages.hi.menu.main]]
-        identifier = "neurodegeneration"
-        parent = "neuroimaging"
-        name = "तंत्रिका अपविकास"
-        url = "/neuroimaging/तंत्रिका-अपविकास/"
-        title = "तंत्रिका अपविकास"
-        weight = 3
-    [[languages.hi.menu.main]]
         identifier = "Golang"
         parent = "datascience"
         name = "गोलांग"
@@ -111,13 +97,6 @@ defaultContentLanguage = "en"
         url = "/datascience/खुले-डेटा-का-विश्लेषण/"
         title = "खुले डेटा का विश्लेषण"
         weight = 2
-    [[languages.hi.menu.main]]
-        identifier = "datainsociety"
-        parent = "datascience"
-        name = "समाज में डेटा"
-        url = "/datascience/समाज-में-डेटा/"
-        title = "समाज में डेटा"
-        weight = 3
 
 # whether to include Chinese/Japanese/Korean
 hasCJKLanguage = false
@@ -182,15 +161,6 @@ enableEmoji = true
     [menu.main.params]
       icon = "fa-solid fa-folder-tree"
   [[menu.main]]
-    identifier = "COVID-19"
-    parent = "biomolecules"
-    pre = ""
-    post = ""
-    name = "COVID-19"
-    url = "/biomolecules/covid-19/"
-    title = "COVID-19"
-    weight = 1
-  [[menu.main]]
     identifier = "DNA"
     parent = "biomolecules"
     pre = ""
@@ -227,15 +197,6 @@ enableEmoji = true
     title = "Olfaction"
     weight = 2
   [[menu.main]]
-    identifier = "neurodegeneration"
-    parent = "neuroimaging"
-    pre = ""
-    post = ""
-    name = "Neurodegeneration"
-    url = "/neuroimaging/neurodegeneration/"
-    title = "Neurodegeneration"
-    weight = 3
-  [[menu.main]]
     identifier = "Golang"
     parent = "datascience"
     pre = ""
@@ -245,23 +206,14 @@ enableEmoji = true
     title = "Golang"
     weight = 1
   [[menu.main]]
-    identifier = "analyzingopendata"
+    identifier = "opendata"
     parent = "datascience"
     pre = ""
     post = ""
     name = "Analyzing Open Data"
-    url = "/datascience/analyzeopendata/"
-    title = "Analyze Open Data"
+    url = "/datascience/opendata/"
+    title = "Open Data"
     weight = 2
-  [[menu.main]]
-    identifier = "datainsociety"
-    parent = "datascience"
-    pre = ""
-    post = ""
-    name = "Data in Society"
-    url = "/datascience/datainsociety/"
-    title = "Data in Society"
-    weight = 3
 
 # -------------------------------------------------------------------------------------
 # Related content Configuration

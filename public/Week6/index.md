@@ -1,32 +1,16 @@
-# 
-
-# Concurrency and Machine Learning
-
-## Project Summary
-
-This project aims to evaluate Go&#39;s concurrent programming framework for training and testing machine learning models namely linear regression. In particular, this project uses the [Boston Housing Study (1970)](http://lib.stat.cmu.edu/datasets/boston), commonly used by statisticians to predict housing prices by others (Brownlee 2020). This dataset was modified by others (Miller 1999) to remove the feature &#39;B&#39; encoding racial segregation.
-
-Machine learning models will utilize the [gonum library](https://pkg.go.dev/gonum.org/v1/gonum). The Go implementation will test linear regression models with varying regulization and/or concurrency. The data will be split approximately 80/20 with 80% (400/506) observations used for training and 20% (106/506) of the data for testing. RMSE and R&lt;sup&gt;2&lt;/sup&gt; values are reported for each model tested with alpha=0.000001 (close to no regularization) and alpha=0.51 (optimized regularization level by Brownlee 2020).
-
-All models are benchmarked for runtime using &#39;time&#39; before commands in the command line and the concurrency flag 0 or 1. Concurrency significantly reduced runtime with runtimes of 0.016s and 0.042s with and without regularization respectively. Models are trained 100 times. The models with alpha=0.000001 performed better than with alpha = 0.51. Note that the data is resampled every time the program is run and results in differing results when run. In one run, the RMSE and R&lt;sup&gt;2&lt;/sup&gt; was 61.5, 0.625 and 51.5, 0.737 for models with and without regularization respectively showing lower RMSE and higher R&lt;sup&gt;2&lt;/sup&gt; score. 
+# Concurrency With Golang
 
 
-## Files
+## What?
 
-*saraogeeweek6.go:* \
-Main routine loads boston.csv file and uses flag &#39;-concurrency&#39; to select OFF (0) or ON (1) as an integer.
+Concurrency is breaking up a single process into independent components and then making a plan on how they will compute. It is based on the idea of CSP or Communicating Sequential Processes (Brookes, Hoare, and Roscoe 1984). The paradigm here is shifted towards communication and splitting of independent processes instead of sharing memory in parallel processing. To communicate between different processes, Golang utilizes goroutines, which are similar to channels as described in CSP. These are different from threads and more lightweight.
 
-*saraogeeweek6_test.go:* \
-Unit test for regression ensuring dimensionality. It also tests if R&lt;sup&gt;2&lt;/sup&gt; values are within reasonalbe limits of 0 and 1.
+## Linear Regression
+See my [Github repository](https://github.com/asaraog/msds431week6) for further details.
 
-*boston.csv* \
-Input file for Boston housing data from Miller 1999.
+This project evaluated Go&#39;s concurrent programming framework for training and testing linear regression models. Machine learning models will utilize the [gonum library](https://pkg.go.dev/gonum.org/v1/gonum). The Go implementation tested linear regression models with varying regulization and/or concurrency using the [Boston Housing Study (1970)](http://lib.stat.cmu.edu/datasets/boston), commonly used by statisticians to predict housing prices by others (Brownlee 2020). This dataset was modified by others (Miller 1999) to remove the feature &#39;B&#39; encoding racial segregation. All models were run 100 times and benchmarked for runtime using &#39;time&#39; before commands in the command line and the concurrency flag 0 or 1. Concurrency significantly increased speed with a runtime of 0.009s compared to 0.279s without concurrency.
 
-*Week6* \
-Unix executable file of cross-compiled Go code for Mac/Windows. 
-
-
-## Installation
+### Running the demo locally
 
 Download or git clone this project onto local machine into folder on local machine.
 ```
@@ -37,8 +21,9 @@ time ./Week6 -concurrency 1
 
 ```
 
-
 ## References
+
+Brookes, S. D., C. A. R. Hoare, and A. W. Roscoe. 1984. “A Theory of Communicating Sequential Processes.” Journal of the ACM 31 (3): 560–99. https://doi.org/10.1145/828.833.
 
 Brownlee, Jason. 2020. “How to Develop Ridge Regression Models in Python.” MachineLearningMastery.Com (blog). October 8, 2020. https://machinelearningmastery.com/ridge-regression-with-python/.
 

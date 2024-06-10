@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Front-End Software Development Using Golang - Asaraog</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="What? In the world of web and desktop applications, frameworks for different software languages such as Rails for Ruby and Electron for JavaScript are popular. Analogous to Rails, Golang uses the Wails framework and offers the benefits of Golang&rsquo;s reported processing speed. Wails also uses the native rendering engine unlike Electron which uses an embedded browser. Furthermore, Wails integrates user interface (UI) frameworks such as React, Vue and Svelte.
+To demo Golang&rsquo;s frontend capabilities, two projects are implemented here using Wails and Svelte:" />
+  <meta itemprop="name" content="Front-end software development using Golang">
+  <meta itemprop="description" content="What? In the world of web and desktop applications, frameworks for different software languages such as Rails for Ruby and Electron for JavaScript are popular. Analogous to Rails, Golang uses the Wails framework and offers the benefits of Golang&rsquo;s reported processing speed. Wails also uses the native rendering engine unlike Electron which uses an embedded browser. Furthermore, Wails integrates user interface (UI) frameworks such as React, Vue and Svelte.
+To demo Golang&rsquo;s frontend capabilities, two projects are implemented here using Wails and Svelte:">
+  <meta itemprop="datePublished" content="2024-05-15T00:09:00-06:00">
+  <meta itemprop="dateModified" content="2024-05-15T00:09:00-06:00">
+  <meta itemprop="wordCount" content="507">
+  <meta itemprop="keywords" content="Golang"><meta property="og:url" content="//localhost:1313/Front-end_Applications/">
+  <meta property="og:site_name" content="Asaraog">
+  <meta property="og:title" content="Front-end software development using Golang">
+  <meta property="og:description" content="What? In the world of web and desktop applications, frameworks for different software languages such as Rails for Ruby and Electron for JavaScript are popular. Analogous to Rails, Golang uses the Wails framework and offers the benefits of Golang’s reported processing speed. Wails also uses the native rendering engine unlike Electron which uses an embedded browser. Furthermore, Wails integrates user interface (UI) frameworks such as React, Vue and Svelte.
+To demo Golang’s frontend capabilities, two projects are implemented here using Wails and Svelte:">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-05-15T00:09:00-06:00">
+    <meta property="article:modified_time" content="2024-05-15T00:09:00-06:00">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Front-end software development using Golang">
+<meta name="twitter:description" content="What? In the world of web and desktop applications, frameworks for different software languages such as Rails for Ruby and Electron for JavaScript are popular. Analogous to Rails, Golang uses the Wails framework and offers the benefits of Golang&rsquo;s reported processing speed. Wails also uses the native rendering engine unlike Electron which uses an embedded browser. Furthermore, Wails integrates user interface (UI) frameworks such as React, Vue and Svelte.
+To demo Golang&rsquo;s frontend capabilities, two projects are implemented here using Wails and Svelte:">
+<meta name="application-name" content="ASaraogee">
+<meta name="apple-mobile-web-app-title" content="ASaraogee"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="//localhost:1313/Front-end_Applications/" /><link rel="prev" href="//localhost:1313/MNIST/" /><link rel="next" href="//localhost:1313/Goroutines/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Front-end software development using Golang",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "\/\/localhost:1313\/Front-end_Applications\/"
+    },"genre": "posts","wordcount":  507 ,
+    "url": "\/\/localhost:1313\/Front-end_Applications\/","datePublished": "2024-05-15T00:09:00-06:00","dateModified": "2024-05-15T00:09:00-06:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Author"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="map[logo: name:Home post: pre:&lt;i class=&#39;fas fa-home&#39;&gt;&lt;/i&gt; typeit:false]"><span class="header-title-pre"><i class='fas fa-home'></i></span><span class="header-title-text">Home</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item has-children">
+              <a
+                class="menu-link"
+                href="/biomolecules/"
+                title="Biomolecules"
+                
+              ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Biomolecules</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/biomolecules/dna/"
+                          title="DNA"
+                          
+                        >DNA</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/biomolecules/proteins/"
+                          title="Proteins"
+                          
+                        >Proteins</a>
+                      </li></ul></li><li class="menu-item has-children">
+              <a
+                class="menu-link"
+                href="/datascience/"
+                title="Data Science"
+                
+              ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Data Science</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/datascience/golang/"
+                          title="Golang"
+                          
+                        >Golang</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/datascience/opendata/"
+                          title="Open Data"
+                          
+                        >Analyzing Open Data</a>
+                      </li></ul></li><li class="menu-item has-children">
+              <a
+                class="menu-link"
+                href="/neuroimaging/"
+                title="Neuroimaging"
+                
+              ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Neuroimaging</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/neuroimaging/autism/"
+                          title="Autism"
+                          
+                        >Autism</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/neuroimaging/olfaction/"
+                          title="Olfaction"
+                          
+                        >Olfaction</a>
+                      </li></ul></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li><li class="menu-item language-switch">
+            <span role="button" aria-label="Select Language" title="Select Language"><i class="fa-solid fa-language fa-fw" aria-hidden="true"></i></span>
+            <ul class="sub-menu"><li class="menu-item">No more translations</li></ul>
+          </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="Asaraog"><span class="header-title-pre"><i class='fas fa-home'></i></span><span class="header-title-text">Home</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li
+              class="menu-item"
+            ><span class="nested-item">
+                  <a
+                    class="menu-link"
+                    href="/biomolecules/"
+                    title="Biomolecules"
+                    
+                  ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Biomolecules</a>
+                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/biomolecules/dna/"
+                          title="DNA"
+                          
+                        >DNA</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/biomolecules/proteins/"
+                          title="Proteins"
+                          
+                        >Proteins</a>
+                      </li></ul></li><li
+              class="menu-item"
+            ><span class="nested-item">
+                  <a
+                    class="menu-link"
+                    href="/datascience/"
+                    title="Data Science"
+                    
+                  ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Data Science</a>
+                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/datascience/golang/"
+                          title="Golang"
+                          
+                        >Golang</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/datascience/opendata/"
+                          title="Open Data"
+                          
+                        >Analyzing Open Data</a>
+                      </li></ul></li><li
+              class="menu-item"
+            ><span class="nested-item">
+                  <a
+                    class="menu-link"
+                    href="/neuroimaging/"
+                    title="Neuroimaging"
+                    
+                  ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Neuroimaging</a>
+                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/neuroimaging/autism/"
+                          title="Autism"
+                          
+                        >Autism</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/neuroimaging/olfaction/"
+                          title="Olfaction"
+                          
+                        >Olfaction</a>
+                      </li></ul></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span><span class="menu-system-item language-switch">
+              <span role="button" aria-label="Select Language" title="Select Language">English<i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i></span>
+              <select class="language-select" onchange="location = this.value;"><option disabled>No more translations</option></select>
+            </span></li>
+      </ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><nav aria-label="breadcrumb" class="breadcrumb-container">
+    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/posts/" title="Posts">Posts</a></li><li class="breadcrumb-item active" aria-current="page">Front-End Software Development Using Golang</li>
+    </ol>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="Collections"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Front-End Software Development Using Golang</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line">
+        </div><div class="post-meta-line"><span title="published on 2024-05-15 00:09:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2024-05-15">2024-05-15</time></span>&nbsp;<span title="507 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 600 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>3 minutes</span>&nbsp;</div>
+    </div><div class="featured-image"><img loading="lazy" src="/images/frontend.png" alt="/images/frontend.png" data-title="/images/frontend.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#what">What?</a></li>
+    <li><a href="#assisted-writing-application">Assisted Writing Application</a></li>
+    <li><a href="#chatbot">Chatbot</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><h2 id="what" class="heading-element"><span>What?</span>
+  <a href="#what" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>In the world of web and desktop applications, frameworks for different software languages such as <a href="https://rubyonrails.org/"target="_blank" rel="external nofollow noopener noreferrer">Rails</a> for Ruby and <a href="https://www.electronjs.org/"target="_blank" rel="external nofollow noopener noreferrer">Electron</a> for JavaScript are popular. Analogous to Rails, <a href="https://go.dev/"target="_blank" rel="external nofollow noopener noreferrer">Golang</a> uses the <a href="https://wails.io/"target="_blank" rel="external nofollow noopener noreferrer">Wails</a> framework and offers the benefits of Golang&rsquo;s reported processing speed. Wails also uses the native rendering engine unlike Electron which uses an embedded browser. Furthermore, Wails integrates user interface (UI) frameworks such as <a href="https://wails.io/docs/community/templates/"target="_blank" rel="external nofollow noopener noreferrer">React, Vue and Svelte</a>.</p>
+<p>To demo Golang&rsquo;s frontend capabilities, two projects are implemented here using Wails and <a href="https://svelte.dev/repl/hello-world"target="_blank" rel="external nofollow noopener noreferrer">Svelte</a>:</p>
+<ul>
+<li>Assisted Writing Application</li>
+<li>Chatbot</li>
+</ul>
+<h2 id="assisted-writing-application" class="heading-element"><span>Assisted Writing Application</span>
+  <a href="#assisted-writing-application" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>This project produces a prototype for an assisted writing application based on <a href="https://vale.sh/"target="_blank" rel="external nofollow noopener noreferrer">Vale</a> (an exisiting command line interface written in Golang).  It accepts plain text files (.txt or .md) as user input and a style preference as a text input. The output is displayed in the application with support for errors such as invalid user preference, invalid type of text file or insufficient length of text.The application prototype is succesful during development (wails dev) in linking Vale CLI output with user input and displaying errors. However, Wails is unable to integrate with command line applications during build (wails build) for this application. Future implemntations would explore other prose linters that do not require command line dependencies.</p>
+<p>To run the prototype locally, first install Wails onto your machine and then download this project:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">xcode-select --install
+</span></span><span class="line"><span class="cl">go install github.com/wailsapp/wails/v2/cmd/wails@latest
+</span></span><span class="line"><span class="cl">git clone https://github.com/asaraog/msds431week8.git
+</span></span><span class="line"><span class="cl">cd msds431week8
+</span></span><span class="line"><span class="cl">wails dev</span></span></code></pre></td></tr></table>
+</div>
+</div><p>To test for correct application behavior, input 1 or 2 to indicate a style preference and click &lsquo;Lint it&rsquo; to upload &rsquo;test.txt&rsquo;. Try entering 3 to generate the appropriate error message.</p>
+<p>See my <a href="https://github.com/asaraog/msds431week8"target="_blank" rel="external nofollow noopener noreferrer">Github repository</a> for further details.</p>
+<h2 id="chatbot" class="heading-element"><span>Chatbot</span>
+  <a href="#chatbot" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>This project produces a prototype for a desktop chatbot application. It accepts a single word query as a plain text input and output answers from a knowledge base(<a href="https://github.com/ThomasWMiller/jump-start-sqlite/blob/main/QandA.csv"target="_blank" rel="external nofollow noopener noreferrer">by others</a>) represented with <a href="https://github.com/mattn/go-sqlite3"target="_blank" rel="external nofollow noopener noreferrer">Go&rsquo;s SQL</a> driver. The prototype is capable of integrating NLP concepts such as <a href="https://yi-wang-2005.medium.com/nlp-in-sql-word-vectors-82dffc908423"target="_blank" rel="external nofollow noopener noreferrer">term frequency-inverse document frequency (TF-IDF)</a>. It also includes support for errors such as too many words, no input and no matches. The application prototype is succesful during development AND build in providing the correct answers to user input questions. Further development of the application would first continue in SQL by adding a TF-IDF representation to calculate similarity scores. We can then add &lsquo;fuzzy matching&rsquo; and tokenization/lemmatization of the corpus and query. This will have the simplest development process with no dependency required. The single word query is highly amenable to using word2vec.</p>
+<p>To run the application locally, download or git clone this project:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone https://github.com/asaraog/msds431week9.git
+</span></span><span class="line"><span class="cl">cd msds431week9/build/bin
+</span></span><span class="line"><span class="cl">open Week9.app</span></span></code></pre></td></tr></table>
+</div>
+</div><p>To test for correct chatbot application behavior first type nothing into the text box and then &lsquo;break&rsquo;, &rsquo;test&rsquo; and &lsquo;break test&rsquo; before clicking &lsquo;Query&rsquo;</p>
+<p>See my <a href="https://github.com/asaraog/msds431week9"target="_blank" rel="external nofollow noopener noreferrer">Github repository</a> for further details.</p>
+<h2 id="references" class="heading-element"><span>References</span>
+  <a href="#references" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Miller, Tom. &ldquo;Desktop Applications,&rdquo;. MSDS 431: Data Engineering with Go. Course at Northwestern University, Chicago, IL, June 19, 2023.</p>
+<p>Miller, Tom. &ldquo;Natural Language Processing,&rdquo;. MSDS 431: Data Engineering with Go. Course at Northwestern University, Chicago, IL, June 19, 2023.
+<a href="https://github.com/ThomasWMiller/jump-start-sqlite"target="_blank" rel="external nofollow noopener noreferrer">https://github.com/ThomasWMiller/jump-start-sqlite</a></p>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="Updated on 2024-05-15 00:09:00">Updated on 2024-05-15&nbsp;</span>
+      </div><div class="post-info-license">
+            <span><a rel="license external nofollow noopener noreferrer" href="https://github.com/asaraog/asaraog.github.io/blob/main/LICENSE" target="_blank">BSD-3-Clause</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/Front-end_Applications/index.md" title="Read Markdown" class="link-to-markdown">Read Markdown</a></span><span><a href="https://github.com/asaraog/asaraog.github.io/blob/main/content/posts/Front-end_Applications.md?plain=1" title="View source"target="_blank" rel="external nofollow noopener noreferrer" class="link-to-source">View source</a></span><span><a href="https://github.com/asaraog/asaraog.github.io/issues/new?title=[BUG]%20Front-end&#43;software&#43;development&#43;using&#43;Golang&amp;body=%7cField%7cValue%7c%0A%7c-%7c-%7c%0A%7cTitle%7cFront-end&#43;software&#43;development&#43;using&#43;Golang%7c%0A%7cURL%7c//localhost:1313/Front-end_Applications/%7c%0A%7cFilename%7chttps://github.com/asaraog/asaraog.github.io/blob/main/content/posts/Front-end_Applications.md?plain=1%7c" title="Report issue"target="_blank" rel="external nofollow noopener noreferrer" class="link-to-report">Report issue</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="//localhost:1313/Front-end_Applications/"><i class="fa-brands fa-linkedin fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="//localhost:1313/Front-end_Applications/"><i class="fa-brands fa-reddit fa-fw" aria-hidden="true"></i></a>
+  </span>
+        </div>
+      </div></div>
+
+  <div class="post-info-more">
+    <section class="post-tags"></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/MNIST/" class="post-nav-item" rel="prev" title="MNIST Dataset"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>MNIST Dataset</a>
+      <a href="/Goroutines/" class="post-nav-item" rel="next" title="Concurrency With Golang">Concurrency With Golang<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article>
+
+  <aside class="toc" id="toc-auto" aria-label="Contents"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.125.7"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.3.6"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">Theme FixIt works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="preload" href="/lib/katex/katex.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/katex/katex.min.css"></noscript><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":false},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"version":"v0.3.6"};</script><script src="/js/theme.min.js" defer></script></body>
+</html>
