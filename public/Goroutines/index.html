@@ -10,24 +10,24 @@
 <meta name="description" content="What? Concurrency or concurrent processing is breaking up a single process into independent components to coordinate compute. It is based on the idea of CSP or Communicating Sequential Processes (Brookes, Hoare, and Roscoe 1984). In contrast to parallel processing, the paradigm here is shifted towards communication and splitting of independent processes instead of sharing memory. To communicate between different processes, Golang utilizes goroutines, which are similar to channels as described in CSP." />
   <meta itemprop="name" content="Concurrency with Golang">
   <meta itemprop="description" content="What? Concurrency or concurrent processing is breaking up a single process into independent components to coordinate compute. It is based on the idea of CSP or Communicating Sequential Processes (Brookes, Hoare, and Roscoe 1984). In contrast to parallel processing, the paradigm here is shifted towards communication and splitting of independent processes instead of sharing memory. To communicate between different processes, Golang utilizes goroutines, which are similar to channels as described in CSP.">
-  <meta itemprop="datePublished" content="2024-05-15T00:09:00-06:00">
-  <meta itemprop="dateModified" content="2024-05-15T00:09:00-06:00">
+  <meta itemprop="datePublished" content="2023-08-01T00:09:00-06:00">
+  <meta itemprop="dateModified" content="2023-08-01T00:09:00-06:00">
   <meta itemprop="wordCount" content="322">
-  <meta itemprop="keywords" content="Golang"><meta property="og:url" content="//localhost:1313/Goroutines/">
+  <meta itemprop="keywords" content="Dataengineering"><meta property="og:url" content="//localhost:1313/Goroutines/">
   <meta property="og:site_name" content="Asaraog">
   <meta property="og:title" content="Concurrency with Golang">
   <meta property="og:description" content="What? Concurrency or concurrent processing is breaking up a single process into independent components to coordinate compute. It is based on the idea of CSP or Communicating Sequential Processes (Brookes, Hoare, and Roscoe 1984). In contrast to parallel processing, the paradigm here is shifted towards communication and splitting of independent processes instead of sharing memory. To communicate between different processes, Golang utilizes goroutines, which are similar to channels as described in CSP.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-05-15T00:09:00-06:00">
-    <meta property="article:modified_time" content="2024-05-15T00:09:00-06:00">
+    <meta property="article:published_time" content="2023-08-01T00:09:00-06:00">
+    <meta property="article:modified_time" content="2023-08-01T00:09:00-06:00">
 <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Concurrency with Golang">
 <meta name="twitter:description" content="What? Concurrency or concurrent processing is breaking up a single process into independent components to coordinate compute. It is based on the idea of CSP or Communicating Sequential Processes (Brookes, Hoare, and Roscoe 1984). In contrast to parallel processing, the paradigm here is shifted towards communication and splitting of independent processes instead of sharing memory. To communicate between different processes, Golang utilizes goroutines, which are similar to channels as described in CSP.">
 <meta name="application-name" content="ASaraogee">
 <meta name="apple-mobile-web-app-title" content="ASaraogee"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="//localhost:1313/Goroutines/" /><link rel="prev" href="//localhost:1313/Front-end_Applications/" /><link rel="next" href="//localhost:1313/Website/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="//localhost:1313/Goroutines/" /><link rel="prev" href="//localhost:1313/Health/" /><link rel="next" href="//localhost:1313/Front-end_Applications/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
   {
@@ -39,7 +39,7 @@
       "@type": "WebPage",
       "@id": "\/\/localhost:1313\/Goroutines\/"
     },"genre": "posts","wordcount":  322 ,
-    "url": "\/\/localhost:1313\/Goroutines\/","datePublished": "2024-05-15T00:09:00-06:00","dateModified": "2024-05-15T00:09:00-06:00","publisher": {
+    "url": "\/\/localhost:1313\/Goroutines\/","datePublished": "2023-08-01T00:09:00-06:00","dateModified": "2023-08-01T00:09:00-06:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
@@ -55,81 +55,47 @@
       <ul class="menu"><li class="menu-item has-children">
               <a
                 class="menu-link"
-                href="/biomolecules/"
-                title="Biomolecules"
+                href="/projects/"
+                title="Projects"
                 
-              ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Biomolecules</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+              ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Projects</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
                 <ul class="sub-menu">
                   <li
                         class="menu-item"
                       >
                         <a
                           class="menu-link"
-                          href="/biomolecules/dna/"
-                          title="DNA"
+                          href="/projects/biomolecules/"
+                          title="Biomolecules"
                           
-                        >DNA</a>
+                        >Biomolecules</a>
                       </li><li
                         class="menu-item"
                       >
                         <a
                           class="menu-link"
-                          href="/biomolecules/proteins/"
-                          title="Proteins"
+                          href="/projects/neuroimaging/"
+                          title="Neuroimaging"
                           
-                        >Proteins</a>
-                      </li></ul></li><li class="menu-item has-children">
-              <a
-                class="menu-link"
-                href="/datascience/"
-                title="Data Science"
-                
-              ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Data Science</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
-                <ul class="sub-menu">
-                  <li
-                        class="menu-item"
-                      >
-                        <a
-                          class="menu-link"
-                          href="/datascience/golang/"
-                          title="Golang"
-                          
-                        >Golang</a>
+                        >Neuroimaging</a>
                       </li><li
                         class="menu-item"
                       >
                         <a
                           class="menu-link"
-                          href="/datascience/opendata/"
-                          title="Open Data"
+                          href="/projects/dataengineering/"
+                          title="Data Engineering"
                           
-                        >Analyzing Open Data</a>
-                      </li></ul></li><li class="menu-item has-children">
-              <a
-                class="menu-link"
-                href="/neuroimaging/"
-                title="Neuroimaging"
-                
-              ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Neuroimaging</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
-                <ul class="sub-menu">
-                  <li
-                        class="menu-item"
-                      >
-                        <a
-                          class="menu-link"
-                          href="/neuroimaging/autism/"
-                          title="Autism"
-                          
-                        >Autism</a>
+                        >Data Engineering</a>
                       </li><li
                         class="menu-item"
                       >
                         <a
                           class="menu-link"
-                          href="/neuroimaging/olfaction/"
-                          title="Olfaction"
+                          href="/projects/artificialintelligence/"
+                          title="Artificial Intelligence"
                           
-                        >Olfaction</a>
+                        >Artificial Intelligence</a>
                       </li></ul></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
             <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
             <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
@@ -180,10 +146,10 @@
             ><span class="nested-item">
                   <a
                     class="menu-link"
-                    href="/biomolecules/"
-                    title="Biomolecules"
+                    href="/projects/"
+                    title="Projects"
                     
-                  ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Biomolecules</a>
+                  ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Projects</a>
                   <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
                 </span>
                 <ul class="sub-menu">
@@ -192,79 +158,37 @@
                       >
                         <a
                           class="menu-link"
-                          href="/biomolecules/dna/"
-                          title="DNA"
+                          href="/projects/biomolecules/"
+                          title="Biomolecules"
                           
-                        >DNA</a>
+                        >Biomolecules</a>
                       </li><li
                         class="menu-item"
                       >
                         <a
                           class="menu-link"
-                          href="/biomolecules/proteins/"
-                          title="Proteins"
+                          href="/projects/neuroimaging/"
+                          title="Neuroimaging"
                           
-                        >Proteins</a>
-                      </li></ul></li><li
-              class="menu-item"
-            ><span class="nested-item">
-                  <a
-                    class="menu-link"
-                    href="/datascience/"
-                    title="Data Science"
-                    
-                  ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Data Science</a>
-                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
-                </span>
-                <ul class="sub-menu">
-                  <li
-                        class="menu-item"
-                      >
-                        <a
-                          class="menu-link"
-                          href="/datascience/golang/"
-                          title="Golang"
-                          
-                        >Golang</a>
+                        >Neuroimaging</a>
                       </li><li
                         class="menu-item"
                       >
                         <a
                           class="menu-link"
-                          href="/datascience/opendata/"
-                          title="Open Data"
+                          href="/projects/dataengineering/"
+                          title="Data Engineering"
                           
-                        >Analyzing Open Data</a>
-                      </li></ul></li><li
-              class="menu-item"
-            ><span class="nested-item">
-                  <a
-                    class="menu-link"
-                    href="/neuroimaging/"
-                    title="Neuroimaging"
-                    
-                  ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Neuroimaging</a>
-                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
-                </span>
-                <ul class="sub-menu">
-                  <li
-                        class="menu-item"
-                      >
-                        <a
-                          class="menu-link"
-                          href="/neuroimaging/autism/"
-                          title="Autism"
-                          
-                        >Autism</a>
+                        >Data Engineering</a>
                       </li><li
                         class="menu-item"
                       >
                         <a
                           class="menu-link"
-                          href="/neuroimaging/olfaction/"
-                          title="Olfaction"
+                          href="/projects/artificialintelligence/"
+                          title="Artificial Intelligence"
                           
-                        >Olfaction</a>
+                        >Artificial Intelligence</a>
                       </li></ul></li><li class="menu-item menu-system">
           <span class="menu-system-item theme-switch" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span><span class="menu-system-item language-switch">
               <span role="button" aria-label="Select Language" title="Select Language">English<i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i></span>
@@ -287,7 +211,7 @@
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Concurrency With Golang</span>
       </h1></div><div class="post-meta">
       <div class="post-meta-line">
-        </div><div class="post-meta-line"><span title="published on 2024-05-15 00:09:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2024-05-15">2024-05-15</time></span>&nbsp;<span title="322 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 400 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>2 minutes</span>&nbsp;</div>
+        </div><div class="post-meta-line"><span title="published on 2023-08-01 00:09:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2023-08-01">2023-08-01</time></span>&nbsp;<span title="322 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 400 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>2 minutes</span>&nbsp;</div>
     </div><div class="featured-image"><img loading="lazy" src="/images/concurrent.png" alt="/images/concurrent.png" data-title="/images/concurrent.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></div><div class="details toc" id="toc-static" data-kept="false">
         <div class="details-summary toc-title">
           <span>Contents</span>
@@ -339,13 +263,13 @@
   </a>
 </h2><p>Brookes, S. D., C. A. R. Hoare, and A. W. Roscoe. 1984. “A Theory of Communicating Sequential Processes.” Journal of the ACM 31 (3): 560–99. <a href="https://doi.org/10.1145/828.833"target="_blank" rel="external nofollow noopener noreferrer">https://doi.org/10.1145/828.833</a>.</p>
 <p>Brownlee, Jason. 2020. “How to Develop Ridge Regression Models in Python.” MachineLearningMastery.Com (blog). October 8, 2020. <a href="https://machinelearningmastery.com/ridge-regression-with-python/"target="_blank" rel="external nofollow noopener noreferrer">https://machinelearningmastery.com/ridge-regression-with-python/</a>.</p>
-<p>Miller, Tom. &ldquo;Exploring Concurrency,&rdquo;. MSDS 431: Data Engineering with Go. Course at Northwestern University, Chicago, IL, June 19, 2023.</p>
+<p>Miller, Tom. &ldquo;Exploring Concurrency&rdquo;. MSDS 431: Data Engineering with Go. Course at Northwestern University, Chicago, IL, June 19, 2023.</p>
 <p>Miller, Thomas W. 1999. &ldquo;The Boston splits: Sample size requirements for modern regression.&rdquo; 1999 Proceedings of the Statistical Computing Section of the American Statistical Association, 210–215.</p>
 </div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
-        <span title="Updated on 2024-05-15 00:09:00">Updated on 2024-05-15&nbsp;</span>
+        <span title="Updated on 2023-08-01 00:09:00">Updated on 2023-08-01&nbsp;</span>
       </div><div class="post-info-license">
             <span><a rel="license external nofollow noopener noreferrer" href="https://github.com/asaraog/asaraog.github.io/blob/main/LICENSE" target="_blank">BSD-3-Clause</a></span>
           </div></div><div class="post-info-line">
@@ -364,8 +288,8 @@
     </section>
   </div>
 
-  <div class="post-nav"><a href="/Front-end_Applications/" class="post-nav-item" rel="prev" title="Front-End Software Development Using Golang"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Front-End Software Development Using Golang</a>
-      <a href="/Website/" class="post-nav-item" rel="next" title="Building This Website With Hugo">Building This Website With Hugo<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+  <div class="post-nav"><a href="/Health/" class="post-nav-item" rel="prev" title="Healthcare"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Healthcare</a>
+      <a href="/Front-end_Applications/" class="post-nav-item" rel="next" title="Front-End Development in Go">Front-End Development in Go<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article>
 

@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Biomolecules - biomedical - Asaraog</title>
+    <link>//localhost:1313/biomedical/biomolecules/</link>
+    <description>Biomolecules - biomedical | Asaraog</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 15 May 2024 00:09:00 -0600</lastBuildDate><atom:link href="//localhost:1313/biomedical/biomolecules/" rel="self" type="application/rss+xml" /><item>
+  <title>Data-driven engineering of CRISPR-Cas12a</title>
+  <link>//localhost:1313/CRISPR/</link>
+  <pubDate>Wed, 15 May 2024 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/CRISPR/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/crispr.png" alt="Data-driven engineering of CRISPR-Cas12a" title="Data-driven engineering of CRISPR-Cas12a" referrerpolicy="no-referrer"/></div>Abstract We know that amino acids are combined in sequence to constitute proteins for an undefined number of biological functions. Proteins thus evolved for millions of years before being repurposed for human applications in the medical field, food and chemicals. CRISPR enzymes are emerging as a highly versatile workhorse for targeting of specific DNA sequences, useful in biomedicine and biotechnology. Exploring the vast space of possible protein sequences is intractable using traditional protein engineering approaches of rational design and directed evolution.]]></description>
+</item>
+</channel>
+</rss>

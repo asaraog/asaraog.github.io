@@ -1,8 +1,8 @@
 ---
-title: Front-end software development using Golang
-date: 2024-05-15T00:09:00-06:00
+title: Front-end development in Go
+date: 2023-08-22T00:09:00-06:00
 draft: false
-datascience: golang
+projects: dataengineering
 featuredImage: /images/frontend.png
 
 ---

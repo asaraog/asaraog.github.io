@@ -1,0 +1,27 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Neuroimaging - project - Asaraog</title>
+    <link>//localhost:1313/projects/neuroimaging/</link>
+    <description>Neuroimaging - project | Asaraog</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 23 May 2024 00:09:00 -0600</lastBuildDate><atom:link href="//localhost:1313/projects/neuroimaging/" rel="self" type="application/rss+xml" /><item>
+  <title>Neural Decoding of Smell</title>
+  <link>//localhost:1313/Neural_Decoding/</link>
+  <pubDate>Thu, 23 May 2024 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/Neural_Decoding/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/decoding3.png" alt="Neural Decoding of Smell" title="Neural Decoding of Smell" referrerpolicy="no-referrer"/></div>Neural Decoding of Smell with Generative AI Masters of Science in Data Science Thesis Proposal
+School of Professional Studies, Northwestern University
+Abstract
+Olfaction (sense of smell) and related structural abnormalities in the olfactory bulbs are among the first observed symptoms corelated with Alzhiemer’s disease (Esiri and Wilcock 1984; Thomann et al. 2009). The functional relationship between olfaction and the olfactory bulbs is poorly understood (Weiss et al. 2020). In the area of visual decoding, advances in machine learning using generative adversarial networks (GANs) have provided an unprecedented insight into neural decoding or the mapping of an individual brain’s responses and performance (Seeliger et al.]]></description>
+</item>
+<item>
+  <title>Predicting Autism from MRI</title>
+  <link>//localhost:1313/ABIDE/</link>
+  <pubDate>Fri, 13 May 2022 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/ABIDE/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/abide.png" alt="Predicting Autism from MRI" title="Predicting Autism from MRI" referrerpolicy="no-referrer"/></div>Predicting the Diagnosis of Autism using Classification Models based on fMRI Abstract
+Autism spectrum disorder is a lifelong neurodevelopmental disorder that is diagnosed based on behavioral and social interaction patterns. Predictive algorithms provide a novel approach in identifying key neurological biomarkers and subsequent psychiatric diagnosis using functional magnetic resonance imaging (fMRI) data. This study analyzes a dataset collected from studies at 17 international locations as part of the Autism Brain Imaging Dataset Exchange (ABIDE).]]></description>
+</item>
+</channel>
+</rss>

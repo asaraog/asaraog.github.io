@@ -1,9 +1,9 @@
 ---
-weight: 3
-title: Building this website with Hugo
-date: 2024-05-01T00:09:00-06:00
+weight: 1
+title: Building this website in Hugo
+date: 2024-06-17T00:09:00-06:00
 draft: false
-datascience: golang
+projects: dataengineering
 featuredImage: /images/hugo-preview.png
 
 ---

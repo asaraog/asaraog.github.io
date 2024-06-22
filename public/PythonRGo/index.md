@@ -1,4 +1,4 @@
-# Comparing Golang With Python/R
+# Comparing Golang to Python/R
 
 &lt;font size=&#34;1&#34;&gt; Image credit: [R logo](https://www.r-project.org/logo/), [Gopher](https://go.dev/doc/gopher/README) &lt;/font&gt;
 

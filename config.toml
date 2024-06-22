@@ -32,71 +32,41 @@ defaultContentLanguage = "en"
       subtitle = "कार्य प्रगति पर"
       typeit = true
     [[languages.hi.menu.main]]
-        identifier = "biomolecules"
-        name = "जैविक अणुओं"
-        url = "/biomolecules/"
-        title = "जैविक अणुओं"
+        identifier = "projects"
+        name = "परियोजनाएं"
+        url = "/projects/"
+        title = "परियोजनाएं"
         weight = 1
       [languages.hi.menu.main.params]
         icon = "fa-solid fa-folder-tree"
     [[languages.hi.menu.main]]
-        identifier = "datascience"
-        name = "डेटा विज्ञान"
-        url = "/datascience/"
-        title = "डेटा विज्ञान"
-        weight = 2
-      [languages.hi.menu.main.params]
-          icon = "fa-solid fa-folder-tree"
-    [[languages.hi.menu.main]]
         identifier = "neuroimaging"
+        parent = "projects"
         name = "तंत्रिका-इमेजिंग"
-        url = "/neuroimaging/"
+        url = "/projects/neuroimaging/"
         title = "तंत्रिका-इमेजिंग"
-        weight = 3
-      [languages.hi.menu.main.params]
-          icon = "fa-solid fa-folder-tree"
-    [[languages.hi.menu.main]]
-        identifier = "DNA"
-        parent = "biomolecules"
-        name = "डीएनए"
-        url = "/biomolecules/डीएनए/"
-        title = "डीएनए"
         weight = 2
     [[languages.hi.menu.main]]
-        identifier = "proteins"
-        parent = "biomolecules"
-        name = "प्रोटीन्स"
-        url = "/biomolecules/प्रोटीन्स/"
-        title = "प्रोटीन्स"
-        weight = 3
-    [[languages.hi.menu.main]]
-        identifier = "autism"
-        parent = "neuroimaging"
-        name = "ऑटिज़्म"
-        url = "/neuroimaging/ऑटिज़्म/"
-        title = "ऑटिज़्म"
+        identifier = "biomolecules"
+        parent = "projects"
+        name = "जैविक अणुओं"
+        url = "/projects/जैविक-अणुओं/"
+        title = "जैविक अणुओं"
         weight = 1
     [[languages.hi.menu.main]]
-        identifier = "olfaction"
-        parent = "neuroimaging"
-        name = "घ्राण"
-        url = "/neuroimaging/घ्राण/"
-        title = "घ्राण"
-        weight = 2
+        identifier = "dataengineering"
+        parent = "projects"
+        name = "डेटा इंजीनियरिंग"
+        url = "/projects/डेटा-इंजीनियरिंग/"
+        title = "डेटा इंजीनियरिंग"
+        weight = 3
     [[languages.hi.menu.main]]
-        identifier = "Golang"
-        parent = "datascience"
-        name = "गोलांग"
-        url = "/datascience/गोलांग/"
-        title = "गोलांग"
-        weight = 1
-    [[languages.hi.menu.main]]
-        identifier = "analyzingopendata"
-        parent = "datascience"
-        name = "खुले डेटा का विश्लेषण"
-        url = "/datascience/खुले-डेटा-का-विश्लेषण/"
-        title = "खुले डेटा का विश्लेषण"
-        weight = 2
+        identifier = "artificialintelligence"
+        parent = "projects"
+        name = "कृत्रिम बुद्धि"
+        url = "/data/कृत्रिम-बुद्धि/"
+        title = "कृत्रिम बुद्धि"
+        weight = 4
 
 # whether to include Chinese/Japanese/Korean
 hasCJKLanguage = false
@@ -117,16 +87,16 @@ enableEmoji = true
 # -------------------------------------------------------------------------------------
 [menu]
   [[menu.main]]
-    identifier = "biomolecules"
+    identifier = "projects"
     parent = ""
     # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
-    name = "Biomolecules"
-    url = "/biomolecules/"
+    name = "Projects"
+    url = "/projects/"
     # title will be shown when you hover on this menu link
-    title = "Biomolecules"
+    title = "Projects"
     weight = 1
     # FixIt 0.2.14 | NEW add user-defined content to menu items
     [menu.main.params]
@@ -139,81 +109,42 @@ enableEmoji = true
       # FixIt 0.2.16 | NEW set menu item type, optional values: ["mobile", "desktop"]
       type = ""
   [[menu.main]]
-    identifier = "datascience"
-    parent = ""
-    pre = ""
-    post = ""
-    name = "Data Science"
-    url = "/datascience/"
-    title = "Data Science"
-    weight = 2
-    [menu.main.params]
-      icon = "fa-solid fa-folder-tree"
-  [[menu.main]]
     identifier = "neuroimaging"
-    parent = ""
+    parent = "projects"
     pre = ""
     post = ""
     name = "Neuroimaging"
-    url = "/neuroimaging/"
+    url = "/projects/neuroimaging/"
     title = "Neuroimaging"
-    weight = 3
-    [menu.main.params]
-      icon = "fa-solid fa-folder-tree"
-  [[menu.main]]
-    identifier = "DNA"
-    parent = "biomolecules"
-    pre = ""
-    post = ""
-    name = "DNA"
-    url = "/biomolecules/dna/"
-    title = "DNA"
     weight = 2
   [[menu.main]]
-    identifier = "proteins"
-    parent = "biomolecules"
+    identifier = "biomolecules"
+    parent = "projects"
     pre = ""
     post = ""
-    name = "Proteins"
-    url = "/biomolecules/proteins/"
-    title = "Proteins"
-    weight = 3
-  [[menu.main]]
-    identifier = "autism"
-    parent = "neuroimaging"
-    pre = ""
-    post = ""
-    name = "Autism"
-    url = "/neuroimaging/autism/"
-    title = "Autism"
+    name = "Biomolecules"
+    url = "/projects/biomolecules/"
+    title = "Biomolecules"
     weight = 1
   [[menu.main]]
-    identifier = "olfaction"
-    parent = "neuroimaging"
+    identifier = "dataengineering"
+    parent = "projects"
     pre = ""
     post = ""
-    name = "Olfaction"
-    url = "/neuroimaging/olfaction/"
-    title = "Olfaction"
-    weight = 2
+    name = "Data Engineering"
+    url = "/projects/dataengineering/"
+    title = "Data Engineering"
+    weight = 3
   [[menu.main]]
-    identifier = "Golang"
-    parent = "datascience"
+    identifier = "artificialintelligence"
+    parent = "projects"
     pre = ""
     post = ""
-    name = "Golang"
-    url = "/datascience/golang/"
-    title = "Golang"
-    weight = 1
-  [[menu.main]]
-    identifier = "opendata"
-    parent = "datascience"
-    pre = ""
-    post = ""
-    name = "Analyzing Open Data"
-    url = "/datascience/opendata/"
-    title = "Open Data"
-    weight = 2
+    name = "Artificial Intelligence"
+    url = "/projects/artificialintelligence/"
+    title = "Artificial Intelligence"
+    weight = 4
+
 
 # -------------------------------------------------------------------------------------
 # Related content Configuration
@@ -409,10 +340,7 @@ enableEmoji = true
   category = "categories"
   tag = "tags"
   collection = "collections"
-  datascience = "datascience"
-  biomolecules = "biomolecules"
-  neuroimaging = "neuroimaging"
-
+  project = "projects"
 
 
 

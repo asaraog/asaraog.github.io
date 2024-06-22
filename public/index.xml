@@ -3,52 +3,98 @@
     <title>Asaraog</title>
     <link>//localhost:1313/</link>
     <description>Asaraog</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 15 May 2024 00:09:00 -0600</lastBuildDate>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 17 Jun 2024 00:09:00 -0600</lastBuildDate>
       <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-  <title>Comparing Golang with Python/R</title>
+  <title>Building this website in Hugo</title>
+  <link>//localhost:1313/Website/</link>
+  <pubDate>Mon, 17 Jun 2024 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/Website/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/hugo-preview.png" alt="Building this website in Hugo" title="Building this website in Hugo" referrerpolicy="no-referrer"/></div>Partial image credit Why Golang? Static site generators such as Hugo were developed recently using Golang. Golang is a compiled language designed for today&rsquo;s multi-processor, scalable, high-performance systems. Other platforms have inherited dependency chains that can lead to infeasible build times. Realizing these benefits, Cloudfare recently migrated from Gatsby (a web framework based on JavaScript).
+Demo website I first created a demo website using the Hugo Winston theme. This theme does have a Live Demo which made it simple to deploy onto Netlify.]]></description>
+</item>
+<item>
+  <title>Comparing Golang to Python/R</title>
   <link>//localhost:1313/PythonRGo/</link>
-  <pubDate>Wed, 08 May 2024 00:09:00 -0600</pubDate>
+  <pubDate>Sun, 06 Aug 2023 00:09:00 -0600</pubDate>
   <author>Author</author>
   <guid>//localhost:1313/PythonRGo/</guid>
-  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/comparing.png" alt="Comparing Golang with Python/R" title="Comparing Golang with Python/R" referrerpolicy="no-referrer"/></div>Image credit: R logo, Gopher Evaluating Golang Unlike Python/R, Golang is a compiled language that is more verbose but is said to run faster. For example, Uber, Amex and KhanAcademy find benefits with Golang.
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/comparing.png" alt="Comparing Golang to Python/R" title="Comparing Golang to Python/R" referrerpolicy="no-referrer"/></div>Image credit: R logo, Gopher Evaluating Golang Unlike Python/R, Golang is a compiled language that is more verbose but is said to run faster. For example, Uber, Amex and KhanAcademy find benefits with Golang.
 To benchmark Golang&rsquo;s performance and runtime against Python and/or R, here are various cases:
 Performing least squares regression of the Anscombe Quartet (1973) Computing summary statistics of the California Housing Prices (Miller 2015) Web crawling and scraping of Wikipedia Identifying anomalies in the MNIST dataset Least squares regression with Python and R The Golang implementation is benchmarked for runtime with a previous implementation by Miller (2015) in Python/R as a reference.]]></description>
 </item>
 <item>
-  <title>Building this website with Hugo</title>
-  <link>//localhost:1313/Website/</link>
-  <pubDate>Wed, 01 May 2024 00:09:00 -0600</pubDate>
+  <title>Neural Decoding of Smell</title>
+  <link>//localhost:1313/Neural_Decoding/</link>
+  <pubDate>Thu, 23 May 2024 00:09:00 -0600</pubDate>
   <author>Author</author>
-  <guid>//localhost:1313/Website/</guid>
-  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/hugo-preview.png" alt="Building this website with Hugo" title="Building this website with Hugo" referrerpolicy="no-referrer"/></div>Partial image credit Why Golang? Static site generators such as Hugo were developed recently using Golang. Golang is a compiled language designed for today&rsquo;s multi-processor, scalable, high-performance systems. Other platforms have inherited dependency chains that can lead to infeasible build times. Realizing these benefits, Cloudfare recently migrated from Gatsby (a web framework based on JavaScript).
-Demo website I first created a demo website using the Hugo Winston theme. This theme does have a Live Demo which made it simple to deploy onto Netlify.]]></description>
+  <guid>//localhost:1313/Neural_Decoding/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/decoding3.png" alt="Neural Decoding of Smell" title="Neural Decoding of Smell" referrerpolicy="no-referrer"/></div>Neural Decoding of Smell with Generative AI Masters of Science in Data Science Thesis Proposal
+School of Professional Studies, Northwestern University
+Abstract
+Olfaction (sense of smell) and related structural abnormalities in the olfactory bulbs are among the first observed symptoms corelated with Alzhiemer’s disease (Esiri and Wilcock 1984; Thomann et al. 2009). The functional relationship between olfaction and the olfactory bulbs is poorly understood (Weiss et al. 2020). In the area of visual decoding, advances in machine learning using generative adversarial networks (GANs) have provided an unprecedented insight into neural decoding or the mapping of an individual brain’s responses and performance (Seeliger et al.]]></description>
+</item>
+<item>
+  <title>Computer Vision</title>
+  <link>//localhost:1313/Computer_Vision/</link>
+  <pubDate>Tue, 29 Aug 2023 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/Computer_Vision/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/vision.png" alt="Computer Vision" title="Computer Vision" referrerpolicy="no-referrer"/></div>Image classification using neural networks with Python MNIST dataset This project utilizes the The Modified National Institute of Standards and Technology (MNIST) dataset which comprises of 60 thousand training observations and 10 thousand test observations of handwritten digits.
+Due to the complexity of imaging data, connectionist network models or neural networks have been gaining significant interest in recent years. Python machine learning packages sklearn and keras have been especially useful for specifying neural network architectures.]]></description>
+</item>
+<item>
+  <title>Natural Language Processing</title>
+  <link>//localhost:1313/NLP/</link>
+  <pubDate>Tue, 29 Aug 2023 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/NLP/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/nlp.png" alt="Natural Language Processing" title="Natural Language Processing" referrerpolicy="no-referrer"/></div>Deep Learning Classification Models with AG News The volume of digital data such as online news has been growing at an unprecedented pace. Natural language processing can help leverage this data for useful applications such as topic classification. A dataset from AG News of over 120,000 samples of news was classified according to topics - World, Sports, Business and Tech. Term frequency – inverse document frequency (TFIDF) is the classic method and is employed in this study for the vectorization of documents.]]></description>
+</item>
+<item>
+  <title>Front-end development in Go</title>
+  <link>//localhost:1313/Front-end_Applications/</link>
+  <pubDate>Tue, 22 Aug 2023 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/Front-end_Applications/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/frontend.png" alt="Front-end development in Go" title="Front-end development in Go" referrerpolicy="no-referrer"/></div>What? In the world of web and desktop applications, frameworks for different software languages such as Rails for Ruby and Electron for JavaScript are popular. Analogous to Rails, Golang uses the Wails framework and offers the benefits of Golang&rsquo;s reported processing speed. Wails also uses the native rendering engine unlike Electron which uses an embedded browser. Furthermore, Wails integrates user interface (UI) frameworks such as React, Vue and Svelte.
+To demo Golang&rsquo;s frontend capabilities, two projects are implemented here using Wails and Svelte:]]></description>
 </item>
 <item>
   <title>Concurrency with Golang</title>
   <link>//localhost:1313/Goroutines/</link>
-  <pubDate>Wed, 15 May 2024 00:09:00 -0600</pubDate>
+  <pubDate>Tue, 01 Aug 2023 00:09:00 -0600</pubDate>
   <author>Author</author>
   <guid>//localhost:1313/Goroutines/</guid>
   <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/concurrent.png" alt="Concurrency with Golang" title="Concurrency with Golang" referrerpolicy="no-referrer"/></div>What? Concurrency or concurrent processing is breaking up a single process into independent components to coordinate compute. It is based on the idea of CSP or Communicating Sequential Processes (Brookes, Hoare, and Roscoe 1984). In contrast to parallel processing, the paradigm here is shifted towards communication and splitting of independent processes instead of sharing memory. To communicate between different processes, Golang utilizes goroutines, which are similar to channels as described in CSP.]]></description>
 </item>
 <item>
-  <title>Front-end software development using Golang</title>
-  <link>//localhost:1313/Front-end_Applications/</link>
-  <pubDate>Wed, 15 May 2024 00:09:00 -0600</pubDate>
+  <title>Machine Learning with Healthcare</title>
+  <link>//localhost:1313/Health/</link>
+  <pubDate>Sat, 28 May 2022 00:09:00 -0600</pubDate>
   <author>Author</author>
-  <guid>//localhost:1313/Front-end_Applications/</guid>
-  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/frontend.png" alt="Front-end software development using Golang" title="Front-end software development using Golang" referrerpolicy="no-referrer"/></div>What? In the world of web and desktop applications, frameworks for different software languages such as Rails for Ruby and Electron for JavaScript are popular. Analogous to Rails, Golang uses the Wails framework and offers the benefits of Golang&rsquo;s reported processing speed. Wails also uses the native rendering engine unlike Electron which uses an embedded browser. Furthermore, Wails integrates user interface (UI) frameworks such as React, Vue and Svelte.
-To demo Golang&rsquo;s frontend capabilities, two projects are implemented here using Wails and Svelte:]]></description>
+  <guid>//localhost:1313/Health/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/health.png" alt="Machine Learning with Healthcare" title="Machine Learning with Healthcare" referrerpolicy="no-referrer"/></div>Prediction of Bodyfat using a Linear Regression Model and Body Measurements Abstract
+Bodyfat percentage is an important estimator for health. The most accurate method for measuring bodyfat is by underwater weighing which is time-intensive. Predictive analytics (linear regression) using indirect measurements offer a faster method to compute bodyfat percentage. This study analyzes bodyfat data determined by underwater weighing with their corresponding indirect measurements. To predict the bodyfat using these measurements, we compare a traditional linear model, regularized model, subset models (indicator, dichotomous, piecewise, polynomial), and feature engineering models (principal components analysis).]]></description>
 </item>
 <item>
-  <title>MNIST Dataset</title>
-  <link>//localhost:1313/MNIST/</link>
-  <pubDate>Wed, 15 May 2024 00:09:00 -0600</pubDate>
+  <title>Predicting Autism from MRI</title>
+  <link>//localhost:1313/ABIDE/</link>
+  <pubDate>Fri, 13 May 2022 00:09:00 -0600</pubDate>
   <author>Author</author>
-  <guid>//localhost:1313/MNIST/</guid>
-  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/mnist.png" alt="MNIST Dataset" title="MNIST Dataset" referrerpolicy="no-referrer"/></div>MNIST Dataset This project utilizes the The Modified National Institute of Standards and Technology (MNIST) dataset which comprises of 60 thousand training observations and 10 thousand test observations of handwritten digits.
-Image classification using neural networks with Python Due to the complexity of imaging data, connectionist network models or neural networks have been gaining significant interest in recent years. Python machine learning packages sklearn and keras have been especially useful for specifying neural network architectures.]]></description>
+  <guid>//localhost:1313/ABIDE/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/abide.png" alt="Predicting Autism from MRI" title="Predicting Autism from MRI" referrerpolicy="no-referrer"/></div>Predicting the Diagnosis of Autism using Classification Models based on fMRI Abstract
+Autism spectrum disorder is a lifelong neurodevelopmental disorder that is diagnosed based on behavioral and social interaction patterns. Predictive algorithms provide a novel approach in identifying key neurological biomarkers and subsequent psychiatric diagnosis using functional magnetic resonance imaging (fMRI) data. This study analyzes a dataset collected from studies at 17 international locations as part of the Autism Brain Imaging Dataset Exchange (ABIDE).]]></description>
+</item>
+<item>
+  <title>Machine Learning with DNA</title>
+  <link>//localhost:1313/DNA/</link>
+  <pubDate>Tue, 10 May 2022 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/DNA/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/dna.png" alt="Machine Learning with DNA" title="Machine Learning with DNA" referrerpolicy="no-referrer"/></div>Predicting Colon Cancer Using Clustering Models based on DNA Microarray Data Abstract
+Colon cancer is a significant public health concern and leading cause of death in the older human population. The healthcare burden can be significantly reduced with earlier detection and preventative measures. Although genetic information has been shown to be altered in the early stage of the disease, DNA sequencing data is highly dimensional and must be analyzed using predictive algorithms.]]></description>
 </item>
 </channel>
 </rss>

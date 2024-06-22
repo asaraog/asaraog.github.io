@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Artificialintelligence - data - Asaraog</title>
+    <link>//localhost:1313/data/artificialintelligence/</link>
+    <description>Artificialintelligence - data | Asaraog</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 15 May 2024 00:09:00 -0600</lastBuildDate><atom:link href="//localhost:1313/data/artificialintelligence/" rel="self" type="application/rss+xml" /><item>
+  <title>MNIST Dataset</title>
+  <link>//localhost:1313/MNIST/</link>
+  <pubDate>Wed, 15 May 2024 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/MNIST/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/mnist2.png" alt="MNIST Dataset" title="MNIST Dataset" referrerpolicy="no-referrer"/></div>MNIST Dataset This project utilizes the The Modified National Institute of Standards and Technology (MNIST) dataset which comprises of 60 thousand training observations and 10 thousand test observations of handwritten digits.
+Image classification using neural networks with Python Due to the complexity of imaging data, connectionist network models or neural networks have been gaining significant interest in recent years. Python machine learning packages sklearn and keras have been especially useful for specifying neural network architectures.]]></description>
+</item>
+</channel>
+</rss>

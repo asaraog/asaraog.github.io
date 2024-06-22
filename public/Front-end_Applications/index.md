@@ -1,4 +1,4 @@
-# Front-End Software Development Using Golang
+# Front-End Development in Go
 
 
 ## What?

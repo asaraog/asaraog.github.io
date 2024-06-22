@@ -1,0 +1,34 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Dataengineering - data - Asaraog</title>
+    <link>//localhost:1313/data/dataengineering/</link>
+    <description>Dataengineering - data | Asaraog</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 15 May 2024 00:09:00 -0600</lastBuildDate><atom:link href="//localhost:1313/data/dataengineering/" rel="self" type="application/rss+xml" /><item>
+  <title>Comparing Golang with Python/R</title>
+  <link>//localhost:1313/PythonRGo/</link>
+  <pubDate>Wed, 08 May 2024 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/PythonRGo/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/comparing.png" alt="Comparing Golang with Python/R" title="Comparing Golang with Python/R" referrerpolicy="no-referrer"/></div>Image credit: R logo, Gopher Evaluating Golang Unlike Python/R, Golang is a compiled language that is more verbose but is said to run faster. For example, Uber, Amex and KhanAcademy find benefits with Golang.
+To benchmark Golang&rsquo;s performance and runtime against Python and/or R, here are various cases:
+Performing least squares regression of the Anscombe Quartet (1973) Computing summary statistics of the California Housing Prices (Miller 2015) Web crawling and scraping of Wikipedia Identifying anomalies in the MNIST dataset Least squares regression with Python and R The Golang implementation is benchmarked for runtime with a previous implementation by Miller (2015) in Python/R as a reference.]]></description>
+</item>
+<item>
+  <title>Concurrency with Golang</title>
+  <link>//localhost:1313/Goroutines/</link>
+  <pubDate>Wed, 15 May 2024 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/Goroutines/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/concurrent.png" alt="Concurrency with Golang" title="Concurrency with Golang" referrerpolicy="no-referrer"/></div>What? Concurrency or concurrent processing is breaking up a single process into independent components to coordinate compute. It is based on the idea of CSP or Communicating Sequential Processes (Brookes, Hoare, and Roscoe 1984). In contrast to parallel processing, the paradigm here is shifted towards communication and splitting of independent processes instead of sharing memory. To communicate between different processes, Golang utilizes goroutines, which are similar to channels as described in CSP.]]></description>
+</item>
+<item>
+  <title>Front-end software development using Golang</title>
+  <link>//localhost:1313/Front-end_Applications/</link>
+  <pubDate>Wed, 15 May 2024 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/Front-end_Applications/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/frontend.png" alt="Front-end software development using Golang" title="Front-end software development using Golang" referrerpolicy="no-referrer"/></div>What? In the world of web and desktop applications, frameworks for different software languages such as Rails for Ruby and Electron for JavaScript are popular. Analogous to Rails, Golang uses the Wails framework and offers the benefits of Golang&rsquo;s reported processing speed. Wails also uses the native rendering engine unlike Electron which uses an embedded browser. Furthermore, Wails integrates user interface (UI) frameworks such as React, Vue and Svelte.
+To demo Golang&rsquo;s frontend capabilities, two projects are implemented here using Wails and Svelte:]]></description>
+</item>
+</channel>
+</rss>

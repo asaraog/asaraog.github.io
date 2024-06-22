@@ -1,4 +1,4 @@
-# Building This Website With Hugo
+# Building This Website in Hugo
 
 &lt;font size=&#34;1&#34;&gt; [Partial image credit](https://github.com/Lruihao/hugo-blog/blob/main/assets/images/blog-flow.png) &lt;/font&gt;
 

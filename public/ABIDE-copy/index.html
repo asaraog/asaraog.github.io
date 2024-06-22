@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Predicting Autism - Asaraog</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="Predicting the Diagnosis of Autism using Classification Models based on fMRI Abstract Autism spectrum disorder is a lifelong neurodevelopmental disorder that is diagnosed based on behavioral and social interaction patterns. Predictive algorithms provide a novel approach in identifying key neurological biomarkers and subsequent psychiatric diagnosis using functional magnetic resonance imaging (fMRI) data. This study analyzes a dataset collected from studies at 17 international locations as part of the Autism Brain Imaging Dataset Exchange (ABIDE)." />
+  <meta itemprop="name" content="Predicting Autism">
+  <meta itemprop="description" content="Predicting the Diagnosis of Autism using Classification Models based on fMRI Abstract Autism spectrum disorder is a lifelong neurodevelopmental disorder that is diagnosed based on behavioral and social interaction patterns. Predictive algorithms provide a novel approach in identifying key neurological biomarkers and subsequent psychiatric diagnosis using functional magnetic resonance imaging (fMRI) data. This study analyzes a dataset collected from studies at 17 international locations as part of the Autism Brain Imaging Dataset Exchange (ABIDE).">
+  <meta itemprop="datePublished" content="2024-05-15T00:09:00-06:00">
+  <meta itemprop="dateModified" content="2024-05-15T00:09:00-06:00">
+  <meta itemprop="wordCount" content="194">
+  <meta itemprop="keywords" content="Neuroimaging"><meta property="og:url" content="//localhost:1313/ABIDE-copy/">
+  <meta property="og:site_name" content="Asaraog">
+  <meta property="og:title" content="Predicting Autism">
+  <meta property="og:description" content="Predicting the Diagnosis of Autism using Classification Models based on fMRI Abstract Autism spectrum disorder is a lifelong neurodevelopmental disorder that is diagnosed based on behavioral and social interaction patterns. Predictive algorithms provide a novel approach in identifying key neurological biomarkers and subsequent psychiatric diagnosis using functional magnetic resonance imaging (fMRI) data. This study analyzes a dataset collected from studies at 17 international locations as part of the Autism Brain Imaging Dataset Exchange (ABIDE).">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-05-15T00:09:00-06:00">
+    <meta property="article:modified_time" content="2024-05-15T00:09:00-06:00">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Predicting Autism">
+<meta name="twitter:description" content="Predicting the Diagnosis of Autism using Classification Models based on fMRI Abstract Autism spectrum disorder is a lifelong neurodevelopmental disorder that is diagnosed based on behavioral and social interaction patterns. Predictive algorithms provide a novel approach in identifying key neurological biomarkers and subsequent psychiatric diagnosis using functional magnetic resonance imaging (fMRI) data. This study analyzes a dataset collected from studies at 17 international locations as part of the Autism Brain Imaging Dataset Exchange (ABIDE).">
+<meta name="application-name" content="ASaraogee">
+<meta name="apple-mobile-web-app-title" content="ASaraogee"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="//localhost:1313/ABIDE-copy/" /><link rel="prev" href="//localhost:1313/ABIDE/" /><link rel="next" href="//localhost:1313/Neural_Decoding/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Predicting Autism",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "\/\/localhost:1313\/ABIDE-copy\/"
+    },"genre": "posts","wordcount":  194 ,
+    "url": "\/\/localhost:1313\/ABIDE-copy\/","datePublished": "2024-05-15T00:09:00-06:00","dateModified": "2024-05-15T00:09:00-06:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Author"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="map[logo: name:Home post: pre:&lt;i class=&#39;fas fa-home&#39;&gt;&lt;/i&gt; typeit:false]"><span class="header-title-pre"><i class='fas fa-home'></i></span><span class="header-title-text">Home</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item has-children">
+              <a
+                class="menu-link"
+                href="/projects/"
+                title="Projects"
+                
+              ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Projects</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/projects/biomolecules/"
+                          title="Biomolecules"
+                          
+                        >Biomolecules</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/projects/neuroimaging/"
+                          title="Neuroimaging"
+                          
+                        >Neuroimaging</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/projects/dataengineering/"
+                          title="Data Engineering"
+                          
+                        >Data Engineering</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/projects/artificialintelligence/"
+                          title="Artificial Intelligence"
+                          
+                        >Artificial Intelligence</a>
+                      </li></ul></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li><li class="menu-item language-switch">
+            <span role="button" aria-label="Select Language" title="Select Language"><i class="fa-solid fa-language fa-fw" aria-hidden="true"></i></span>
+            <ul class="sub-menu"><li class="menu-item">No more translations</li></ul>
+          </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="Asaraog"><span class="header-title-pre"><i class='fas fa-home'></i></span><span class="header-title-text">Home</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li
+              class="menu-item"
+            ><span class="nested-item">
+                  <a
+                    class="menu-link"
+                    href="/projects/"
+                    title="Projects"
+                    
+                  ><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Projects</a>
+                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/projects/biomolecules/"
+                          title="Biomolecules"
+                          
+                        >Biomolecules</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/projects/neuroimaging/"
+                          title="Neuroimaging"
+                          
+                        >Neuroimaging</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/projects/dataengineering/"
+                          title="Data Engineering"
+                          
+                        >Data Engineering</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/projects/artificialintelligence/"
+                          title="Artificial Intelligence"
+                          
+                        >Artificial Intelligence</a>
+                      </li></ul></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span><span class="menu-system-item language-switch">
+              <span role="button" aria-label="Select Language" title="Select Language">English<i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i></span>
+              <select class="language-select" onchange="location = this.value;"><option disabled>No more translations</option></select>
+            </span></li>
+      </ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><nav aria-label="breadcrumb" class="breadcrumb-container">
+    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/posts/" title="Posts">Posts</a></li><li class="breadcrumb-item active" aria-current="page">Predicting Autism</li>
+    </ol>
+  </nav><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="Collections"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Predicting Autism</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line">
+        </div><div class="post-meta-line"><span title="published on 2024-05-15 00:09:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2024-05-15">2024-05-15</time></span>&nbsp;<span title="194 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 200 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>One minute</span>&nbsp;</div>
+    </div><div class="featured-image"><img loading="lazy" src="/images/abide.png" alt="/images/abide.png" data-title="/images/abide.png" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#predicting-the-diagnosis-of-autism-using-classification-models-based-on-fmri">Predicting the Diagnosis of Autism using Classification Models based on fMRI</a>
+      <ul>
+        <li><a href="#abstract">Abstract</a></li>
+      </ul>
+    </li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><h2 id="predicting-the-diagnosis-of-autism-using-classification-models-based-on-fmri" class="heading-element"><span>Predicting the Diagnosis of Autism using Classification Models based on fMRI</span>
+  <a href="#predicting-the-diagnosis-of-autism-using-classification-models-based-on-fmri" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 id="abstract" class="heading-element"><span>Abstract</span>
+  <a href="#abstract" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>Autism spectrum disorder is a lifelong neurodevelopmental disorder that is diagnosed based on behavioral and social interaction patterns. Predictive algorithms provide a novel approach in identifying key neurological biomarkers and subsequent psychiatric diagnosis using functional magnetic resonance imaging (fMRI) data. This study analyzes a dataset collected from studies at 17 international locations as part of the <strong>Autism Brain Imaging Dataset Exchange (ABIDE)</strong>. To classify the medical images, we extract regional homogeneity scores and compare random forest models with convolutional neural networks. The accuracy for a five-fold cross validated random forest model and neural network having the highest validation score were found to be 0.57 and 0.54 respectively using the holdout test dataset.</p>
+<p>See my <a href="/docs/saraogee-research-report5.pdf">report</a> <i class="fa-solid fa-arrow-up-right-from-square"></i> and <a href="/docs/Assignment5.html">Jupyter notebook</a> <i class="fa-solid fa-arrow-up-right-from-square"></i> for further details.</p>
+<h2 id="references" class="heading-element"><span>References</span>
+  <a href="#references" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Martino, A. di, C. G. Yan, Q. Li, E. Denio, F. X. Castellanos, K. Alaerts, J. S. Anderson, et al. 2014. “The Autism Brain Imaging Data Exchange: Towards Large-Scale of the Intrinsic Brain Architecture in Autism.” Molecular Psychiatry 19 (6): 659. <a href="https://doi.org/10.1038/MP.2013.78"target="_blank" rel="external nofollow noopener noreferrer">https://doi.org/10.1038/MP.2013.78</a>.</p>
+<p>Miller, Tom. &ldquo;Medical Imaging&rdquo;. MSDS 422: Practical Machine Learning. Course at Northwestern University, Chicago, IL, May 21, 2022.</p>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="Updated on 2024-05-15 00:09:00">Updated on 2024-05-15&nbsp;</span>
+      </div><div class="post-info-license">
+            <span><a rel="license external nofollow noopener noreferrer" href="https://github.com/asaraog/asaraog.github.io/blob/main/LICENSE" target="_blank">BSD-3-Clause</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/ABIDE-copy/index.md" title="Read Markdown" class="link-to-markdown">Read Markdown</a></span><span><a href="https://github.com/asaraog/asaraog.github.io/blob/main/content/posts/ABIDE%20copy.md?plain=1" title="View source"target="_blank" rel="external nofollow noopener noreferrer" class="link-to-source">View source</a></span><span><a href="https://github.com/asaraog/asaraog.github.io/issues/new?title=[BUG]%20Predicting&#43;Autism&amp;body=%7cField%7cValue%7c%0A%7c-%7c-%7c%0A%7cTitle%7cPredicting&#43;Autism%7c%0A%7cURL%7c//localhost:1313/ABIDE-copy/%7c%0A%7cFilename%7chttps://github.com/asaraog/asaraog.github.io/blob/main/content/posts/ABIDE%20copy.md?plain=1%7c" title="Report issue"target="_blank" rel="external nofollow noopener noreferrer" class="link-to-report">Report issue</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="//localhost:1313/ABIDE-copy/"><i class="fa-brands fa-linkedin fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="//localhost:1313/ABIDE-copy/"><i class="fa-brands fa-reddit fa-fw" aria-hidden="true"></i></a>
+  </span>
+        </div>
+      </div></div>
+
+  <div class="post-info-more">
+    <section class="post-tags"></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/ABIDE/" class="post-nav-item" rel="prev" title="Predicting Autism"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Predicting Autism</a>
+      <a href="/Neural_Decoding/" class="post-nav-item" rel="next" title="Neural Decoding of Smell">Neural Decoding of Smell<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article>
+
+  <aside class="toc" id="toc-auto" aria-label="Contents"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.125.7"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.3.6"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">Theme FixIt works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="preload" href="/lib/katex/katex.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/katex/katex.min.css"></noscript><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":false},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"version":"v0.3.6"};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

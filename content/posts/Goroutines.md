@@ -1,8 +1,8 @@
 ---
 title: Concurrency with Golang
-date: 2024-05-15T00:09:00-06:00
+date: 2023-08-01T00:09:00-06:00
 draft: false
-datascience: golang
+projects: dataengineering
 featuredImage: /images/concurrent.png
 
 ---
@@ -32,7 +32,7 @@ Brookes, S. D., C. A. R. Hoare, and A. W. Roscoe. 1984. “A Theory of Communica
 
 Brownlee, Jason. 2020. “How to Develop Ridge Regression Models in Python.” MachineLearningMastery.Com (blog). October 8, 2020. https://machinelearningmastery.com/ridge-regression-with-python/.
 
-Miller, Tom. "Exploring Concurrency,". MSDS 431: Data Engineering with Go. Course at Northwestern University, Chicago, IL, June 19, 2023.
+Miller, Tom. "Exploring Concurrency". MSDS 431: Data Engineering with Go. Course at Northwestern University, Chicago, IL, June 19, 2023.
 
 Miller, Thomas W. 1999. "The Boston splits: Sample size requirements for modern regression." 1999 Proceedings of the Statistical Computing Section of the American Statistical Association, 210–215.
 

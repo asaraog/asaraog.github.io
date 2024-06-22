@@ -26,7 +26,7 @@ Brookes, S. D., C. A. R. Hoare, and A. W. Roscoe. 1984. “A Theory of Communica
 
 Brownlee, Jason. 2020. “How to Develop Ridge Regression Models in Python.” MachineLearningMastery.Com (blog). October 8, 2020. https://machinelearningmastery.com/ridge-regression-with-python/.
 
-Miller, Tom. &#34;Exploring Concurrency,&#34;. MSDS 431: Data Engineering with Go. Course at Northwestern University, Chicago, IL, June 19, 2023.
+Miller, Tom. &#34;Exploring Concurrency&#34;. MSDS 431: Data Engineering with Go. Course at Northwestern University, Chicago, IL, June 19, 2023.
 
 Miller, Thomas W. 1999. &#34;The Boston splits: Sample size requirements for modern regression.&#34; 1999 Proceedings of the Statistical Computing Section of the American Statistical Association, 210–215.
 

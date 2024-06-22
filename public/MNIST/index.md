@@ -1,4 +1,4 @@
-# MNIST Dataset
+# MNIST Dataset in Python/Go
 
 
 ## MNIST Dataset
@@ -11,10 +11,11 @@ For a single node in the hidden layer (equivalent to logistic regression), we se
 
 ![ClassDis1](/docs/singlenode.jpg)
 
-Increasing the number of nodes in the hidden layer by one, we see better seperation between the classes in the model:
+Increasing the number of nodes in the hidden layer by one, we see better seperation between the classes:
+
 ![ClassDis2](/docs/twonodes.jpg)
 
-See my [report](/docs/saraogee-research-report1.pdf) &lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt; for further details. Also, see each experiment for each of the models ([single node](/docs/MSDS458_Assignment_01_exp1.html) &lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt;, [double node](/docs/MSDS458_Assignment_01_exp2.html) &lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt;, [many nodes](/docs/MSDS458_Assignment_01_exp3.html) &lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt;), preprocessing inputs using [principal component analysis (PCA)](/docs/MSDS458_Assignment_01_exp4.html) &lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt; or ranked inputs from a [random forest](/docs/MSDS458_Assignment_01_exp5.html) &lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt; analysis.
+See my [report](/docs/saraogee-research-report1.pdf) &lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt; for further details. Also, see each experiment for each of the models ([single node](/docs/MSDS458_Assignment_01_exp1.html) &lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt;, [double node](/docs/MSDS458_Assignment_01_exp2.html) &lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt;, [many nodes](/docs/MSDS458_Assignment_01_exp3.html) &lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt;), as well as preprocessing inputs using [principal component analysis (PCA)](/docs/MSDS458_Assignment_01_exp4.html) &lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt; or ranked inputs from a [random forest](/docs/MSDS458_Assignment_01_exp5.html) &lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt; analysis.
 
 ## Image classification using random forests with Golang
 This project creates a demo towards implementing a data engineering pipeline from image capture to recognition for an integrated application using purely Golang. For this demonstration, image classification is performed using Golang&#39;s [randomForest package](https://github.com/malaschitz/randomForest) employed on MNIST dataset using the [GoMNIST driver](https://github.com/kuroko1t/GoMNIST). Results are compared using an isolation forest ([go-iforest](https://github.com/e-XpertSolutions/go-iforest)) trained on all of the test observations.  For information about isolation forests, see an [earlier post](/PythonRGo) comparing Golang with Python/R under &#34;Identifying anomalies in MNIST&#34;. The best-performing model utilized 1000 trees and had **96% accuracy on the hold-out test dataset** with comparable accuracy for each digit. The average anomaly score was expectedly higher for the misclassified images. Misclassified images from the test set are printed using Go&#39;s [image package](https://pkg.go.dev/image).

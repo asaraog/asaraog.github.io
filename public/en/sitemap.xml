@@ -2,36 +2,9 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
-      <loc>//localhost:1313/PythonRGo/</loc><lastmod>2024-05-08T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
-      <loc>//localhost:1313/Week2/</loc><lastmod>2024-05-08T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
-            rel="alternate"
-            hreflang="hi"
-            href="//localhost:1313/hi/Week2/"
-            /><xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="//localhost:1313/Week2/"
-          /></url><url>
-      <loc>//localhost:1313/first_post3/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-            rel="alternate"
-            hreflang="hi"
-            href="//localhost:1313/hi/first_post3/"
-            /><xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="//localhost:1313/first_post3/"
-          /></url><url>
-      <loc>//localhost:1313/Website/</loc><lastmod>2024-05-01T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/Week3/</loc><lastmod>2024-05-01T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-            rel="alternate"
-            hreflang="hi"
-            href="//localhost:1313/hi/Week3/"
-            /><xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="//localhost:1313/Week3/"
-          /></url><url>
-      <loc>//localhost:1313/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
+      <loc>//localhost:1313/Website/</loc><lastmod>2024-06-17T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>//localhost:1313/PythonRGo/</loc><lastmod>2023-08-06T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/</loc><lastmod>2024-06-17T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
             href="//localhost:1313/hi/"
@@ -40,32 +13,8 @@
           hreflang="en"
           href="//localhost:1313/"
           /></url><url>
-      <loc>//localhost:1313/Goroutines/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-      <loc>//localhost:1313/Week6/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
-            rel="alternate"
-            hreflang="hi"
-            href="//localhost:1313/hi/Week6/"
-            /><xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="//localhost:1313/Week6/"
-          /></url><url>
-      <loc>//localhost:1313/datascience/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
-            rel="alternate"
-            hreflang="hi"
-            href="//localhost:1313/hi/datascience/"
-            /><xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="//localhost:1313/datascience/"
-          /></url><url>
-      <loc>//localhost:1313/Week8/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-      <loc>//localhost:1313/Front-end_Applications/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-      <loc>//localhost:1313/datascience/golang/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-      <loc>//localhost:1313/MNIST/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-      <loc>//localhost:1313/Week7/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-      <loc>//localhost:1313/datascience/opendata/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-      <loc>//localhost:1313/posts/</loc><lastmod>2024-05-15T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
+      <loc>//localhost:1313/projects/dataengineering/</loc><lastmod>2024-06-17T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>//localhost:1313/posts/</loc><lastmod>2024-06-17T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
             href="//localhost:1313/hi/posts/"
@@ -74,36 +23,28 @@
           hreflang="en"
           href="//localhost:1313/posts/"
           /></url><url>
-      <loc>//localhost:1313/neuroimaging/autism/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/biomolecules/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+      <loc>//localhost:1313/projects/</loc><lastmod>2024-06-17T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
-            href="//localhost:1313/hi/biomolecules/"
+            href="//localhost:1313/hi/projects/"
             /><xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//localhost:1313/biomolecules/"
+          href="//localhost:1313/projects/"
           /></url><url>
-      <loc>//localhost:1313/biomolecules/DNA/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/first_post/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-            rel="alternate"
-            hreflang="hi"
-            href="//localhost:1313/hi/first_post/"
-            /><xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="//localhost:1313/first_post/"
-          /></url><url>
-      <loc>//localhost:1313/neuroimaging/</loc><lastmod>2023-02-20T20:14:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-            rel="alternate"
-            hreflang="hi"
-            href="//localhost:1313/hi/neuroimaging/"
-            /><xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="//localhost:1313/neuroimaging/"
-          /></url><url>
-      <loc>//localhost:1313/Week10/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/Neural_Decoding/</loc><lastmod>2024-05-23T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+      <loc>//localhost:1313/projects/neuroimaging/</loc><lastmod>2024-05-23T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+      <loc>//localhost:1313/projects/artificialintelligence/</loc><lastmod>2023-08-29T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/Computer_Vision/</loc><lastmod>2023-08-29T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/NLP/</loc><lastmod>2023-08-29T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/Front-end_Applications/</loc><lastmod>2023-08-22T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/Goroutines/</loc><lastmod>2023-08-01T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/Health/</loc><lastmod>2022-05-28T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/ABIDE/</loc><lastmod>2022-05-13T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/projects/biomolecules/</loc><lastmod>2022-05-10T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/DNA/</loc><lastmod>2022-05-10T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/CRISPR/</loc><lastmod>2020-09-01T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>//localhost:1313/StemCells/</loc><lastmod>2016-06-05T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>//localhost:1313/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="hi"

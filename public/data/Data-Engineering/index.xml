@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Data Engineering - data - Asaraog</title>
+    <link>//localhost:1313/data/Data-Engineering/</link>
+    <description>Data Engineering - data | Asaraog</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 01 May 2024 00:09:00 -0600</lastBuildDate><atom:link href="//localhost:1313/data/Data-Engineering/" rel="self" type="application/rss+xml" /><item>
+  <title>Building this website with Hugo</title>
+  <link>//localhost:1313/Website/</link>
+  <pubDate>Wed, 01 May 2024 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/Website/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/hugo-preview.png" alt="Building this website with Hugo" title="Building this website with Hugo" referrerpolicy="no-referrer"/></div>Partial image credit Why Golang? Static site generators such as Hugo were developed recently using Golang. Golang is a compiled language designed for today&rsquo;s multi-processor, scalable, high-performance systems. Other platforms have inherited dependency chains that can lead to infeasible build times. Realizing these benefits, Cloudfare recently migrated from Gatsby (a web framework based on JavaScript).
+Demo website I first created a demo website using the Hugo Winston theme. This theme does have a Live Demo which made it simple to deploy onto Netlify.]]></description>
+</item>
+</channel>
+</rss>

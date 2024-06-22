@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Artificialintelligenceß - project - Asaraog</title>
+    <link>//localhost:1313/projects/artificialintelligence%C3%9F/</link>
+    <description>Artificialintelligenceß - project | Asaraog</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 15 May 2024 00:09:00 -0600</lastBuildDate><atom:link href="//localhost:1313/projects/artificialintelligence%C3%9F/" rel="self" type="application/rss+xml" /><item>
+  <title>Health Data Science</title>
+  <link>//localhost:1313/Health/</link>
+  <pubDate>Wed, 15 May 2024 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/Health/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/dna.png" alt="Health Data Science" title="Health Data Science" referrerpolicy="no-referrer"/></div>Prediction of Bodyfat using a Linear Regression Model and Body Measurements Abstract
+Bodyfat percentage is an important estimator for health. The most accurate method for measuring bodyfat is by underwater weighing which is time-intensive. Predictive analytics (linear regression) using indirect measurements offer a faster method to compute bodyfat percentage. This study analyzes bodyfat data determined by underwater weighing with their corresponding indirect measurements. To predict the bodyfat using these measurements, we compare a traditional linear model, regularized model, subset models (indicator, dichotomous, piecewise, polynomial), and feature engineering models (principal components analysis).]]></description>
+</item>
+</channel>
+</rss>

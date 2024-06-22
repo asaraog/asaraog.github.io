@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Olfaction - neuroimaging - Asaraog</title>
+    <link>//localhost:1313/neuroimaging/olfaction/</link>
+    <description>Olfaction - neuroimaging | Asaraog</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 15 May 2024 00:09:00 -0600</lastBuildDate><atom:link href="//localhost:1313/neuroimaging/olfaction/" rel="self" type="application/rss+xml" /><item>
+  <title>Neural Decoding of Smell with Generative AI</title>
+  <link>//localhost:1313/Neural_Decoding/</link>
+  <pubDate>Wed, 15 May 2024 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/Neural_Decoding/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/decoding3.png" alt="Neural Decoding of Smell with Generative AI" title="Neural Decoding of Smell with Generative AI" referrerpolicy="no-referrer"/></div>Masters of Science in Data Science Thesis Proposal School of Professional Studies, Northwestern University
+Olfaction (sense of smell) and related structural abnormalities in the olfactory bulbs are among the first observed symptoms corelated with Alzhiemer’s disease (Esiri and Wilcock 1984; Thomann et al. 2009). The functional relationship between olfaction and the olfactory bulbs is poorly understood (Weiss et al. 2020). In the area of visual decoding, advances in machine learning using generative adversarial networks (GANs) have provided an unprecedented insight into neural decoding or the mapping of an individual brain’s responses and performance (Seeliger et al.]]></description>
+</item>
+</channel>
+</rss>
