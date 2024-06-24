@@ -13,6 +13,14 @@
 Due to the complexity of imaging data, connectionist network models or neural networks have been gaining significant interest in recent years. Python machine learning packages sklearn and keras have been especially useful for specifying neural network architectures.]]></description>
 </item>
 <item>
+  <title>Natural Language Processing</title>
+  <link>//localhost:1313/NLP/</link>
+  <pubDate>Mon, 03 Apr 2023 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/NLP/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/nlp.png" alt="Natural Language Processing" title="Natural Language Processing" referrerpolicy="no-referrer"/></div>Deep Learning Classification Models with AG News The growth of online news has led to a large volume of digital data. Natural language processing can help leverage this data for useful applications such as topic classification. Deep learning classification models are an attractive option to be used in these applications as the many layers in deep networks allow for hierarchal processing of the data (Glassner, 2021). The field of natural language processing has seen rapid growth since the advent of deep learning models with recurrent neural networks leading the charge (Ketkar &amp; Moolayil, 2021).]]></description>
+</item>
+<item>
   <title>Healthcare</title>
   <link>//localhost:1313/Health/</link>
   <pubDate>Sat, 28 May 2022 00:09:00 -0600</pubDate>

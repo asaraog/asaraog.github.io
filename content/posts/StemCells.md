@@ -1,5 +1,5 @@
 ---
-title: TGF-β and stem cells for cartilage
+title: TGF-beta and stem cells for cartilage
 date: 2016-06-05T00:09:00-06:00
 draft: false
 projects: biomolecules

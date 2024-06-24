@@ -1,4 +1,4 @@
-# TGF-Β and Stem Cells for Cartilage
+# TGF-Beta and Stem Cells for Cartilage
 
 ## Engineering a chondrogenic microenvironment to promote MSC chondrogenesis
 Bacherlors of Science in Chemical and Biomolecular Engineering Thesis

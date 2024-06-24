@@ -60,6 +60,14 @@ To demo Golang&rsquo;s frontend capabilities, two projects are implemented here 
   <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/concurrent.png" alt="Concurrency with Golang" title="Concurrency with Golang" referrerpolicy="no-referrer"/></div>What? Concurrency or concurrent processing is breaking up a single process into independent components to coordinate compute. It is based on the idea of CSP or Communicating Sequential Processes (Brookes, Hoare, and Roscoe 1984). In contrast to parallel processing, the paradigm here is shifted towards communication and splitting of independent processes instead of sharing memory. To communicate between different processes, Golang utilizes goroutines, which are similar to channels as described in CSP.]]></description>
 </item>
 <item>
+  <title>Natural Language Processing</title>
+  <link>//localhost:1313/NLP/</link>
+  <pubDate>Mon, 03 Apr 2023 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/NLP/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/nlp.png" alt="Natural Language Processing" title="Natural Language Processing" referrerpolicy="no-referrer"/></div>Deep Learning Classification Models with AG News The growth of online news has led to a large volume of digital data. Natural language processing can help leverage this data for useful applications such as topic classification. Deep learning classification models are an attractive option to be used in these applications as the many layers in deep networks allow for hierarchal processing of the data (Glassner, 2021). The field of natural language processing has seen rapid growth since the advent of deep learning models with recurrent neural networks leading the charge (Ketkar &amp; Moolayil, 2021).]]></description>
+</item>
+<item>
   <title>Healthcare</title>
   <link>//localhost:1313/Health/</link>
   <pubDate>Sat, 28 May 2022 00:09:00 -0600</pubDate>
@@ -85,17 +93,6 @@ Autism spectrum disorder is a lifelong neurodevelopmental disorder that is diagn
   <guid>//localhost:1313/DNA/</guid>
   <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/dna.png" alt="Machine Learning with DNA" title="Machine Learning with DNA" referrerpolicy="no-referrer"/></div>Predicting Colon Cancer Using Clustering Models based on DNA Microarray Data Abstract
 Colon cancer is a significant public health concern and leading cause of death in the older human population. The healthcare burden can be significantly reduced with earlier detection and preventative measures. Although genetic information has been shown to be altered in the early stage of the disease, DNA sequencing data is highly dimensional and must be analyzed using predictive algorithms.]]></description>
-</item>
-<item>
-  <title>CRISPR protein engineering</title>
-  <link>//localhost:1313/CRISPR/</link>
-  <pubDate>Tue, 01 Sep 2020 00:09:00 -0600</pubDate>
-  <author>Author</author>
-  <guid>//localhost:1313/CRISPR/</guid>
-  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/crispr.png" alt="CRISPR protein engineering" title="CRISPR protein engineering" referrerpolicy="no-referrer"/></div>Data Driven Engineering of CRISPR-Cas12a for PAM Recognition Masters of Science in Chemical Engineering Thesis
-College of Engineering, University of Wisconsin-Madison
-Abstract
-We know that amino acids are combined in sequence to constitute proteins for an undefined number of biological functions. Proteins thus evolved for millions of years before being repurposed for human applications in the medical field, food and chemicals. CRISPR enzymes are emerging as a highly versatile workhorse for targeting of specific DNA sequences, useful in biomedicine and biotechnology.]]></description>
 </item>
 </channel>
 </rss>
