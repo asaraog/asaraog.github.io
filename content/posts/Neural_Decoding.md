@@ -1,4 +1,5 @@
 ---
+weight: 1
 title: Neural Decoding of Smell
 date: 2024-05-23T00:09:00-06:00
 draft: false

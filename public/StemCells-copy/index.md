@@ -1,4 +1,4 @@
-# TGFB and Cartilage Stem Cells
+# TGF-Beta and Stem Cells for Cartilage
 
 ## Engineering a chondrogenic microenvironment to promote MSC chondrogenesis
 Bacherlors of Science in Chemical and Biomolecular Engineering Thesis
@@ -19,5 +19,5 @@ Saraogee, Apoorv. 2016. “Engineering a chondrogenic microenvironment to promot
 ---
 
 > Author:   
-> URL: //localhost:1313/StemCells/  
+> URL: //localhost:1313/StemCells-copy/  
 

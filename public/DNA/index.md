@@ -1,4 +1,4 @@
-# Machine Learning With DNA
+# DNA-Based Machine Learning
 
 
 ## Predicting Colon Cancer Using Clustering Models based on DNA Microarray Data

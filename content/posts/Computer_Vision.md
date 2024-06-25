@@ -1,5 +1,5 @@
 ---
-title: Computer Vision
+title: Computer Vision in Python/Go
 date: 2023-08-29T00:09:00-06:00
 draft: false
 projects: artificialintelligence
@@ -14,11 +14,11 @@ Due to the complexity of imaging data, connectionist network models or neural ne
 
 For a single node in the hidden layer (equivalent to logistic regression), we see some overlap:
 
-![ClassDis1](/docs/singlenode.jpg)
+<img src="/docs/singlenode.jpg" width="300" height="200">
 
 Increasing the number of nodes in the hidden layer by one, we see better seperation between the classes:
 
-![ClassDis2](/docs/twonodes.jpg)
+<img src="/docs/twonodes.jpg" width="300" height="300">
 
 See my [report](/docs/saraogee-research-report1.pdf) <i class="fa-solid fa-arrow-up-right-from-square"></i> for further details. Also, see each experiment for each of the models ([single node](/docs/MSDS458_Assignment_01_exp1.html) <i class="fa-solid fa-arrow-up-right-from-square"></i>, [double node](/docs/MSDS458_Assignment_01_exp2.html) <i class="fa-solid fa-arrow-up-right-from-square"></i>, [many nodes](/docs/MSDS458_Assignment_01_exp3.html) <i class="fa-solid fa-arrow-up-right-from-square"></i>), as well as preprocessing inputs using [principal component analysis (PCA)](/docs/MSDS458_Assignment_01_exp4.html) <i class="fa-solid fa-arrow-up-right-from-square"></i> or ranked inputs from a [random forest](/docs/MSDS458_Assignment_01_exp5.html) <i class="fa-solid fa-arrow-up-right-from-square"></i> analysis.
 

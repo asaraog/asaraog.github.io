@@ -3,13 +3,22 @@
     <title>Biomolecules - project - Asaraog</title>
     <link>//localhost:1313/projects/biomolecules/</link>
     <description>Biomolecules - project | Asaraog</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 10 May 2022 00:09:00 -0600</lastBuildDate><atom:link href="//localhost:1313/projects/biomolecules/" rel="self" type="application/rss+xml" /><item>
-  <title>Machine Learning with DNA</title>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 04 Jun 2023 00:09:00 -0600</lastBuildDate><atom:link href="//localhost:1313/projects/biomolecules/" rel="self" type="application/rss+xml" /><item>
+  <title>SARS‑CoV‑2 epidemiology</title>
+  <link>//localhost:1313/COVID/</link>
+  <pubDate>Sun, 04 Jun 2023 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/COVID/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/covid19.png" alt="SARS‑CoV‑2 epidemiology" title="SARS‑CoV‑2 epidemiology" referrerpolicy="no-referrer"/></div>Epidemiology with agent-based models Abstract
+This project aims to present a computational simulation of disease transmission using agent based modeling techniques implemented in Python using the Mesa package. By developing a custom disease model, we investigate the effects of various factors such as infection rates, recovery types, age and vaccination availability on the dynamics of an infectious disease. The findings from our simulation aim to contribute to the broader understanding of disease transmission dynamics, which has been a major focus in various fields over the last several years.]]></description>
+</item>
+<item>
+  <title>DNA-Based Machine Learning</title>
   <link>//localhost:1313/DNA/</link>
   <pubDate>Tue, 10 May 2022 00:09:00 -0600</pubDate>
   <author>Author</author>
   <guid>//localhost:1313/DNA/</guid>
-  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/dna.png" alt="Machine Learning with DNA" title="Machine Learning with DNA" referrerpolicy="no-referrer"/></div>Predicting Colon Cancer Using Clustering Models based on DNA Microarray Data Abstract
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/dna.png" alt="DNA-Based Machine Learning" title="DNA-Based Machine Learning" referrerpolicy="no-referrer"/></div>Predicting Colon Cancer Using Clustering Models based on DNA Microarray Data Abstract
 Colon cancer is a significant public health concern and leading cause of death in the older human population. The healthcare burden can be significantly reduced with earlier detection and preventative measures. Although genetic information has been shown to be altered in the early stage of the disease, DNA sequencing data is highly dimensional and must be analyzed using predictive algorithms.]]></description>
 </item>
 <item>
@@ -24,12 +33,12 @@ Abstract
 We know that amino acids are combined in sequence to constitute proteins for an undefined number of biological functions. Proteins thus evolved for millions of years before being repurposed for human applications in the medical field, food and chemicals. CRISPR enzymes are emerging as a highly versatile workhorse for targeting of specific DNA sequences, useful in biomedicine and biotechnology.]]></description>
 </item>
 <item>
-  <title>TGF-beta and stem cells for cartilage</title>
+  <title>TGFB and cartilage stem cells</title>
   <link>//localhost:1313/StemCells/</link>
   <pubDate>Sun, 05 Jun 2016 00:09:00 -0600</pubDate>
   <author>Author</author>
   <guid>//localhost:1313/StemCells/</guid>
-  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/stemcells.png" alt="TGF-beta and stem cells for cartilage" title="TGF-beta and stem cells for cartilage" referrerpolicy="no-referrer"/></div>Engineering a chondrogenic microenvironment to promote MSC chondrogenesis Bacherlors of Science in Chemical and Biomolecular Engineering Thesis
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/stemcells.png" alt="TGFB and cartilage stem cells" title="TGFB and cartilage stem cells" referrerpolicy="no-referrer"/></div>Engineering a chondrogenic microenvironment to promote MSC chondrogenesis Bacherlors of Science in Chemical and Biomolecular Engineering Thesis
 School of Mechanical Engineering, Georgia Institute of Technology
 Abstract
 Osteoarthritis (OA) is characterized by the degradation of articular cartilage and affects 27 million people in the US. Mesenchymal stem cells (MSCs) are a promising cell source for OA therapies because of their immunomodulatory properties and ability to be differentiated along a chondrogenic lineage. Traditional chondrogenic differentiation of MSCs relies on using growth factors such as TGF-βs, but cells rapidly undergo hypertrophy and are not able to withstand the same mechanical load as healthy hyaline cartilage.]]></description>

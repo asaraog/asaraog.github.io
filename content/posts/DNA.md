@@ -1,5 +1,5 @@
 ---
-title: Machine Learning with DNA
+title: DNA-Based Machine Learning
 date: 2022-05-10T00:09:00-06:00
 draft: false
 projects: biomolecules

@@ -40,12 +40,22 @@ defaultContentLanguage = "en"
       [languages.hi.menu.main.params]
         icon = "fa-solid fa-folder-tree"
     [[languages.hi.menu.main]]
+        identifier = "posts"
+        name = "पदों"
+        url = "/posts/"
+        title = "पदों"
+        weight = 2
+      [languages.hi.menu.main.params]
+        icon = "fa-solid fa-file"
+    [[languages.hi.menu.main]]
         identifier = "neuroimaging"
         parent = "projects"
         name = "तंत्रिका-इमेजिंग"
         url = "/projects/neuroimaging/"
         title = "तंत्रिका-इमेजिंग"
         weight = 2
+      [languages.hi.menu.main.params]
+        icon = "fa-solid fa-brain"
     [[languages.hi.menu.main]]
         identifier = "biomolecules"
         parent = "projects"
@@ -53,6 +63,8 @@ defaultContentLanguage = "en"
         url = "/projects/जैविक-अणुओं/"
         title = "जैविक अणुओं"
         weight = 1
+      [languages.hi.menu.main.params]
+        icon = "fa-solid fa-dna"
     [[languages.hi.menu.main]]
         identifier = "dataengineering"
         parent = "projects"
@@ -60,6 +72,8 @@ defaultContentLanguage = "en"
         url = "/projects/डेटा-इंजीनियरिंग/"
         title = "डेटा इंजीनियरिंग"
         weight = 3
+      [languages.hi.menu.main.params]
+        icon = "fa-solid fa-database"
     [[languages.hi.menu.main]]
         identifier = "artificialintelligence"
         parent = "projects"
@@ -67,6 +81,8 @@ defaultContentLanguage = "en"
         url = "/data/कृत्रिम-बुद्धि/"
         title = "कृत्रिम बुद्धि"
         weight = 4
+      [languages.hi.menu.main.params]
+        icon = "fa-solid fa-laptop-code"
 
 # whether to include Chinese/Japanese/Korean
 hasCJKLanguage = false
@@ -109,6 +125,28 @@ enableEmoji = true
       # FixIt 0.2.16 | NEW set menu item type, optional values: ["mobile", "desktop"]
       type = ""
   [[menu.main]]
+    identifier = "posts"
+    parent = ""
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = "Posts"
+    weight = 2
+    # FixIt 0.2.14 | NEW add user-defined content to menu items
+    [menu.main.params]
+      # add css class to a specific menu item
+      class = ""
+      # whether set as a draft menu item whose function is similar to a draft post/page
+      draft = false
+      # FixIt 0.2.16 | NEW add fontawesome icon to a specific menu item
+      icon = "fa-solid fa-file"
+      # FixIt 0.2.16 | NEW set menu item type, optional values: ["mobile", "desktop"]
+      type = ""
+ [[menu.main]]
     identifier = "neuroimaging"
     parent = "projects"
     pre = ""
@@ -117,6 +155,13 @@ enableEmoji = true
     url = "/projects/neuroimaging/"
     title = "Neuroimaging"
     weight = 2
+   [menu.main.params]
+      # add css class to a specific menu item
+      class = ""
+      # whether set as a draft menu item whose function is similar to a draft post/page
+      draft = false
+      # FixIt 0.2.16 | NEW add fontawesome icon to a specific menu item
+      icon = "fa-solid fa-brain"
   [[menu.main]]
     identifier = "biomolecules"
     parent = "projects"
@@ -126,6 +171,13 @@ enableEmoji = true
     url = "/projects/biomolecules/"
     title = "Biomolecules"
     weight = 1
+   [menu.main.params]
+      # add css class to a specific menu item
+      class = ""
+      # whether set as a draft menu item whose function is similar to a draft post/page
+      draft = false
+      # FixIt 0.2.16 | NEW add fontawesome icon to a specific menu item
+      icon = "fa-solid fa-dna"
   [[menu.main]]
     identifier = "dataengineering"
     parent = "projects"
@@ -135,6 +187,13 @@ enableEmoji = true
     url = "/projects/dataengineering/"
     title = "Data Engineering"
     weight = 3
+     [menu.main.params]
+      # add css class to a specific menu item
+      class = ""
+      # whether set as a draft menu item whose function is similar to a draft post/page
+      draft = false
+      # FixIt 0.2.16 | NEW add fontawesome icon to a specific menu item
+      icon = "fa-solid fa-database"
   [[menu.main]]
     identifier = "artificialintelligence"
     parent = "projects"
@@ -144,6 +203,13 @@ enableEmoji = true
     url = "/projects/artificialintelligence/"
     title = "Artificial Intelligence"
     weight = 4
+   [menu.main.params]
+      # add css class to a specific menu item
+      class = ""
+      # whether set as a draft menu item whose function is similar to a draft post/page
+      draft = false
+      # FixIt 0.2.16 | NEW add fontawesome icon to a specific menu item
+      icon = "fa-solid fa-laptop-code"
 
 
 # -------------------------------------------------------------------------------------

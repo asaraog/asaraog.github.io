@@ -1,4 +1,4 @@
-# Healthcare
+# Healthcare-Based Machine Learning
 
 
 ## Prediction of Bodyfat using a Linear Regression Model and Body Measurements

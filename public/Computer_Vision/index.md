@@ -1,4 +1,4 @@
-# Computer Vision
+# Computer Vision in Python/Go
 
 ## Image classification using neural networks with Python
 ### MNIST dataset
@@ -8,11 +8,11 @@ Due to the complexity of imaging data, connectionist network models or neural ne
 
 For a single node in the hidden layer (equivalent to logistic regression), we see some overlap:
 
-![ClassDis1](/docs/singlenode.jpg)
+&lt;img src=&#34;/docs/singlenode.jpg&#34; width=&#34;300&#34; height=&#34;200&#34;&gt;
 
 Increasing the number of nodes in the hidden layer by one, we see better seperation between the classes:
 
-![ClassDis2](/docs/twonodes.jpg)
+&lt;img src=&#34;/docs/twonodes.jpg&#34; width=&#34;300&#34; height=&#34;300&#34;&gt;
 
 See my [report](/docs/saraogee-research-report1.pdf) &lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt; for further details. Also, see each experiment for each of the models ([single node](/docs/MSDS458_Assignment_01_exp1.html) &lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt;, [double node](/docs/MSDS458_Assignment_01_exp2.html) &lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt;, [many nodes](/docs/MSDS458_Assignment_01_exp3.html) &lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt;), as well as preprocessing inputs using [principal component analysis (PCA)](/docs/MSDS458_Assignment_01_exp4.html) &lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt; or ranked inputs from a [random forest](/docs/MSDS458_Assignment_01_exp5.html) &lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt; analysis.
 
