@@ -8,11 +8,11 @@ This project aims to present a computational simulation of disease transmission 
 See the [full report](/docs/group2-term-paper.pdf) &lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt; and [Jupyter notebook](/docs/group2-term-project.html) &lt;i class=&#34;fa-solid fa-arrow-up-right-from-square&#34;&gt;&lt;/i&gt; for further details.
 
 ## References
+Kermack, W.O., and McKendrick, A.G. 1927. “A Contribution to the Mathematical Theory of Epidemics.” Royal Society of London 115 (772): 700–721. https://doi.org/10.1098/rspa.1927.0118.
+
+Miller, Thomas. 2022. “Model of an Epidemic.” Data Science Quarterly 1 (1/2).
 
 Miller, Tom. &#34;Queuing.&#34; MSDS 460: Decision Analytics. Course at Northwestern University, Chicago, IL, June 4, 2023.
-
-Saraogee, Apoorv. 2016. “Engineering a chondrogenic microenvironment to promote MSC chondrogenesis.” Bachelors of Science, Georgia Institute of Technology. http://hdl.handle.net/1853/58470
-
 
 ---
 
