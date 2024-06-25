@@ -1,7 +1,7 @@
 ---
 weight: 3
 title: Building this website in Hugo
-date: 2024-06-17T00:09:00-06:00
+date: 2024-06-24T00:09:00-06:00
 draft: false
 projects: dataengineering
 featuredImage: /images/hugo-preview.png
