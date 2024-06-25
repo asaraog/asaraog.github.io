@@ -77,12 +77,12 @@ This project aims to present a computational simulation of disease transmission 
   <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/nlp.png" alt="Natural Language Processing" title="Natural Language Processing" referrerpolicy="no-referrer"/></div>Deep Learning Classification Models with AG News The growth of online news has led to a large volume of digital data. Natural language processing can help leverage this data for useful applications such as topic classification. Deep learning classification models are an attractive option to be used in these applications as the many layers in deep networks allow for hierarchal processing of the data (Glassner, 2021). The field of natural language processing has seen rapid growth since the advent of deep learning models with recurrent neural networks leading the charge (Ketkar &amp; Moolayil, 2021).]]></description>
 </item>
 <item>
-  <title>Healthcare-Based Machine Learning</title>
+  <title>Healthcare-based datasets</title>
   <link>//localhost:1313/Health/</link>
   <pubDate>Sat, 28 May 2022 00:09:00 -0600</pubDate>
   <author>Author</author>
   <guid>//localhost:1313/Health/</guid>
-  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/health.png" alt="Healthcare-Based Machine Learning" title="Healthcare-Based Machine Learning" referrerpolicy="no-referrer"/></div>Prediction of Bodyfat using a Linear Regression Model and Body Measurements Abstract
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/health.png" alt="Healthcare-based datasets" title="Healthcare-based datasets" referrerpolicy="no-referrer"/></div>Prediction of Bodyfat using a Linear Regression Model and Body Measurements Abstract
 Bodyfat percentage is an important estimator for health. The most accurate method for measuring bodyfat is by underwater weighing which is time-intensive. Predictive analytics (linear regression) using indirect measurements offer a faster method to compute bodyfat percentage. This study analyzes bodyfat data determined by underwater weighing with their corresponding indirect measurements. To predict the bodyfat using these measurements, we compare a traditional linear model, regularized model, subset models (indicator, dichotomous, piecewise, polynomial), and feature engineering models (principal components analysis).]]></description>
 </item>
 <item>

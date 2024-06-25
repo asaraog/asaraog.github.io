@@ -2,9 +2,10 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
-      <loc>//localhost:1313/Website/</loc><lastmod>2024-06-17T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>//localhost:1313/Neural_Decoding/</loc><lastmod>2024-05-23T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
       <loc>//localhost:1313/PythonRGo/</loc><lastmod>2023-08-06T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/</loc><lastmod>2024-06-17T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority><xhtml:link
+      <loc>//localhost:1313/Website/</loc><lastmod>2024-06-24T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>//localhost:1313/</loc><lastmod>2024-06-24T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
             href="//localhost:1313/hi/"
@@ -13,8 +14,8 @@
           hreflang="en"
           href="//localhost:1313/"
           /></url><url>
-      <loc>//localhost:1313/projects/dataengineering/</loc><lastmod>2024-06-17T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-      <loc>//localhost:1313/posts/</loc><lastmod>2024-06-17T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority><xhtml:link
+      <loc>//localhost:1313/projects/dataengineering/</loc><lastmod>2024-06-24T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>//localhost:1313/posts/</loc><lastmod>2024-06-24T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
             href="//localhost:1313/hi/posts/"
@@ -23,7 +24,7 @@
           hreflang="en"
           href="//localhost:1313/posts/"
           /></url><url>
-      <loc>//localhost:1313/projects/</loc><lastmod>2024-06-17T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority><xhtml:link
+      <loc>//localhost:1313/projects/</loc><lastmod>2024-06-24T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
             href="//localhost:1313/hi/projects/"
@@ -32,7 +33,6 @@
           hreflang="en"
           href="//localhost:1313/projects/"
           /></url><url>
-      <loc>//localhost:1313/Neural_Decoding/</loc><lastmod>2024-05-23T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
       <loc>//localhost:1313/projects/neuroimaging/</loc><lastmod>2024-05-23T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
       <loc>//localhost:1313/projects/artificialintelligence/</loc><lastmod>2023-08-29T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>//localhost:1313/Computer_Vision/</loc><lastmod>2023-08-29T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

@@ -3,16 +3,7 @@
     <title>Dataengineering - project - Asaraog</title>
     <link>//localhost:1313/projects/dataengineering/</link>
     <description>Dataengineering - project | Asaraog</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 17 Jun 2024 00:09:00 -0600</lastBuildDate><atom:link href="//localhost:1313/projects/dataengineering/" rel="self" type="application/rss+xml" /><item>
-  <title>Building this website in Hugo</title>
-  <link>//localhost:1313/Website/</link>
-  <pubDate>Mon, 17 Jun 2024 00:09:00 -0600</pubDate>
-  <author>Author</author>
-  <guid>//localhost:1313/Website/</guid>
-  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/hugo-preview.png" alt="Building this website in Hugo" title="Building this website in Hugo" referrerpolicy="no-referrer"/></div>Partial image credit Why Golang? Static site generators such as Hugo were developed recently using Golang. Golang is a compiled language designed for today&rsquo;s multi-processor, scalable, high-performance systems. Other platforms have inherited dependency chains that can lead to infeasible build times. Realizing these benefits, Cloudfare recently migrated from Gatsby (a web framework based on JavaScript).
-Demo website I first created a demo website using the Hugo Winston theme. This theme does have a Live Demo which made it simple to deploy onto Netlify.]]></description>
-</item>
-<item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 24 Jun 2024 00:09:00 -0600</lastBuildDate><atom:link href="//localhost:1313/projects/dataengineering/" rel="self" type="application/rss+xml" /><item>
   <title>Comparing Golang to Python/R</title>
   <link>//localhost:1313/PythonRGo/</link>
   <pubDate>Sun, 06 Aug 2023 00:09:00 -0600</pubDate>
@@ -21,6 +12,15 @@ Demo website I first created a demo website using the Hugo Winston theme. This t
   <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/comparing.png" alt="Comparing Golang to Python/R" title="Comparing Golang to Python/R" referrerpolicy="no-referrer"/></div>Image credit: R logo, Gopher Evaluating Golang Unlike Python/R, Golang is a compiled language that is more verbose but is said to run faster. For example, Uber, Amex and KhanAcademy find benefits with Golang.
 To benchmark Golang&rsquo;s performance and runtime against Python and/or R, here are various cases:
 Performing least squares regression of the Anscombe Quartet (1973) Computing summary statistics of the California Housing Prices (Miller 2015) Web crawling and scraping of Wikipedia Identifying anomalies in the MNIST dataset Least squares regression with Python and R The Golang implementation is benchmarked for runtime with a previous implementation by Miller (2015) in Python/R as a reference.]]></description>
+</item>
+<item>
+  <title>Building this website in Hugo</title>
+  <link>//localhost:1313/Website/</link>
+  <pubDate>Mon, 24 Jun 2024 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>//localhost:1313/Website/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/hugo-preview.png" alt="Building this website in Hugo" title="Building this website in Hugo" referrerpolicy="no-referrer"/></div>Partial image credit Why Golang? Static site generators such as Hugo were developed recently using Golang. Golang is a compiled language designed for today&rsquo;s multi-processor, scalable, high-performance systems. Other platforms have inherited dependency chains that can lead to infeasible build times. Realizing these benefits, Cloudfare recently migrated from Gatsby (a web framework based on JavaScript).
+Demo website I first created a demo website using the Hugo Winston theme. This theme does have a Live Demo which made it simple to deploy onto Netlify.]]></description>
 </item>
 <item>
   <title>Front-end development in Go</title>

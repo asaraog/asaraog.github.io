@@ -1,5 +1,5 @@
 ---
-title: Healthcare-Based Machine Learning
+title: Healthcare-based datasets
 date: 2022-05-28T00:09:00-06:00
 draft: false
 projects: artificialintelligence
