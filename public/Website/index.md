@@ -2,9 +2,9 @@
 
 &lt;font size=&#34;1&#34;&gt; [Partial image credit](https://github.com/Lruihao/hugo-blog/blob/main/assets/images/blog-flow.png) &lt;/font&gt;
 
-## Why Golang?
+## Why Go?
 
-Static site generators such as [Hugo](https://gohugo.io) were developed recently using Golang. [Golang](https://go.dev/) is a compiled language designed for today&#39;s multi-processor, scalable, high-performance systems. Other platforms have inherited dependency chains that can lead to infeasible build times. Realizing these benefits,  [Cloudfare](https://blog.cloudflare.com/new-dev-docs) recently migrated from Gatsby (a web framework based on JavaScript). 
+Static site generators such as [Hugo](https://gohugo.io) were developed recently using Go. [Go](https://go.dev/) is a compiled language designed for today&#39;s multi-processor, scalable, high-performance systems. Other platforms have inherited dependency chains that can lead to infeasible build times. Realizing these benefits,  [Cloudfare](https://blog.cloudflare.com/new-dev-docs) recently migrated from Gatsby (a web framework based on JavaScript). 
 
 ### Demo website
 I first created a [demo website](autonotes.netlify.app) using the [Hugo Winston theme](https://themes.gohugo.io/themes/hugo-winston-theme/). This theme does have a [Live Demo](https://hugo-winston.netlify.app/) which made it simple to deploy onto [Netlify](https://www.netlify.com/). All descriptions are fictional and generated using [ChatGPT](https://chat.openai.com/).

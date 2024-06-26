@@ -3,14 +3,14 @@
 
 ## What?
 
-In the world of web and desktop applications, frameworks for different software languages such as [Rails](https://rubyonrails.org/) for Ruby and [Electron](https://www.electronjs.org/) for JavaScript are popular. Analogous to Rails, [Golang](https://go.dev/) uses the [Wails](https://wails.io/) framework and offers the benefits of Golang&#39;s reported processing speed. Wails also uses the native rendering engine unlike Electron which uses an embedded browser. Furthermore, Wails integrates user interface (UI) frameworks such as [React, Vue and Svelte](https://wails.io/docs/community/templates/).
+In the world of web and desktop applications, frameworks for different software languages such as [Rails](https://rubyonrails.org/) for Ruby and [Electron](https://www.electronjs.org/) for JavaScript are popular. Analogous to Rails, [Go](https://go.dev/) uses the [Wails](https://wails.io/) framework and offers the benefits of Go&#39;s reported processing speed. Wails also uses the native rendering engine unlike Electron which uses an embedded browser. Furthermore, Wails integrates user interface (UI) frameworks such as [React, Vue and Svelte](https://wails.io/docs/community/templates/).
 
-To demo Golang&#39;s frontend capabilities, two projects are implemented here using Wails and [Svelte](https://svelte.dev/repl/hello-world):
+To demo Go&#39;s frontend capabilities, two projects are implemented here using Wails and [Svelte](https://svelte.dev/repl/hello-world):
 - Assisted Writing Application
 - Chatbot
 
 ## Assisted Writing Application
-This project produces a prototype for an assisted writing application based on [Vale](https://vale.sh/) (an exisiting command line interface written in Golang).  It accepts plain text files (.txt or .md) as user input and a style preference as a text input. The output is displayed in the application with support for errors such as invalid user preference, invalid type of text file or insufficient length of text.The application prototype is succesful during development (wails dev) in linking Vale CLI output with user input and displaying errors. However, Wails is unable to integrate with command line applications during build (wails build) for this application. Future implemntations would explore other prose linters that do not require command line dependencies.
+This project produces a prototype for an assisted writing application based on [Vale](https://vale.sh/) (an exisiting command line interface written in Go).  It accepts plain text files (.txt or .md) as user input and a style preference as a text input. The output is displayed in the application with support for errors such as invalid user preference, invalid type of text file or insufficient length of text.The application prototype is succesful during development (wails dev) in linking Vale CLI output with user input and displaying errors. However, Wails is unable to integrate with command line applications during build (wails build) for this application. Future implemntations would explore other prose linters that do not require command line dependencies.
 
 To run the prototype locally, first install Wails onto your machine and then download this project:
 ```

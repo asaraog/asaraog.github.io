@@ -1,9 +1,9 @@
-# Concurrency With Golang
+# Concurrency With Go
 
 
 ## What?
 
-Concurrency or **concurrent processing** is breaking up a single process into independent components to coordinate compute. It is based on the idea of CSP or Communicating Sequential Processes (Brookes, Hoare, and Roscoe 1984). In contrast to **parallel processing**, the paradigm here is shifted towards communication and splitting of independent processes instead of sharing memory. To communicate between different processes, Golang utilizes goroutines, which are similar to channels as described in CSP. Goroutines are lightweight and different from threads in parallel processing.
+Concurrency or **concurrent processing** is breaking up a single process into independent components to coordinate compute. It is based on the idea of CSP or Communicating Sequential Processes (Brookes, Hoare, and Roscoe 1984). In contrast to **parallel processing**, the paradigm here is shifted towards communication and splitting of independent processes instead of sharing memory. To communicate between different processes, Go utilizes goroutines, which are similar to channels as described in CSP. Goroutines are lightweight and different from threads in parallel processing.
 
 ## Linear Regression
 This project evaluated Go&#39;s concurrent programming framework for training and testing linear regression models. Machine learning models will utilize the [gonum library](https://pkg.go.dev/gonum.org/v1/gonum). The Go implementation tested linear regression models with varying regulization and/or concurrency using the [Boston Housing Study (1970)](http://lib.stat.cmu.edu/datasets/boston), commonly used by statisticians to predict housing prices by others (Brownlee 2020). This dataset was modified by others (Miller 1999) to remove the feature &#39;B&#39; encoding racial segregation. All models were run 100 times and benchmarked for runtime using &#39;time&#39; before commands in the command line and the concurrency flag 0 or 1. Concurrency significantly increased speed with a runtime of 0.009s compared to 0.279s without concurrency.
