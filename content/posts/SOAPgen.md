@@ -17,4 +17,12 @@ The pipeline uses Microsoft Azure services for speech processing and downstream 
 
 Beyond automation, the project highlights how cloud-based AI tools can support real-world medical documentation tasks. SOAPgen sits at the intersection of natural language processing, speech technology, and data engineering, with an emphasis on building practical tooling for healthcare settings.
 
-See my [Github repository](https://github.com/asaraog/soapgen) for all code.
+Future directions: After a Business Associate Agreement (BAA) is signed with OneDrive for Business, the watcher function can be removed with Power Automate.
+
+To run locally, download or git clone this project:
+```
+git clone https://github.com/asaraog/soapgen.git
+cd soapgen
+python3 watcher.py
+```
+Record and add audio file to local environment for testing. See my [Github repository](https://github.com/asaraog/soapgen) for all code. 
