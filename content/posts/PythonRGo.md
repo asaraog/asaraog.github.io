@@ -1,5 +1,4 @@
 ---
-weight: 2
 title: Comparing Go to Python/R
 date: 2023-08-06T00:09:00-06:00
 draft: false

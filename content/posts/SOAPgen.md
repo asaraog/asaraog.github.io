@@ -1,4 +1,5 @@
 ---
+weight: 2
 title: SOAPgen
 date: 2025-12-04T00:09:00-06:00
 draft: false
