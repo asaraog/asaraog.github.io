@@ -1,14 +1,13 @@
 ---
 weight: 1
 title: Neural EEG Decoding
-date: 2026-04-24T00:09:00-06:00
+date: 2026-03-24T00:09:00-06:00
 draft: false
 projects: neuroimaging
-featuredImage: /images/decoding3.png
-
+featuredImage: /images/eeg_task1_flow.png
 ---
-
 ## Neural EEG Decoding of Smell with a CNN-LSTM
+
 Masters of Science in Data Science Thesis
 
 School of Professional Studies, Northwestern University
@@ -26,5 +25,3 @@ Supplementary code and data are available on GitHub at [asaraog/msdsthesis](http
 ## References
 
 Kato, Mugihiko, Mitsuaki Okutsu, Hiroyuki Kanaya, Kohei Adachi, Kenichi Tomeoka, and Mariko Osaka. 2022. “Spatiotemporal Dynamics of Odor Representations in the Human Brain Revealed by EEG Decoding.” *Proceedings of the National Academy of Sciences* 119 (21): e2114966119. https://doi.org/10.1073/pnas.2114966119.
-
-Weiss, Tali, Timna Soroka, Lior Gorodisky, Sagit Shushan, Kobi Snitz, Reut Weissgross, Edna Furman-Haran, Thijs Dhollander, and Noam Sobel. 2020. “Human Olfaction without Apparent Olfactory Bulbs.” *Neuron* 105 (1): 35-45.e5. https://doi.org/10.1016/j.neuron.2019.10.006.

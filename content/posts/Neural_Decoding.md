@@ -5,11 +5,12 @@ date: 2024-05-23T00:09:00-06:00
 draft: false
 projects: neuroimaging
 featuredImage: /images/decoding3.png
-
 ---
-
 ## Neural MRI Decoding of Smell with Generative AI
+
 Masters of Science in Data Science Thesis Proposal
+
+Also an oral presentation at symposium in Chicago, IL, November 2024.
 
 School of Professional Studies, Northwestern University
 
@@ -38,5 +39,3 @@ Weiss, Tali, Timna Soroka, Lior Gorodisky, Sagit Shushan, Kobi Snitz, Reut Weiss
 ———. 2020. “Human Olfaction without Apparent Olfactory Bulbs.” Neuron 105 (1): 35-45.e5. https://doi.org/10.1016/j.neuron.2019.10.006.
 
 Zou, Yong-ming, Da Lu, Li-ping Liu, Hui-hong Zhang, and Yu-ying Zhou. 2016. “Olfactory Dysfunction in Alzheimer’s Disease.” Neuropsychiatric Disease and Treatment 12 (April):869–75. https://doi.org/10.2147/NDT.S104886.
-
-
