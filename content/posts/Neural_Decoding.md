@@ -1,6 +1,6 @@
 ---
 weight: 1
-title: Neural Decoding of Smell
+title: Neural MRI Decoding
 date: 2024-05-23T00:09:00-06:00
 draft: false
 projects: neuroimaging
@@ -8,7 +8,7 @@ featuredImage: /images/decoding3.png
 
 ---
 
-## Neural Decoding of Smell with Generative AI
+## Neural MRI Decoding of Smell with Generative AI
 Masters of Science in Data Science Thesis Proposal
 
 School of Professional Studies, Northwestern University
@@ -18,6 +18,8 @@ School of Professional Studies, Northwestern University
 Olfaction (sense of smell) and related structural abnormalities in the olfactory bulbs are among the first observed symptoms corelated with Alzhiemer’s disease (Esiri and Wilcock 1984; Thomann et al. 2009). The functional relationship between olfaction and the olfactory bulbs is poorly understood (Weiss et al. 2020). In the area of visual decoding, advances in machine learning using  generative adversarial networks (GANs) have provided an unprecedented insight into neural decoding or the mapping of an individual brain’s responses and performance (Seeliger et al. 2018; Van Gerven et al. 2019) when compared to linear models (VanRullen and Reddy 2019). Working on a latent space of reduced dimensions from the neuroimaging data, GANs employ competing (artificial) neural networks – a generator to produce predictions and a discriminator to distinguish the ground truth – to ultimately converge on a model that has learned the mapping between the latent space (a reduced representation of neuroimages) and smell space (identity of odor and pleasantness rating).  It is a form of multi-voxel (3-D pixel) pattern analysis (MVPA).
 
 I propose applying GANs to a publicly available dataset of neuroimages (fMRI) recorded in real-time after exposure to different smells (Weiss et al. 2019). This dataset is ideal for functional mapping as it includes individuals that pass standardized smell testing but inexplicably do not have any apparent olfactory bulbs. The guiding research question will be to explain how individuals without olfactory bulbs can smell. I hypothesize that there are different regions of interest (ROIs) for individuals without apparent olfactory bulbs and that neural decoding for individuals without olfactory bulbs will take more time than for others. Similar to a visual decoding task on gender by others (VanRullen and Reddy 2019), I will arrange the latent space for the neuroimages corresponding to different ROIs (such as occipital, temporal or frontoparietal lobes) and run a binary decoding task (pleasant vs unpleasant) after each odor stimulus. Understanding olfactory regions of interest is significant for radiologists in differentiating between olfactory symptoms caused by neurodegenerative diseases or other prevalent reasons such as aging (Zou et al. 2016).
+
+Source code is available on GitHub at [asaraog/mridecoder](https://github.com/asaraog/mridecoder).
 
 ## References
 
