@@ -1,5 +1,5 @@
 ---
-weight: 1
+weight: 3
 title: Neural EEG Decoding
 date: 2026-03-24T00:09:00-06:00
 draft: false
