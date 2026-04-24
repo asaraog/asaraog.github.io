@@ -1,14 +1,12 @@
 ---
-weight: 2
 title: SOAPgen
 date: 2025-12-04T00:09:00-06:00
 draft: false
 projects: artificialintelligence
 featuredImage: /images/soapgen.svg
-
 ---
-
 ## Generating SOAP notes from audio using Microsoft Azure
+
 **Abstract**
 
 SOAPgen is a healthcare AI and LLM project focused on converting recorded clinical conversations into structured SOAP notes: Subjective, Objective, Assessment, and Plan. The goal is to reduce manual documentation time for clinicians and make patient records easier to organize, review, and share.
@@ -20,9 +18,11 @@ Beyond automation, the project highlights how cloud-based AI tools can support r
 Future directions: After a Business Associate Agreement (BAA) is signed with OneDrive for Business, the watcher function can be removed with Power Automate.
 
 To run locally, download or git clone this project:
+
 ```
 git clone https://github.com/asaraog/soapgen.git
 cd soapgen
 python3 watcher.py
 ```
-Record and add audio file to local environment for testing. See my [Github repository](https://github.com/asaraog/soapgen) for all code. 
+
+Record and add audio file to local environment for testing. See my [Github repository](https://github.com/asaraog/soapgen) for all code.
