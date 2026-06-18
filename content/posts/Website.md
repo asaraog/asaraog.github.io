@@ -6,7 +6,7 @@ draft: false
 projects: dataengineering
 featuredImage: /images/hugo-preview.png
 ---
-<font size="1">[Partial image credit](https://github.com/Lruihao/hugo-blog/blob/main/assets/images/blog-flow.png)</font>
+<span style="font-size:0.75em;">[Partial image credit](https://github.com/Lruihao/hugo-blog/blob/main/assets/images/blog-flow.png)</span>
 
 ## Why Go?
 
