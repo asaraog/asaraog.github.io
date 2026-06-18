@@ -6,7 +6,7 @@ projects: neuroimaging
 featuredImage: /images/eeg_classification_flow.png
 featuredImagePreview: /images/eeg_classification_flow_preview.png
 ---
-## Neural EEG Decoding of Smell with a CNN-LSTM
+## Neural EEG Decoding of Smell with Artificial Intelligence
 
 Masters of Science in Data Science Thesis
 
