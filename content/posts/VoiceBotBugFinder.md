@@ -20,7 +20,11 @@ To run locally, clone the project and start from the notebook workflow:
 ```bash
 git clone https://github.com/asaraog/voicebotbugfinder.git
 cd voicebot
-activate your Python environment, install requirements, and run the notebook in runstoshare/
+pip install fastapi uvicorn websockets twilio openai requests python-dotenv
+cp .env.example .env
+# Start tunnel first, then set SERVER_DOMAIN in .env using the public URL
+npx localtunnel --port 8080   # Terminal 1
+jupyter nbconvert --to notebook --execute --inplace voicebotbugfinder.ipynb
 ```
 
 See the full implementation on [GitHub](https://github.com/asaraog/voicebotbugfinder).
