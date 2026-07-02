@@ -19,7 +19,6 @@ To run locally, clone the project and start from the notebook workflow:
 
 ```bash
 git clone https://github.com/asaraog/voicebotbugfinder.git
-cd voicebot
 pip install fastapi uvicorn websockets twilio openai requests python-dotenv
 cp .env.example .env
 # Start tunnel first, then set SERVER_DOMAIN in .env using the public URL
