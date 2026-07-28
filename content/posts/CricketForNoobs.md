@@ -22,3 +22,16 @@ The entire product, spanning backend, retrieval, and frontend, is a single Go bi
 - **Fan-side data plane.** Live scoreboard and ball-by-ball data are fetched by each user's browser directly from public feeds and handed to the server to parse, so data freshness scales with the audience rather than against it and the backend stays stateless.
 - **Live market integration.** Prediction-market prices stream in beside the model's estimate, and a market-pulse detector surfaces sharp price moves. Traders react seconds after the action, well before scoreboard feeds update.
 - **CI/CD.** Automated tests and deployment to production and staging environments on every push.
+
+**Measured: the Go rewrite is about 4× faster than the Python original**
+
+The first version of this product was Python (FastAPI + uvicorn). Both versions still run, so the comparison is empirical, not theoretical: same laptop, same JSON endpoint, warmed, 50 sequential requests.
+
+![Go vs Python request latency](/images/go-vs-python-bench.svg)
+
+| | Python 3.11 (FastAPI + uvicorn) | Go 1.20 (standard library) |
+|---|---|---|
+| Request latency | 1.61 ms | **0.41 ms** |
+| Boot to serving | 1.90 s | **1.14 s** |
+
+The per-request gap is framework and interpreter overhead, paid on every call forever; it is also a throughput ceiling (roughly 600 vs 2,400 requests per second per process, before Go's native multi-core scaling). The boot number understates the difference: the Go figure includes building a BM25 index over ~9,500 documents, loading 20,000 word embeddings, and parsing 9,417 player careers at startup, none of which the Python version did.
