@@ -22,5 +22,3 @@ The entire product, spanning backend, retrieval, and frontend, is a single Go bi
 - **Fan-side data plane.** Live scoreboard and ball-by-ball data are fetched by each user's browser directly from public feeds and handed to the server to parse, so data freshness scales with the audience rather than against it and the backend stays stateless.
 - **Live market integration.** Prediction-market prices stream in beside the model's estimate, and a market-pulse detector surfaces sharp price moves. Traders react seconds after the action, well before scoreboard feeds update.
 - **CI/CD.** Automated tests and deployment to production and staging environments on every push.
-
-The code is private (the product may be commercialized), but I'm happy to walk through the architecture in depth.
