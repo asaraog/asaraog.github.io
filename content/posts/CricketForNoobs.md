@@ -2,7 +2,7 @@
 title: Cricket for Noobs
 date: 2026-07-27T20:30:00-05:00
 draft: false
-projects: artificialintelligence
+projects: dataengineering
 featuredImage: /images/cricket-noobs.svg
 ---
 ## A live AI cricket helper for American sports fans
