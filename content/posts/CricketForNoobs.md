@@ -23,9 +23,9 @@ The entire product, spanning backend, retrieval, and frontend, is a single Go bi
 - **Live market integration.** Prediction-market prices stream in beside the model's estimate, and a market-pulse detector surfaces sharp price moves. Traders react seconds after the action, well before scoreboard feeds update.
 - **CI/CD.** Automated tests and deployment to production and staging environments on every push.
 
-**Measured: the Go rewrite is about 4× faster than the Python original**
+## Go vs Python, measured
 
-The first version of this product was Python (FastAPI + uvicorn). Both versions still run, so the comparison is empirical, not theoretical: same laptop, same JSON endpoint, warmed, 50 sequential requests.
+The Go rewrite is about 4× faster than the Python original. The first version of this product was Python (FastAPI + uvicorn). Both versions still run, so the comparison is empirical, not theoretical: same laptop, same JSON endpoint, warmed, 50 sequential requests.
 
 | | Python 3.11 (FastAPI + uvicorn) | Go 1.20 (standard library) |
 |---|---|---|
