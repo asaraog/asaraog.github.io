@@ -27,8 +27,6 @@ The entire product, spanning backend, retrieval, and frontend, is a single Go bi
 
 The first version of this product was Python (FastAPI + uvicorn). Both versions still run, so the comparison is empirical, not theoretical: same laptop, same JSON endpoint, warmed, 50 sequential requests.
 
-![Go vs Python request latency](/images/go-vs-python-bench.svg)
-
 | | Python 3.11 (FastAPI + uvicorn) | Go 1.20 (standard library) |
 |---|---|---|
 | Request latency | 1.61 ms | **0.41 ms** |
