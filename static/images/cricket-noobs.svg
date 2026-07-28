@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Cricket for Noobs">
+  <rect width="800" height="420" rx="18" fill="#10151c"/>
+  <!-- cricket ball -->
+  <circle cx="200" cy="210" r="95" fill="#b91c1c"/>
+  <path d="M155 130 q-28 80 0 160" stroke="#f8e7c9" stroke-width="7" fill="none"/>
+  <path d="M245 130 q28 80 0 160" stroke="#f8e7c9" stroke-width="7" fill="none"/>
+  <path d="M162 145 l14 8 M158 175 l15 6 M156 205 l15 3 M158 235 l15 -2 M163 265 l14 -6" stroke="#f8e7c9" stroke-width="4"/>
+  <path d="M238 145 l-14 8 M242 175 l-15 6 M244 205 l-15 3 M242 235 l-15 -2 M237 265 l-14 -6" stroke="#f8e7c9" stroke-width="4"/>
+  <!-- chat bubble -->
+  <rect x="360" y="100" width="360" height="150" rx="24" fill="#1a2230" stroke="#2a3547" stroke-width="3"/>
+  <path d="M420 250 l-18 42 52 -42z" fill="#1a2230" stroke="#2a3547" stroke-width="3"/>
+  <text x="392" y="152" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="30" fill="#e8edf4">a wicket = an out</text>
+  <text x="392" y="196" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="30" fill="#e8edf4">an over = 6 pitches</text>
+  <text x="392" y="234" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="26" fill="#4fc37f">live · grounded · translated</text>
+  <!-- title -->
+  <text x="400" y="360" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="44" font-weight="700" fill="#4fc37f">Cricket for Noobs</text>
+  <text x="400" y="398" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="22" fill="#9aa7b8">an AI cricket helper for American sports fans</text>
+</svg>
