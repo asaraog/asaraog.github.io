@@ -1175,6 +1175,7 @@ enableEmoji = true
       [params.page.comment.waline]
         enable = true
         serverURL = "https://waline-comments-apoorv6.vercel.app"
+        lang = "en-US"
         pageview = false # FixIt 0.2.15 | NEW
         emoji = ["//unpkg.com/@waline/emojis@1.1.0/weibo"]
         meta = ["nick", "mail", "link"]
