@@ -21,6 +21,6 @@ The entire product, spanning backend, retrieval, and frontend, is a single Go bi
 - **Retrieval inside the binary.** A ~9,500-document corpus (authored rules and betting mechanics, a jargon glossary, and per-format career aggregates for 9,417 players derived from ball-by-ball archives of 22,000+ professional matches) is embedded via `go:embed` and searched three ways: exact name matching with prominence tie-breaks, semantic search over compressed word embeddings shipped in the binary, and BM25 with a relevance floor, falling back gracefully so retrieval never has a hard external dependency.
 - **Fan-side data plane.** Live scoreboard and ball-by-ball data are fetched by each user's browser directly from public feeds and handed to the server to parse, so data freshness scales with the audience rather than against it and the backend stays stateless.
 - **Live market integration.** Prediction-market prices stream in beside the model's estimate, and a market-pulse detector surfaces sharp price moves. Traders react seconds after the action, well before scoreboard feeds update.
-- **Zero-cost operations.** CI/CD to prod and staging environments on push, a self-ping keep-alive defeating free-tier sleep, key-protected log endpoints with a scheduled local collector for durable analytics, and per-chat geo telemetry. Total infrastructure cost: $0/month.
+- **CI/CD.** Automated tests and deployment to production and staging environments on every push.
 
 The code is private (the product may be commercialized), but I'm happy to walk through the architecture in depth.
