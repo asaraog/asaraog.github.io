@@ -18,5 +18,3 @@ Major League Cricket and prediction markets are creating a new fan: an American 
 The entire product — backend, retrieval, and frontend — is a single Go binary built on the standard library alone: no frameworks, no database, no vector store. Go over Python was a deliberate speed choice: compiled answers return in microseconds, searching the ~9,500-document knowledge base takes under a millisecond in memory, and the whole thing cold-starts instantly in a 512MB free-tier container. The AI is kept on a short leash — anything exact (scores, stats, win math) is computed deterministically, and the model only narrates around verified facts. Total infrastructure cost: $0/month.
 
 The interesting parts — how live data stays fresh as the audience grows, how the market signal works, and what powers retrieval — are deliberately not written up here. The code is private and the product may be commercialized, but I'm happy to walk through the full architecture in conversation.
-
-Within six hours of launch it had organic visitors from four countries and its first search-engine referral.
