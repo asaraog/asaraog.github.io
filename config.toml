@@ -1232,12 +1232,12 @@ enableEmoji = true
         katex = false
       # FixIt 0.2.14 | NEW Giscus comments config
       [params.page.comment.giscus]
-        enable = false
-        repo = ""
-        repoId = ""
-        category = ""
-        categoryId = ""
-        mapping = ""
+        enable = true
+        repo = "asaraog/asaraog.github.io"
+        repoId = "R_kgDOL6oP4Q"
+        category = "Announcements"
+        categoryId = "DIC_kwDOL6oP4c4DCIQF"
+        mapping = "pathname"
         strict = "0" # FixIt NEW | 0.2.18
         term = ""
         reactionsEnabled = "1"
