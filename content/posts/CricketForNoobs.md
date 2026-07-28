@@ -15,7 +15,7 @@ Cricket for Noobs is a production web app that explains live cricket to American
 
 **Systems design**
 
-The entire product — backend, retrieval, and frontend — is a single Go binary built on the standard library alone: no frameworks, no database, no vector store, one Docker layer.
+The entire product — backend, retrieval, and frontend — is a single Go binary built on the standard library alone: no frameworks, no database, no vector store, one Docker layer. Go was a deliberate choice over Python for speed: it compiles to native code, so there's no interpreter overhead — deterministic answers (scores, definitions, win math) return in microseconds, and searching all ~9,500 corpus documents by brute-force cosine similarity takes under a millisecond, which is precisely why no vector database is needed. Goroutines make concurrency nearly free — market prices for all of a match's outcomes are fetched and enriched in parallel — and the compiled binary cold-starts instantly and serves everything from memory inside a 512MB free-tier container, where a Python equivalent with its dependency stack would struggle to fit, let alone respond as fast.
 
 - **Answer tiers, deterministic first.** Exact questions (score, who's winning, who's batting, term definitions) never reach an LLM: they're computed from parsed match state or served from a curated glossary, instantly and token-free. The LLM writes only narrative, sandwiched between a deterministic header and footer, and is forbidden from inventing numbers — market prices, DLS pars, and stats are quoted only when present in context.
 - **Retrieval inside the binary.** A ~9,500-document corpus (authored rules and betting mechanics, a jargon glossary, and per-format career aggregates for 9,417 players derived from ball-by-ball archives of 22,000+ professional matches) is embedded via `go:embed` and searched three ways: exact name matching with prominence tie-breaks, semantic search over compressed word embeddings shipped in the binary, and BM25 with a relevance floor — falling back gracefully so retrieval never has a hard external dependency.
@@ -25,4 +25,4 @@ The entire product — backend, retrieval, and frontend — is a single Go binar
 
 Within six hours of the domain going live, the site had organic visitors from four countries — including its first search-engine referral — and real users asking the exact questions it was designed for.
 
-The code is private (the product may be commercialized), but I'm happy to walk through the architecture in depth — there's a write-up of the product philosophy at [cricketfornoobs.com/blog](https://cricketfornoobs.com/blog/building-cricket-for-noobs).
+The code is private (the product may be commercialized), but I'm happy to walk through the architecture in depth.
