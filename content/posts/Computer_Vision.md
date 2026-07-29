@@ -57,6 +57,20 @@ The classification report and confusion matrix live inside each linked notebook.
 | automobile to truck | 82 |
 | airplane to ship | 78 |
 
+| Class | Precision | Recall | F1 | Support |
+|---|---:|---:|---:|---:|
+| airplane | 0.821 | 0.771 | 0.795 | 1,000 |
+| automobile | 0.954 | 0.859 | 0.904 | 1,000 |
+| bird | 0.720 | 0.650 | 0.683 | 1,000 |
+| cat | 0.599 | 0.636 | 0.617 | 1,000 |
+| deer | 0.682 | 0.820 | 0.745 | 1,000 |
+| dog | 0.742 | 0.680 | 0.709 | 1,000 |
+| frog | 0.824 | 0.839 | 0.832 | 1,000 |
+| horse | 0.871 | 0.765 | 0.815 | 1,000 |
+| ship | 0.830 | 0.907 | 0.867 | 1,000 |
+| truck | 0.827 | 0.900 | 0.862 | 1,000 |
+| **Overall** | | | **78.27% accuracy** | 10,000 |
+
 Nearly every large error is a within-superclass one. Cat and dog alone account for 281 errors between them, more than an eighth of all 2,173, and the rest pair vehicles with vehicles and animals with animals. Ship (0.907 recall) and automobile (0.859) are the easiest, cat (0.636) and bird (0.650) the hardest. The model has clearly learned the animal/vehicle split and is failing inside it, which is the expected shape at this depth rather than a training fault.
 
 
@@ -99,6 +113,20 @@ These five confusions account for most of the damage.
 | 5 to 3 | 21 | an open-left 5 loses its stem |
 | 8 to 9 | 18 | a faint lower loop |
 | 7 to 9 | 15 | a shared descender stroke |
+
+| Digit | Precision | Recall | F1 | Support |
+|---|---:|---:|---:|---:|
+| 0 | 0.953 | 0.990 | 0.971 | 967 |
+| 1 | 0.987 | 0.988 | 0.987 | 1,121 |
+| 2 | 0.948 | 0.946 | 0.947 | 1,022 |
+| 3 | 0.946 | 0.949 | 0.948 | 999 |
+| 4 | 0.964 | 0.952 | 0.958 | 970 |
+| 5 | 0.955 | 0.938 | 0.946 | 886 |
+| 6 | 0.960 | 0.971 | 0.966 | 944 |
+| 7 | 0.964 | 0.940 | 0.952 | 1,013 |
+| 8 | 0.945 | 0.939 | 0.942 | 962 |
+| 9 | 0.930 | 0.939 | 0.934 | 1,000 |
+| **Overall** | | | **95.55% accuracy** | 9,884 |
 
 Digits 7 and 9 take 61 errors each and 8 takes 59 (recall 0.940, 0.939, 0.939), while 0 and 1 are essentially unconfusable. Every top confusion is a shape confusion a person would also make, so the forest fails on ambiguous glyphs rather than on a systematic fault.
 
