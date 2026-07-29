@@ -55,6 +55,36 @@ Images are printed in a new directory 'imagesout' with the name coressponding to
 
 See my [Github repository](https://github.com/asaraog/msds431week10) for further details.
 
+### Where the classifier fails
+
+96% accuracy is a single number covering ten quite different digits. The confusion matrix below is built from the model's own saved predictions in `goScores.csv`. Colour encodes **errors only**, and the diagonal is drawn neutral, so the error structure stays visible instead of being drowned out by the correct predictions.
+
+<style>
+.cm-fig img.cm-dark { display: none; }
+[data-theme="dark"] .cm-fig img.cm-light { display: none; }
+[data-theme="dark"] .cm-fig img.cm-dark { display: block; }
+.cm-fig img { max-width: 100%; height: auto; }
+</style>
+<div class="cm-fig">
+<img class="cm-light" src="/images/mnist_confusion_light.png" alt="Confusion matrix for MNIST digit classification with a Go random forest. Accuracy 95.55 percent over 9,884 test images with 440 errors. Largest confusions are 4 predicted as 9 (28 times), 7 as 2 (27 times), and 5 as 3 (21 times).">
+<img class="cm-dark" src="/images/mnist_confusion_dark.png" alt="Confusion matrix for MNIST digit classification with a Go random forest. Accuracy 95.55 percent over 9,884 test images with 440 errors. Largest confusions are 4 predicted as 9 (28 times), 7 as 2 (27 times), and 5 as 3 (21 times).">
+</div>
+
+The five confusions that account for most of the damage:
+
+| Actual to predicted | Count | Why it is plausible |
+|---|---:|---|
+| 4 to 9 | 28 | a closed-top 4 is a 9 |
+| 7 to 2 | 27 | a crossed or curved 7 mimics a 2 |
+| 5 to 3 | 21 | an open-left 5 loses its stem |
+| 8 to 9 | 18 | a faint lower loop |
+| 7 to 9 | 15 | a shared descender stroke |
+
+Digits 7 and 9 take 61 errors each and 8 takes 59, for recalls of 0.940, 0.939 and 0.939. The easiest are 0 and 1, essentially unconfusable at this resolution. Every one of the top confusions is a shape confusion a person would also make on a sloppy sample, which is the reassuring result: the forest fails on genuinely ambiguous glyphs rather than on some systematic preprocessing fault.
+
+One caveat worth keeping visible. The exported scores cover 9,884 of the 10,000 test images and contain 440 errors, while 415 misclassified images were written to disk, so the two artifacts came from slightly different runs. Accuracy is 95.6% on the exported set, which is the 96% quoted above, but the exact error count depends on which artifact you count.
+
+
 ## References
 
 Sambamoorthi, Nethra. "Computer Vision Part 1". MSDS 458: Artificial Intelligence and Deep Learning. Course at Northwestern University, Chicago, IL, October 9, 2022. https://github.com/aimlfacnwu/MSDS_458_Fall2022/tree/master/MSDS458_Assignment_01

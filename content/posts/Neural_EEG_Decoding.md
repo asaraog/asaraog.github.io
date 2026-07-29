@@ -22,6 +22,36 @@ Working with the publicly available Kato et al. (2022) EEG dataset of odorants, 
 
 Supplementary code and data are available on GitHub at [asaraog/msdsthesis](https://github.com/asaraog/msdsthesis).
 
+## How well does it actually decode?
+
+Headline accuracy hides *where* a model is wrong. Below is the pooled confusion matrix across all five cross-validation folds, so every trial appears exactly once, predicted by a model that never saw that subject during training.
+
+<style>
+.cm-fig img.cm-dark { display: none; }
+[data-theme="dark"] .cm-fig img.cm-light { display: none; }
+[data-theme="dark"] .cm-fig img.cm-dark { display: block; }
+.cm-fig img { max-width: 100%; height: auto; }
+</style>
+<div class="cm-fig">
+<img class="cm-light" src="/images/eeg_confusion_light.png" alt="Confusion matrix for odor decoding from EEG. Citronellal: 381 correct, 239 predicted as cyclohexanone. Cyclohexanone: 356 correct, 267 predicted as citronellal. Pooled accuracy 59.3 percent.">
+<img class="cm-dark" src="/images/eeg_confusion_dark.png" alt="Confusion matrix for odor decoding from EEG. Citronellal: 381 correct, 239 predicted as cyclohexanone. Cyclohexanone: 356 correct, 267 predicted as citronellal. Pooled accuracy 59.3 percent.">
+</div>
+
+|  | Predicted **Cit** | Predicted **Cyc** |
+|---|---:|---:|
+| **Actual Citronellal** | **381** | 239 |
+| **Actual Cyclohexanone** | 267 | **356** |
+
+| Class | Precision | Recall | F1 | Support |
+|---|---:|---:|---:|---:|
+| Citronellal (Cit) | 0.588 | 0.615 | 0.601 | 620 |
+| Cyclohexanone (Cyc) | 0.598 | 0.571 | 0.585 | 623 |
+
+Per-fold accuracy was 61.9%, 59.0%, 57.9%, 54.9% and 62.2%, a mean of **59.2% ± 2.7%**, with ROC AUC **0.617**, against the **54%** cross-subject baseline reported by Kato et al. (2022) and a 50% chance rate on this nearly balanced set (620 Cit / 623 Cyc).
+
+What the matrix shows that accuracy alone does not: the errors are close to symmetric, 239 citronellal trials called cyclohexanone against 267 the other way. The model is not collapsing onto one odor, which is the usual failure mode for a weak EEG classifier, and precision is near-identical across the two classes (0.588 and 0.598), so the decision boundary is genuinely split rather than propped up by class imbalance. The margin over chance is modest, but every fold clears it. That supports the claim this work actually makes: odor identity is decodable from EEG above chance across unseen subjects, not that it is decodable reliably.
+
+
 ## References
 
 Kato, Mugihiko, Mitsuaki Okutsu, Hiroyuki Kanaya, Kohei Adachi, Kenichi Tomeoka, and Mariko Osaka. 2022. “Spatiotemporal Dynamics of Odor Representations in the Human Brain Revealed by EEG Decoding.” *Proceedings of the National Academy of Sciences* 119 (21): e2114966119. https://doi.org/10.1073/pnas.2114966119.
