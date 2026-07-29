@@ -89,7 +89,7 @@ Images are printed in a new directory 'imagesout' with the name coressponding to
 
 See my [Github repository](https://github.com/asaraog/msds431week10) for further details.
 
-### Where the classifier fails
+### Confusion matrix
 
 96% is one number covering ten quite different digits. This matrix comes from the model's own saved predictions in `goScores.csv`, with colour encoding **errors only** and a neutral diagonal so the error structure stays visible.
 
