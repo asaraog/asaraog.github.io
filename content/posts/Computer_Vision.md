@@ -40,7 +40,7 @@ See my [report](/docs/saraogee-research-report2-458.pdf) <i class="fa-solid fa-a
 |[9](/docs/exp9.html) <i class="fa-solid fa-arrow-up-right-from-square"></i>| 2 layer deep convolutional neural network with 128, 256 neurons and 0.6 dropout regularization|
 |[10](/docs/exp10.html) <i class="fa-solid fa-arrow-up-right-from-square"></i>| 3 layer deep convolutional neural network with 128, 256, 512 neurons,  0.3 dropout regularization and a fully connected classification layer with 100 neurons|
 
-#### What the best model confuses
+#### What the best CNN confuses
 
 The classification report and confusion matrix live inside each linked notebook. Pulling the best model's matrix ([experiment 10](/docs/exp10.html) <i class="fa-solid fa-arrow-up-right-from-square"></i>) out to where it can be read, with colour on **errors only** and a neutral diagonal.
 
