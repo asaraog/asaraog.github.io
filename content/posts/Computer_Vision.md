@@ -42,7 +42,7 @@ See my [report](/docs/saraogee-research-report2-458.pdf) <i class="fa-solid fa-a
 
 #### What the best model confuses
 
-The classification report and confusion matrix live inside each linked notebook. Pulling the best model's matrix (experiment 10) out to where it can be read, with colour on **errors only** and a neutral diagonal.
+The classification report and confusion matrix live inside each linked notebook. Pulling the best model's matrix ([experiment 10](/docs/exp10.html) <i class="fa-solid fa-arrow-up-right-from-square"></i>) out to where it can be read, with colour on **errors only** and a neutral diagonal.
 
 <div class="cm-fig">
 <img class="cm-light" src="/images/cifar_confusion_light.png" alt="CIFAR-10 confusion matrix for the best convolutional model, accuracy 78.27 percent over 10,000 test images. Largest confusions are dog predicted as cat (160), cat as dog (121), bird as deer (90), automobile as truck (82) and airplane as ship (78).">
