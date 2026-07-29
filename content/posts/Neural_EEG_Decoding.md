@@ -22,7 +22,7 @@ Working with the publicly available Kato et al. (2022) EEG dataset of odorants, 
 
 Supplementary code and data are available on GitHub at [asaraog/msdsthesis](https://github.com/asaraog/msdsthesis).
 
-## Confusion matrix
+### Confusion matrix
 
 Accuracy hides *where* a model is wrong. This is the pooled confusion matrix across all five folds, each trial predicted by a model that never saw its subject.
 
@@ -37,12 +37,7 @@ Accuracy hides *where* a model is wrong. This is the pooled confusion matrix acr
 <img class="cm-dark" src="/images/eeg_confusion_dark.png" alt="Confusion matrix for odor decoding from EEG. Citrus: 381 correct, 239 predicted as cyclohexanone. Cyclohexanone: 356 correct, 267 predicted as citrus. Pooled accuracy 59.3 percent.">
 </div>
 
-|  | Predicted **Cit** | Predicted **Cyc** |
-|---|---:|---:|
-| **Actual Citrus** | **381** | 239 |
-| **Actual Cyclohexanone** | 267 | **356** |
-
-## Precision and recall
+### Precision and recall
 
 | Class | Precision | Recall | F1 |
 |---|---:|---:|---:|
@@ -52,7 +47,6 @@ Accuracy hides *where* a model is wrong. This is the pooled confusion matrix acr
 Per-fold accuracy was 61.9%, 59.0%, 57.9%, 54.9% and 62.2%, a mean of **59.2% ± 2.7%** with ROC AUC **0.617**, against the **54%** cross-subject baseline in Kato et al. (2022) and 50% chance on this balanced set.
 
 The errors are near-symmetric, 239 citrus trials called cyclohexanone against 267 the other way, and precision is near-identical across the classes (0.588 and 0.598). The model is not collapsing onto one odor, which is the usual failure mode for a weak EEG classifier. The margin over chance is modest but every fold clears it.
-
 
 ## References
 
