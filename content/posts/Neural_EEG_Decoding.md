@@ -42,10 +42,10 @@ Accuracy hides *where* a model is wrong. This is the pooled confusion matrix acr
 | **Actual Citrus** | **381** | 239 |
 | **Actual Cyclohexanone** | 267 | **356** |
 
-| Class | Precision | Recall | F1 | Support |
-|---|---:|---:|---:|---:|
-| Citrus (Cit) | 0.588 | 0.615 | 0.601 | 620 |
-| Cyclohexanone (Cyc) | 0.598 | 0.571 | 0.585 | 623 |
+| Class | Precision | Recall | F1 |
+|---|---:|---:|---:|
+| Citrus (Cit) | 0.588 | 0.615 | 0.601 |
+| Cyclohexanone (Cyc) | 0.598 | 0.571 | 0.585 |
 
 Per-fold accuracy was 61.9%, 59.0%, 57.9%, 54.9% and 62.2%, a mean of **59.2% ± 2.7%** with ROC AUC **0.617**, against the **54%** cross-subject baseline in Kato et al. (2022) and 50% chance on this balanced set.
 
