@@ -49,7 +49,7 @@ The classification report and confusion matrix live inside each linked notebook.
 <img class="cm-dark" src="/images/cifar_confusion_dark.png" alt="CIFAR-10 confusion matrix for the best convolutional model, accuracy 78.27 percent over 10,000 test images. Largest confusions are dog predicted as cat (160), cat as dog (121), bird as deer (90), automobile as truck (82) and airplane as ship (78).">
 </div>
 
-**Precision and recall**
+##### Precision and recall
 
 | Class | Precision | Recall | F1 |
 |---|---:|---:|---:|
@@ -65,7 +65,7 @@ The classification report and confusion matrix live inside each linked notebook.
 | truck | 0.827 | 0.900 | 0.862 |
 | **Overall** | | | **78.27% accuracy** |
 
-**Top 5 errors**
+##### Top 5 errors
 
 | Actual to predicted | Count |
 |---|---:|
@@ -109,7 +109,7 @@ See my [Github repository](https://github.com/asaraog/msds431week10) for further
 <img class="cm-dark" src="/images/mnist_confusion_dark.png" alt="Confusion matrix for MNIST digit classification with a Go random forest. Accuracy 95.55 percent over 9,884 test images with 440 errors. Largest confusions are 4 predicted as 9 (28 times), 7 as 2 (27 times), and 5 as 3 (21 times).">
 </div>
 
-**Precision and recall**
+#### Precision and recall
 
 | Digit | Precision | Recall | F1 |
 |---|---:|---:|---:|
@@ -125,7 +125,7 @@ See my [Github repository](https://github.com/asaraog/msds431week10) for further
 | 9 | 0.930 | 0.939 | 0.934 |
 | **Overall** | | | **95.55% accuracy** |
 
-**Top 5 errors**
+#### Top 5 errors
 
 | Actual to predicted | Count | Why it is plausible |
 |---|---:|---|
