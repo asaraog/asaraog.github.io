@@ -40,6 +40,26 @@ See my [report](/docs/saraogee-research-report2-458.pdf) <i class="fa-solid fa-a
 |[9](/docs/exp9.html) <i class="fa-solid fa-arrow-up-right-from-square"></i>| 2 layer deep convolutional neural network with 128, 256 neurons and 0.6 dropout regularization|
 |[10](/docs/exp10.html) <i class="fa-solid fa-arrow-up-right-from-square"></i>| 3 layer deep convolutional neural network with 128, 256, 512 neurons,  0.3 dropout regularization and a fully connected classification layer with 100 neurons|
 
+#### What the best model confuses
+
+The classification report and confusion matrix live inside each linked notebook. Pulling the best model's matrix (experiment 10) out to where it can be read, with colour on **errors only** and a neutral diagonal.
+
+<div class="cm-fig">
+<img class="cm-light" src="/images/cifar_confusion_light.png" alt="CIFAR-10 confusion matrix for the best convolutional model, accuracy 78.27 percent over 10,000 test images. Largest confusions are dog predicted as cat (160), cat as dog (121), bird as deer (90), automobile as truck (82) and airplane as ship (78).">
+<img class="cm-dark" src="/images/cifar_confusion_dark.png" alt="CIFAR-10 confusion matrix for the best convolutional model, accuracy 78.27 percent over 10,000 test images. Largest confusions are dog predicted as cat (160), cat as dog (121), bird as deer (90), automobile as truck (82) and airplane as ship (78).">
+</div>
+
+| Actual to predicted | Count |
+|---|---:|
+| dog to cat | 160 |
+| cat to dog | 121 |
+| bird to deer | 90 |
+| automobile to truck | 82 |
+| airplane to ship | 78 |
+
+Nearly every large error is a within-superclass one. Cat and dog alone account for 281 errors between them, more than an eighth of all 2,173, and the rest pair vehicles with vehicles and animals with animals. Ship (0.907 recall) and automobile (0.859) are the easiest, cat (0.636) and bird (0.650) the hardest. The model has clearly learned the animal/vehicle split and is failing inside it, which is the expected shape at this depth rather than a training fault.
+
+
 ## Image classification using random forests with Go
 This project creates a demo towards implementing a data engineering pipeline from image capture to recognition for an integrated application using purely Go. For this demonstration, image classification is performed using Go's [randomForest package](https://github.com/malaschitz/randomForest) employed on [MNIST](http://yann.lecun.com/exdb/mnist/) dataset using the [GoMNIST driver](https://github.com/kuroko1t/GoMNIST). Results are compared using an **isolation forest** ([go-iforest](https://github.com/e-XpertSolutions/go-iforest)) trained on all of the test observations.  For information about isolation forests, see an [earlier post](/PythonRGo) comparing Go with Python/R under "Identifying anomalies in MNIST". The best-performing model utilized 1000 trees and had **96% accuracy on the hold-out test dataset** with comparable accuracy for each digit. The average anomaly score was expectedly higher for the misclassified images. Misclassified images from the test set are printed using Go's [image package](https://pkg.go.dev/image).
 
