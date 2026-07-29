@@ -71,7 +71,7 @@ The classification report and confusion matrix live inside each linked notebook.
 | truck | 0.827 | 0.900 | 0.862 | 1,000 |
 | **Overall** | | | **78.27% accuracy** | 10,000 |
 
-Nearly every large error is a within-superclass one. Cat and dog alone account for 281 errors between them, more than an eighth of all 2,173, and the rest pair vehicles with vehicles and animals with animals. Ship (0.907 recall) and automobile (0.859) are the easiest, cat (0.636) and bird (0.650) the hardest. The model has clearly learned the animal/vehicle split and is failing inside it, which is the expected shape at this depth rather than a training fault.
+Nearly every large error is a within-superclass one. Cat and dog alone account for 281 errors between them, more than an eighth of all 2,173, and the rest pair vehicles with vehicles and animals with animals. Ship (0.907 recall) and automobile (0.859) are the easiest, cat (0.636) and bird (0.650) the hardest. The model has clearly learned the animal/vehicle split and is failing inside it.
 
 
 ## Image classification using random forests with Go
