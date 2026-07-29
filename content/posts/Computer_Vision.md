@@ -49,13 +49,7 @@ The classification report and confusion matrix live inside each linked notebook.
 <img class="cm-dark" src="/images/cifar_confusion_dark.png" alt="CIFAR-10 confusion matrix for the best convolutional model, accuracy 78.27 percent over 10,000 test images. Largest confusions are dog predicted as cat (160), cat as dog (121), bird as deer (90), automobile as truck (82) and airplane as ship (78).">
 </div>
 
-| Actual to predicted | Count |
-|---|---:|
-| dog to cat | 160 |
-| cat to dog | 121 |
-| bird to deer | 90 |
-| automobile to truck | 82 |
-| airplane to ship | 78 |
+**Precision and recall**
 
 | Class | Precision | Recall | F1 |
 |---|---:|---:|---:|
@@ -70,6 +64,17 @@ The classification report and confusion matrix live inside each linked notebook.
 | ship | 0.830 | 0.907 | 0.867 |
 | truck | 0.827 | 0.900 | 0.862 |
 | **Overall** | | | **78.27% accuracy** |
+
+**Top 5 errors**
+
+| Actual to predicted | Count |
+|---|---:|
+| dog to cat | 160 |
+| cat to dog | 121 |
+| bird to deer | 90 |
+| automobile to truck | 82 |
+| airplane to ship | 78 |
+
 
 Nearly every large error is a within-superclass one. Cat and dog alone account for 281 errors between them, more than an eighth of all 2,173, and the rest pair vehicles with vehicles and animals with animals. Ship (0.907 recall) and automobile (0.859) are the easiest, cat (0.636) and bird (0.650) the hardest. The model has clearly learned the animal/vehicle split and is failing inside it.
 
@@ -104,15 +109,7 @@ See my [Github repository](https://github.com/asaraog/msds431week10) for further
 <img class="cm-dark" src="/images/mnist_confusion_dark.png" alt="Confusion matrix for MNIST digit classification with a Go random forest. Accuracy 95.55 percent over 9,884 test images with 440 errors. Largest confusions are 4 predicted as 9 (28 times), 7 as 2 (27 times), and 5 as 3 (21 times).">
 </div>
 
-These five confusions account for most of the damage.
-
-| Actual to predicted | Count | Why it is plausible |
-|---|---:|---|
-| 4 to 9 | 28 | a closed-top 4 is a 9 |
-| 7 to 2 | 27 | a crossed or curved 7 mimics a 2 |
-| 5 to 3 | 21 | an open-left 5 loses its stem |
-| 8 to 9 | 18 | a faint lower loop |
-| 7 to 9 | 15 | a shared descender stroke |
+**Precision and recall**
 
 | Digit | Precision | Recall | F1 |
 |---|---:|---:|---:|
@@ -128,9 +125,18 @@ These five confusions account for most of the damage.
 | 9 | 0.930 | 0.939 | 0.934 |
 | **Overall** | | | **95.55% accuracy** |
 
-Digits 7 and 9 take 61 errors each and 8 takes 59 (recall 0.940, 0.939, 0.939), while 0 and 1 are essentially unconfusable. Every top confusion is a shape confusion a person would also make, so the forest fails on ambiguous glyphs rather than on a systematic fault.
+**Top 5 errors**
 
-One caveat is that the exported scores cover 9,884 of the 10,000 test images with 440 errors, while 415 misclassified images were written to disk, so the two artifacts came from slightly different runs.
+| Actual to predicted | Count | Why it is plausible |
+|---|---:|---|
+| 4 to 9 | 28 | a closed-top 4 is a 9 |
+| 7 to 2 | 27 | a crossed or curved 7 mimics a 2 |
+| 5 to 3 | 21 | an open-left 5 loses its stem |
+| 8 to 9 | 18 | a faint lower loop |
+| 7 to 9 | 15 | a shared descender stroke |
+
+
+Digits 7 and 9 take 61 errors each and 8 takes 59 (recall 0.940, 0.939, 0.939), while 0 and 1 are essentially unconfusable. Every top confusion is a shape confusion a person would also make, so the forest fails on ambiguous glyphs rather than on a systematic fault.
 
 
 ## References
