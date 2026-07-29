@@ -22,7 +22,7 @@ Working with the publicly available Kato et al. (2022) EEG dataset of odorants, 
 
 Supplementary code and data are available on GitHub at [asaraog/msdsthesis](https://github.com/asaraog/msdsthesis).
 
-## How well does it actually decode?
+## Confusion matrix
 
 Accuracy hides *where* a model is wrong. This is the pooled confusion matrix across all five folds, each trial predicted by a model that never saw its subject.
 
@@ -41,6 +41,8 @@ Accuracy hides *where* a model is wrong. This is the pooled confusion matrix acr
 |---|---:|---:|
 | **Actual Citrus** | **381** | 239 |
 | **Actual Cyclohexanone** | 267 | **356** |
+
+## Precision and recall
 
 | Class | Precision | Recall | F1 |
 |---|---:|---:|---:|
