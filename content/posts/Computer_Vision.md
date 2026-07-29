@@ -57,7 +57,7 @@ See my [Github repository](https://github.com/asaraog/msds431week10) for further
 
 ### Where the classifier fails
 
-96% accuracy is a single number covering ten quite different digits. The confusion matrix below is built from the model's own saved predictions in `goScores.csv`. Colour encodes **errors only**, and the diagonal is drawn neutral, so the error structure stays visible instead of being drowned out by the correct predictions.
+96% is one number covering ten quite different digits. This matrix comes from the model's own saved predictions in `goScores.csv`, with colour encoding **errors only** and a neutral diagonal so the error structure stays visible.
 
 <style>
 .cm-fig img.cm-dark { display: none; }
@@ -70,7 +70,7 @@ See my [Github repository](https://github.com/asaraog/msds431week10) for further
 <img class="cm-dark" src="/images/mnist_confusion_dark.png" alt="Confusion matrix for MNIST digit classification with a Go random forest. Accuracy 95.55 percent over 9,884 test images with 440 errors. Largest confusions are 4 predicted as 9 (28 times), 7 as 2 (27 times), and 5 as 3 (21 times).">
 </div>
 
-The five confusions that account for most of the damage:
+These five confusions account for most of the damage.
 
 | Actual to predicted | Count | Why it is plausible |
 |---|---:|---|
@@ -80,9 +80,9 @@ The five confusions that account for most of the damage:
 | 8 to 9 | 18 | a faint lower loop |
 | 7 to 9 | 15 | a shared descender stroke |
 
-Digits 7 and 9 take 61 errors each and 8 takes 59, for recalls of 0.940, 0.939 and 0.939. The easiest are 0 and 1, essentially unconfusable at this resolution. Every one of the top confusions is a shape confusion a person would also make on a sloppy sample, which is the reassuring result: the forest fails on genuinely ambiguous glyphs rather than on some systematic preprocessing fault.
+Digits 7 and 9 take 61 errors each and 8 takes 59 (recall 0.940, 0.939, 0.939), while 0 and 1 are essentially unconfusable. Every top confusion is a shape confusion a person would also make, so the forest fails on ambiguous glyphs rather than on a systematic fault.
 
-One caveat worth keeping visible. The exported scores cover 9,884 of the 10,000 test images and contain 440 errors, while 415 misclassified images were written to disk, so the two artifacts came from slightly different runs. Accuracy is 95.6% on the exported set, which is the 96% quoted above, but the exact error count depends on which artifact you count.
+One caveat is that the exported scores cover 9,884 of the 10,000 test images with 440 errors, while 415 misclassified images were written to disk, so the two artifacts came from slightly different runs.
 
 
 ## References

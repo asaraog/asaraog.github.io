@@ -24,7 +24,7 @@ Supplementary code and data are available on GitHub at [asaraog/msdsthesis](http
 
 ## How well does it actually decode?
 
-Headline accuracy hides *where* a model is wrong. Below is the pooled confusion matrix across all five cross-validation folds, so every trial appears exactly once, predicted by a model that never saw that subject during training.
+Accuracy hides *where* a model is wrong. This is the pooled confusion matrix across all five folds, each trial predicted by a model that never saw its subject.
 
 <style>
 .cm-fig img.cm-dark { display: none; }
@@ -47,9 +47,9 @@ Headline accuracy hides *where* a model is wrong. Below is the pooled confusion 
 | Citrus (Cit) | 0.588 | 0.615 | 0.601 | 620 |
 | Cyclohexanone (Cyc) | 0.598 | 0.571 | 0.585 | 623 |
 
-Per-fold accuracy was 61.9%, 59.0%, 57.9%, 54.9% and 62.2%, a mean of **59.2% ± 2.7%**, with ROC AUC **0.617**, against the **54%** cross-subject baseline reported by Kato et al. (2022) and a 50% chance rate on this nearly balanced set (620 Cit / 623 Cyc).
+Per-fold accuracy was 61.9%, 59.0%, 57.9%, 54.9% and 62.2%, a mean of **59.2% ± 2.7%** with ROC AUC **0.617**, against the **54%** cross-subject baseline in Kato et al. (2022) and 50% chance on this balanced set.
 
-What the matrix shows that accuracy alone does not is that the errors are close to symmetric, 239 citrus trials called cyclohexanone against 267 the other way. The model is not collapsing onto one odor, which is the usual failure mode for a weak EEG classifier, and precision is near-identical across the two classes (0.588 and 0.598), so the decision boundary is genuinely split rather than propped up by class imbalance. The margin over chance is modest, but every fold clears it. That supports the claim this work actually makes, that odor identity is decodable from EEG above chance across unseen subjects, not that it is decodable reliably.
+The errors are near-symmetric, 239 citrus trials called cyclohexanone against 267 the other way, and precision is near-identical across the classes (0.588 and 0.598). The model is not collapsing onto one odor, which is the usual failure mode for a weak EEG classifier. The margin over chance is modest but every fold clears it.
 
 
 ## References
