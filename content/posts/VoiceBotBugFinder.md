@@ -17,32 +17,32 @@ This project is designed to make conversational QA repeatable, measurable, and d
 
 ## Architecture
 
-Twilio places the outbound call and opens a Media Stream WebSocket. The bridge proxies audio bidirectionally into a single realtime session at roughly 300 ms round trip, so the agent can be interrupted mid-sentence the way a person can.
+The notebook orchestration functions trigger outbound calls through Twilio. When connected, Twilio opens a Media Stream WebSocket, and the in-notebook bridge proxies bidirectionally to the Azure OpenAI Realtime API in a single low-latency (~300ms) session.
+
+Python version: 3.10+
 
 | Layer | Technology |
-| --- | --- |
-| Telephony | Twilio, outbound PSTN with dual-channel recording |
-| Live audio bridge | FastAPI and WebSockets |
-| Speech to speech | Azure OpenAI `gpt-realtime-mini` |
-| Transcription | Azure AI Speech, en-US and hi-IN |
-| Bug analysis | Azure OpenAI GPT-5-mini |
+|-------|------------|
+| **Telephony** | Twilio (outbound PSTN + dual-channel recording) |
+| **Live Audio Bridge** | FastAPI + WebSockets |
+| **Speech-to-Speech AI** | Azure OpenAI `gpt-realtime-mini` |
+| **Transcription** | Azure AI Speech (hi-IN + en-US) |
+| **Bug Analysis** | Azure OpenAI GPT-5-mini |
 
-## Test scenarios
+## Scenarios and Helper functions
 
-Ten scenarios, written to provoke failure rather than confirm success. The interesting bugs in a voice agent are not crashes. They are the moments where it sounds fluent and confident while leaving something out.
-
-| ID | Scenario | What it probes |
-| --- | --- | --- |
-| 01 | New patient scheduling | Collects name, date of birth, reason for visit |
-| 02 | Reschedule appointment | Reschedule plus policy clarification |
-| 03 | Medication refill | Lisinopril and atorvastatin |
+| ID | Scenario | Key Test |
+|----|----------|----------|
+| 01 | New patient scheduling | Collects name, DOB, reason |
+| 02 | Reschedule appointment | Reschedule + policy clarification |
+| 03 | Medication refill | Lisinopril + atorvastatin |
 | 04 | Insurance inquiry | BCBS PPO, Medicare, UHC |
-| 05 | Sunday booking | Agent should refuse a weekend slot |
-| 06 | Multiple requests | Multi-intent handling in a single call |
-| 07 | Urgent same-day | Chest tightness triage and escalation |
-| 08 | Barge-in | Recovery from mid-sentence interruption |
-| 09 | Wrong department | Caller believes they reached the pharmacy |
-| 10 | Hindi only | Language access under Title VI |
+| 05 | Sunday booking [KEY BUG] | **CRITICAL, agent should refuse weekend** |
+| **06** | **Multiple requests** | **Multi-intent handling in single call** |
+| 07 | Urgent same-day | Chest tightness triage |
+| 08 | Barge-in / interruption | Mid-sentence interruption recovery |
+| 09 | Wrong department | Patient thinks they called pharmacy |
+| **10** | **Hindi only** | **Title VI language access compliance** |
 
 ## What it found
 
