@@ -14,7 +14,7 @@ Cricket for Noobs is a production web app that explains live cricket to American
 - **Live market integration.** Prediction-market prices stream in beside the model's estimate, and a market-pulse detector surfaces sharp price moves. Traders react seconds after the action, well before scoreboard feeds update.
 - **Two model providers, one voice.** Gemini writes the narrative, with automatic failover to Groq's Llama on an error or a refusal. Groq also hosts the neural voice behind read-aloud.
 - **CI/CD.** Automated tests and deployment to production and staging environments on every push.
-- **Also an MCP server.** The same model and archive are published separately as [mcp-cricket](https://github.com/asaraog/mcp-cricket), an open-source [Model Context Protocol](https://modelcontextprotocol.io) server, so any AI assistant can query them directly. It ships eleven read-only tools as a single static binary, with no API key.
+- **Also an MCP server.** The same model and archive are published separately as [mcp-cricket](https://github.com/asaraog/mcp-cricket), an open-source Model Context Protocol server, so any AI assistant can query them directly. It ships eleven read-only tools as a single static binary, with no API key.
 
 ## Go vs Python, measured
 
