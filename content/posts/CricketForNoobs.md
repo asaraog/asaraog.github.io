@@ -18,7 +18,7 @@ Cricket for Noobs is a production web app that explains live cricket to American
 
 ## Go vs Python, measured
 
-The entire product, spanning backend, retrieval, and frontend, is a single Go binary built on the standard library alone: no framework, no vector store, one Docker layer. Retrieval is RAG: a ~9,500-document corpus rides inside the binary, searched by compressed word embeddings and BM25, and the top three hits are injected into the prompt before the LLM generates. Brute-force cosine similarity over all of it takes under a millisecond, which is precisely why no vector database is needed.
+The entire product, spanning backend, retrieval, and frontend, is a single Go binary built on the standard library alone: no framework, no vector store, one Docker layer. Retrieval is RAG: a ~9,500-document corpus rides inside the binary, searched by compressed word embeddings and BM25, and the top three hits are injected into the prompt before the LLM generates.
 
 The Go rewrite is about 4× faster than the Python original. The first version of this product was Python (FastAPI + uvicorn), and both versions run on the same setup.
 
