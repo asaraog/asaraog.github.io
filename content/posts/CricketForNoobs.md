@@ -17,13 +17,13 @@ Cricket for Noobs is a production web app that explains live cricket to American
 
 ## Go vs Python, measured
 
-The entire product, spanning backend, retrieval, and frontend, is a single Go binary built on the standard library alone: no framework, no vector store, one Docker layer. Searching all ~9,500 corpus documents by brute-force cosine similarity takes under a millisecond, which is precisely why no vector database is needed.
+The entire product, spanning backend, retrieval, and frontend, is a single Go binary built on the standard library alone: no framework, no vector store, one Docker layer. Retrieval is RAG without the usual stack: a ~9,500-document corpus rides inside the binary and is searched three ways, by exact name match, by compressed word embeddings, and by BM25. Brute-force cosine similarity over all of it takes under a millisecond, which is precisely why no vector database is needed.
 
-The Go rewrite is about 4× faster than the Python original. The first version of this product was Python (FastAPI + uvicorn). Both versions still run, so the comparison is empirical, not theoretical: same laptop, same JSON endpoint, warmed, 50 sequential requests.
+The Go rewrite is about 4× faster than the Python original. The first version of this product was Python (FastAPI + uvicorn), and both versions still run, so the comparison is measured on the same setup rather than estimated.
 
 | | Python 3.11 (FastAPI + uvicorn) | Go 1.20 (standard library) |
 |---|---|---|
 | Request latency | 1.61 ms | **0.41 ms** |
 | Boot to serving | 1.90 s | **1.14 s** |
 
-The per-request gap is framework and interpreter overhead, paid on every call forever; it is also a throughput ceiling (roughly 600 vs 2,400 requests per second per process, before Go's native multi-core scaling). The boot number understates the difference: the Go figure includes building a BM25 index over ~9,500 documents, loading 20,000 word embeddings, and parsing 9,417 player careers at startup, none of which the Python version did.
+The per-request gap is framework and interpreter overhead, paid on every call forever. The boot number understates the difference: the Go figure includes building a BM25 index over ~9,500 documents, loading 20,000 word embeddings, and parsing 9,417 player careers at startup, none of which the Python version did.
