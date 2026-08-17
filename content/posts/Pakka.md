@@ -15,9 +15,10 @@ owner's own UPI id. The moment their bank texts them that the money arrived,
 Pakka reads that message and confirms the booking automatically, no payment
 gateway and no human re-typing anything.
 
-Pakka is RCM in the US sense: schedule, approve, collect, post payment. The
-same loop extends naturally into healthcare RCM too, since a clinic collecting
-a copay before a visit runs on the same mechanism.
+Pakka is RCM (Revenue Cycle Management) in the US sense: schedule, approve,
+collect, post payment. The same loop extends naturally into healthcare RCM
+too, since a clinic collecting a copay before a visit runs on the same
+mechanism.
 
 ## Why payment posting, not just booking
 
