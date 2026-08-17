@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Pakka reconciliation flow diagram</title>
+  <desc id="desc">Diagram showing a WhatsApp booking approved by the owner, an advance paid direct to their UPI id, and the booking confirming itself once the bank SMS is read.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4fbf8"/>
+      <stop offset="100%" stop-color="#eaf6f2"/>
+    </linearGradient>
+    <linearGradient id="bookCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eaf4ff"/>
+      <stop offset="100%" stop-color="#cfe4ff"/>
+    </linearGradient>
+    <linearGradient id="approveCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff3e0"/>
+      <stop offset="100%" stop-color="#ffdfb0"/>
+    </linearGradient>
+    <linearGradient id="collectCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f1eaff"/>
+      <stop offset="100%" stop-color="#d9c8ff"/>
+    </linearGradient>
+    <linearGradient id="reconCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6faf1"/>
+      <stop offset="100%" stop-color="#b9edd3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#0f3d2e" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrow" markerWidth="16" markerHeight="16" refX="12" refY="8" orient="auto">
+      <path d="M0,0 L16,8 L0,16 z" fill="#0f3d2e"/>
+    </marker>
+    <style>
+      .title { font: 700 40px 'Avenir Next', 'Segoe UI', sans-serif; fill: #0f251c; }
+      .subtitle { font: 600 20px 'Avenir Next', 'Segoe UI', sans-serif; fill: #2f5747; letter-spacing: 0.3px; }
+      .step { font: 800 24px 'Avenir Next', 'Segoe UI', sans-serif; fill: #0f3d2e; }
+      .body { font: 600 17px 'Avenir Next', 'Segoe UI', sans-serif; fill: #345a49; }
+      .mini { font: 700 15px 'Avenir Next', 'Segoe UI', sans-serif; fill: #45685a; }
+      .tag { font: 800 14px 'Avenir Next', 'Segoe UI', sans-serif; fill: #ffffff; letter-spacing: 1px; }
+      .rupee { font: 800 15px 'Avenir Next', 'Segoe UI', sans-serif; fill: #0f3d2e; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" rx="36" fill="url(#bg)"/>
+  <circle cx="150" cy="130" r="100" fill="#cfe4ff" opacity="0.4"/>
+  <circle cx="1430" cy="780" r="130" fill="#b9edd3" opacity="0.5"/>
+  <circle cx="1100" cy="120" r="72" fill="#ffdfb0" opacity="0.45"/>
+
+  <text x="100" y="112" class="title">Pakka</text>
+  <text x="100" y="154" class="subtitle">Book on WhatsApp, approve with a tap, and the advance confirms itself</text>
+
+  <g filter="url(#shadow)">
+    <rect x="80" y="250" width="260" height="250" rx="28" fill="url(#bookCard)"/>
+    <rect x="110" y="282" width="200" height="52" rx="16" fill="#2f77d4"/>
+    <text x="210" y="315" text-anchor="middle" class="tag">WHATSAPP</text>
+    <rect x="120" y="355" width="180" height="94" rx="16" fill="#ffffff" opacity="0.94"/>
+    <text x="132" y="380" class="mini">कल 8 बजे</text>
+    <text x="132" y="404" class="mini">बॉक्स क्रिकेट</text>
+    <text x="132" y="432" class="mini" fill="#2f77d4">— customer</text>
+    <text x="210" y="480" text-anchor="middle" class="step">Book</text>
+  </g>
+
+  <path d="M358 374 H442" fill="none" stroke="#0f3d2e" stroke-width="10" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="460" y="250" width="260" height="250" rx="28" fill="url(#approveCard)"/>
+    <rect x="490" y="282" width="200" height="52" rx="16" fill="#e08a2b"/>
+    <text x="590" y="315" text-anchor="middle" class="tag">ONE TAP</text>
+    <circle cx="590" cy="400" r="56" fill="#ffffff" opacity="0.95"/>
+    <path d="M562 400 L582 420 L620 378" fill="none" stroke="#1f8f61" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="590" y="480" text-anchor="middle" class="step">Approve</text>
+  </g>
+
+  <path d="M738 374 H822" fill="none" stroke="#0f3d2e" stroke-width="10" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="840" y="250" width="280" height="250" rx="28" fill="url(#collectCard)"/>
+    <rect x="870" y="282" width="220" height="52" rx="16" fill="#7c4fd6"/>
+    <text x="980" y="315" text-anchor="middle" class="tag">OWNER'S OWN UPI</text>
+    <rect x="900" y="360" width="160" height="98" rx="16" fill="#ffffff" opacity="0.94"/>
+    <text x="980" y="392" text-anchor="middle" class="rupee">₹360</text>
+    <text x="980" y="422" text-anchor="middle" class="mini">direct</text>
+    <text x="980" y="440" text-anchor="middle" class="mini">no gateway</text>
+    <text x="980" y="480" text-anchor="middle" class="step">Collect</text>
+  </g>
+
+  <path d="M980 514 V606" fill="none" stroke="#0f3d2e" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="760" y="628" width="440" height="170" rx="24" fill="url(#reconCard)" stroke="#7fcda3" stroke-width="3"/>
+    <rect x="800" y="662" width="90" height="90" rx="18" fill="#ffffff" opacity="0.95"/>
+    <path d="M822 700 H868 M822 716 H868 M822 684 H858" stroke="#1f8f61" stroke-width="6" stroke-linecap="round"/>
+    <text x="920" y="690" class="step">Post payment</text>
+    <text x="920" y="720" class="body">Owner forwards the bank SMS —</text>
+    <text x="920" y="746" class="body">booking confirms itself</text>
+    <circle cx="1155" cy="663" r="27" fill="#1f8f61"/>
+    <path d="M1142 663 L1151 673 L1170 651" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <text x="370" y="353" class="mini">tap</text>
+  <text x="755" y="353" class="mini">pay</text>
+  <text x="998" y="592" class="mini">bank texts</text>
+</svg>
