@@ -43,4 +43,4 @@ node test.js       # 21 tests, no WhatsApp account or network needed
 ```
 
 Node 18+, zero dependencies. See the [GitHub repo](https://github.com/asaraog/pakka)
-for the full setup.
+for the full setup, or [pakka.online](https://pakka.online) for the hosted version.
