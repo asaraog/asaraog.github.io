@@ -36,5 +36,5 @@ Srinivasan, Syamala. &#34;Creating Chatbot&#34;. MSDS 453: Natural Language Proc
 ---
 
 > Author:   
-> URL: //localhost:1313/NLP/  
+> URL: /NLP/  
 

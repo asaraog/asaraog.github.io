@@ -1,31 +1,59 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Artificialintelligence - project - Asaraog</title>
-    <link>//localhost:1313/projects/artificialintelligence/</link>
+    <link>/projects/artificialintelligence/</link>
     <description>Artificialintelligence - project | Asaraog</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 29 Aug 2023 00:09:00 -0600</lastBuildDate><atom:link href="//localhost:1313/projects/artificialintelligence/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 17 Aug 2026 12:00:00 -0700</lastBuildDate><atom:link href="/projects/artificialintelligence/" rel="self" type="application/rss+xml" /><item>
+  <title>Pakka</title>
+  <link>/Pakka/</link>
+  <pubDate>Mon, 17 Aug 2026 12:00:00 -0700</pubDate>
+  <author>Author</author>
+  <guid>/Pakka/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/pakka.svg" alt="Pakka" title="Pakka" referrerpolicy="no-referrer"/></div>WhatsApp bookings that collect an advance and post the payment themselves Pakka is a WhatsApp bot for small businesses in India that take bookings and an advance payment. Built for sports venues first, though the same pattern fits any shop that takes an appointment and a deposit. A customer books in Hindi, the owner approves with one tap, and the advance goes straight to the owner&rsquo;s own UPI id. The moment their bank texts them that the money arrived, Pakka reads that message and confirms the booking automatically, no payment gateway and no human re-typing anything.]]></description>
+</item>
+<item>
+  <title>Voice Bot Bug Finder</title>
+  <link>/VoiceBotBugFinder/</link>
+  <pubDate>Wed, 01 Jul 2026 18:30:00 -0500</pubDate>
+  <author>Author</author>
+  <guid>/VoiceBotBugFinder/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/voicebot-bugfinder.svg" alt="Voice Bot Bug Finder" title="Voice Bot Bug Finder" referrerpolicy="no-referrer"/></div>Automated QA for healthcare voice agents with telephony and realtime AI Abstract
+Voice Bot Bug Finder is an end-to-end testing and evaluation workflow for healthcare phone agents. It places outbound calls through Twilio, streams live audio into Azure OpenAI Realtime, transcribes calls, and then analyzes outcomes to detect safety, handling, and policy failures.
+The framework runs scenario-based test calls such as medication refill requests, language-access interactions, wrong-department routing, and weekend scheduling edge cases.]]></description>
+</item>
+<item>
+  <title>SOAPgen</title>
+  <link>/SOAPgen/</link>
+  <pubDate>Thu, 04 Dec 2025 00:09:00 -0600</pubDate>
+  <author>Author</author>
+  <guid>/SOAPgen/</guid>
+  <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/soapgen.svg" alt="SOAPgen" title="SOAPgen" referrerpolicy="no-referrer"/></div>Generating SOAP notes from audio using Microsoft Azure Abstract
+SOAPgen is a healthcare AI and LLM project focused on converting recorded clinical conversations into structured SOAP notes: Subjective, Objective, Assessment, and Plan. The goal is to reduce manual documentation time for clinicians and make patient records easier to organize, review, and share.
+The pipeline uses Microsoft Azure services for speech processing and downstream text handling, followed by an LLM to organize the content into the standard SOAP format.]]></description>
+</item>
+<item>
   <title>Computer Vision in Python/Go</title>
-  <link>//localhost:1313/Computer_Vision/</link>
+  <link>/Computer_Vision/</link>
   <pubDate>Tue, 29 Aug 2023 00:09:00 -0600</pubDate>
   <author>Author</author>
-  <guid>//localhost:1313/Computer_Vision/</guid>
+  <guid>/Computer_Vision/</guid>
   <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/vision.png" alt="Computer Vision in Python/Go" title="Computer Vision in Python/Go" referrerpolicy="no-referrer"/></div>Image classification using neural networks with Python MNIST dataset This project utilizes the The Modified National Institute of Standards and Technology (MNIST) dataset which comprises of 60 thousand training observations and 10 thousand test observations of handwritten digits.
 Due to the complexity of imaging data, connectionist network models or neural networks have been gaining significant interest in recent years. Python machine learning packages sklearn and keras have been especially useful for specifying neural network architectures.]]></description>
 </item>
 <item>
   <title>Natural Language Processing</title>
-  <link>//localhost:1313/NLP/</link>
+  <link>/NLP/</link>
   <pubDate>Mon, 03 Apr 2023 00:09:00 -0600</pubDate>
   <author>Author</author>
-  <guid>//localhost:1313/NLP/</guid>
+  <guid>/NLP/</guid>
   <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/nlp.png" alt="Natural Language Processing" title="Natural Language Processing" referrerpolicy="no-referrer"/></div>Deep Learning Classification Models with AG News The growth of online news has led to a large volume of digital data. Natural language processing can help leverage this data for useful applications such as topic classification. Deep learning classification models are an attractive option to be used in these applications as the many layers in deep networks allow for hierarchal processing of the data (Glassner, 2021). The field of natural language processing has seen rapid growth since the advent of deep learning models with recurrent neural networks leading the charge (Ketkar &amp; Moolayil, 2021).]]></description>
 </item>
 <item>
   <title>Healthcare-based datasets</title>
-  <link>//localhost:1313/Health/</link>
+  <link>/Health/</link>
   <pubDate>Sat, 28 May 2022 00:09:00 -0600</pubDate>
   <author>Author</author>
-  <guid>//localhost:1313/Health/</guid>
+  <guid>/Health/</guid>
   <description><![CDATA[<div class="featured-image"><img loading="eager" src="/images/health.png" alt="Healthcare-based datasets" title="Healthcare-based datasets" referrerpolicy="no-referrer"/></div>Prediction of Bodyfat using a Linear Regression Model and Body Measurements Abstract
 Bodyfat percentage is an important estimator for health. The most accurate method for measuring bodyfat is by underwater weighing which is time-intensive. Predictive analytics (linear regression) using indirect measurements offer a faster method to compute bodyfat percentage. This study analyzes bodyfat data determined by underwater weighing with their corresponding indirect measurements. To predict the bodyfat using these measurements, we compare a traditional linear model, regularized model, subset models (indicator, dichotomous, piecewise, polynomial), and feature engineering models (principal components analysis).]]></description>
 </item>

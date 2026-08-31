@@ -95,5 +95,5 @@ Miller, Tom. &#34;Crawling and Scraping the Web,&#34;. MSDS 431: Data Engineerin
 ---
 
 > Author:   
-> URL: //localhost:1313/PythonRGo/  
+> URL: /PythonRGo/  
 

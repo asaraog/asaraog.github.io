@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/Users/asaraog/Documents/Website/asaraog.github.io",
+	"sourceRoot": "/private/tmp/claude-501/-Users-asaraog-Documents-job/07e8269a-9004-4f92-8bde-17455ff8bf5b/scratchpad/asaraog.github.io",
 	"sources": [
 		"themes/FixIt/assets/css/style.scss",
 		"themes/FixIt/assets/css/_variables.scss",

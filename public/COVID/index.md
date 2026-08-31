@@ -17,5 +17,5 @@ Miller, Tom. &#34;Queuing.&#34; MSDS 460: Decision Analytics. Course at Northwes
 ---
 
 > Author:   
-> URL: //localhost:1313/COVID/  
+> URL: /COVID/  
 

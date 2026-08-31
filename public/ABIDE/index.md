@@ -19,5 +19,5 @@ Miller, Tom. &#34;Medical Imaging&#34;. MSDS 422: Practical Machine Learning. Co
 ---
 
 > Author:   
-> URL: //localhost:1313/ABIDE/  
+> URL: /ABIDE/  
 

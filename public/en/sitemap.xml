@@ -2,74 +2,80 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
-      <loc>//localhost:1313/Neural_Decoding/</loc><lastmod>2024-05-23T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
-      <loc>//localhost:1313/PythonRGo/</loc><lastmod>2023-08-06T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/Website/</loc><lastmod>2024-06-24T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>//localhost:1313/</loc><lastmod>2024-06-24T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+      <loc>/Website/</loc><lastmod>2024-06-24T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>/</loc><lastmod>2026-08-30T15:30:00-07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
-            href="//localhost:1313/hi/"
+            href="/hi/"
             /><xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//localhost:1313/"
+          href="/"
           /></url><url>
-      <loc>//localhost:1313/projects/dataengineering/</loc><lastmod>2024-06-24T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>//localhost:1313/posts/</loc><lastmod>2024-06-24T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+      <loc>/projects/dataengineering/</loc><lastmod>2026-08-30T15:30:00-07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>/PayerRateAudit/</loc><lastmod>2026-08-30T15:30:00-07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>/posts/</loc><lastmod>2026-08-30T15:30:00-07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
-            href="//localhost:1313/hi/posts/"
+            href="/hi/posts/"
             /><xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//localhost:1313/posts/"
+          href="/posts/"
           /></url><url>
-      <loc>//localhost:1313/projects/</loc><lastmod>2024-06-24T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+      <loc>/projects/</loc><lastmod>2026-08-30T15:30:00-07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
-            href="//localhost:1313/hi/projects/"
+            href="/hi/projects/"
             /><xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//localhost:1313/projects/"
+          href="/projects/"
           /></url><url>
-      <loc>//localhost:1313/projects/neuroimaging/</loc><lastmod>2024-05-23T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
-      <loc>//localhost:1313/projects/artificialintelligence/</loc><lastmod>2023-08-29T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/Computer_Vision/</loc><lastmod>2023-08-29T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/Front-end_Applications/</loc><lastmod>2023-08-22T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/Goroutines/</loc><lastmod>2023-08-01T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/projects/biomolecules/</loc><lastmod>2023-06-04T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/COVID/</loc><lastmod>2023-06-04T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/NLP/</loc><lastmod>2023-04-03T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/Health/</loc><lastmod>2022-05-28T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/ABIDE/</loc><lastmod>2022-05-13T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/DNA/</loc><lastmod>2022-05-10T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/CRISPR/</loc><lastmod>2020-09-01T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/StemCells/</loc><lastmod>2016-06-05T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>//localhost:1313/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+      <loc>/projects/artificialintelligence/</loc><lastmod>2026-08-17T12:00:00-07:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>/Pakka/</loc><lastmod>2026-08-17T12:00:00-07:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+      <loc>/CricketForNoobs/</loc><lastmod>2026-07-27T20:30:00-05:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+      <loc>/VoiceBotBugFinder/</loc><lastmod>2026-07-01T18:30:00-05:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>/Neural_EEG_Decoding/</loc><lastmod>2026-03-24T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>/projects/neuroimaging/</loc><lastmod>2026-03-24T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>/SOAPgen/</loc><lastmod>2025-12-04T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>/Neural_Decoding/</loc><lastmod>2024-05-23T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>/Computer_Vision/</loc><lastmod>2023-08-29T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>/Front-end_Applications/</loc><lastmod>2023-08-22T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>/PythonRGo/</loc><lastmod>2023-08-06T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>/Goroutines/</loc><lastmod>2023-08-01T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>/projects/biomolecules/</loc><lastmod>2023-06-04T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>/COVID/</loc><lastmod>2023-06-04T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>/NLP/</loc><lastmod>2023-04-03T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>/Health/</loc><lastmod>2022-05-28T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>/ABIDE/</loc><lastmod>2022-05-13T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>/DNA/</loc><lastmod>2022-05-10T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>/CRISPR/</loc><lastmod>2020-09-01T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>/StemCells/</loc><lastmod>2016-06-05T00:09:00-06:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
-            href="//localhost:1313/hi/categories/"
+            href="/hi/categories/"
             /><xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//localhost:1313/categories/"
+          href="/categories/"
           /></url><url>
-      <loc>//localhost:1313/collections/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+      <loc>/collections/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
-            href="//localhost:1313/hi/collections/"
+            href="/hi/collections/"
             /><xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//localhost:1313/collections/"
+          href="/collections/"
           /></url><url>
-      <loc>//localhost:1313/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+      <loc>/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="hi"
-            href="//localhost:1313/hi/tags/"
+            href="/hi/tags/"
             /><xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//localhost:1313/tags/"
+          href="/tags/"
           /></url></urlset>

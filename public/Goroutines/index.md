@@ -35,5 +35,5 @@ Miller, Thomas W. 1999. &#34;The Boston splits: Sample size requirements for mod
 ---
 
 > Author:   
-> URL: //localhost:1313/Goroutines/  
+> URL: /Goroutines/  
 

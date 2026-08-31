@@ -26,5 +26,5 @@ Miller, Tom. &#34;DNA Sequencing&#34;. MSDS 422: Practical Machine Learning. Cou
 ---
 
 > Author:   
-> URL: //localhost:1313/DNA/  
+> URL: /DNA/  
 

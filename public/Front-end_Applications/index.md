@@ -47,5 +47,5 @@ https://github.com/ThomasWMiller/jump-start-sqlite
 ---
 
 > Author:   
-> URL: //localhost:1313/Front-end_Applications/  
+> URL: /Front-end_Applications/  
 

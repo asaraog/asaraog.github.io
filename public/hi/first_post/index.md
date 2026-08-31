@@ -8,5 +8,5 @@ A blog (a truncation of &#34;weblog&#34;) is an informational website published 
 ---
 
 > रचयिता:   
-> URL: //localhost:1313/hi/first_post/  
+> URL: /hi/first_post/  
 

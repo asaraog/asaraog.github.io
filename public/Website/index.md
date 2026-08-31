@@ -1,18 +1,21 @@
 # Building This Website in Hugo
 
-&lt;font size=&#34;1&#34;&gt; [Partial image credit](https://github.com/Lruihao/hugo-blog/blob/main/assets/images/blog-flow.png) &lt;/font&gt;
+&lt;span style=&#34;font-size:0.75em;&#34;&gt;[Partial image credit](https://github.com/Lruihao/hugo-blog/blob/main/assets/images/blog-flow.png)&lt;/span&gt;
 
 ## Why Go?
 
-Static site generators such as [Hugo](https://gohugo.io) were developed recently using Go. [Go](https://go.dev/) is a compiled language designed for today&#39;s multi-processor, scalable, high-performance systems. Other platforms have inherited dependency chains that can lead to infeasible build times. Realizing these benefits,  [Cloudfare](https://blog.cloudflare.com/new-dev-docs) recently migrated from Gatsby (a web framework based on JavaScript). 
+Static site generators such as [Hugo](https://gohugo.io) were developed recently using Go. [Go](https://go.dev/) is a compiled language designed for today&#39;s multi-processor, scalable, high-performance systems. Other platforms have inherited dependency chains that can lead to infeasible build times. Realizing these benefits,  [Cloudfare](https://blog.cloudflare.com/new-dev-docs) recently migrated from Gatsby (a web framework based on JavaScript).
 
 ### Demo website
+
 I first created a [demo website](autonotes.netlify.app) using the [Hugo Winston theme](https://themes.gohugo.io/themes/hugo-winston-theme/). This theme does have a [Live Demo](https://hugo-winston.netlify.app/) which made it simple to deploy onto [Netlify](https://www.netlify.com/). All descriptions are fictional and generated using [ChatGPT](https://chat.openai.com/).
 
 See my [Github repository](https://github.com/asaraog/msds431week3) for further details.
 
 ### Saraogee.com
+
 I had several requirements in mind for my website:
+
 - Public Comments such as [Valine](https://valine.js.org/en/)
 - Site Analytics such as [Google Analytics](https://developers.google.com/analytics/)
 - Search such as [Fuse.js](https://www.fusejs.io/)
@@ -35,6 +38,7 @@ cd msds431week3
 cd exampleSite
 hugo server
 ```
+
 or
 
 ```
@@ -57,5 +61,5 @@ Miller, Tom. &#34;Setting Up a Website,&#34;. MSDS 431: Data Engineering with Go
 ---
 
 > Author:   
-> URL: //localhost:1313/Website/  
+> URL: /Website/  
 
