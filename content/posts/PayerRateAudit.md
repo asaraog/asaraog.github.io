@@ -13,7 +13,7 @@ Payer Rate Audit answers a question every medical practice has: which insurer ac
 
 Both inputs are public. Every US hospital must publish its payer-negotiated rates, and CMS publishes the RVU table. Run against one rural hospital's file, the spread was 2.2x between the best and worst contract for the same procedures. One excision code ranged from $318 to $4,977 across payers.
 
-The tool also reprices a practice's own service mix from the X12 835 remittance files a clearinghouse already delivers, turning a contract negotiation into a dollar figure. I built the scaffold with Devin and corrected it with Claude Code. The corrections were billing domain judgment, documented in the repository.
+The tool also reprices a practice's own service mix from the X12 835 remittance files a clearinghouse already delivers, turning a contract negotiation into a dollar figure. I built the scaffold with Devin and corrected it with Claude Code. The corrections were billing domain judgment.
 
 To run locally:
 
