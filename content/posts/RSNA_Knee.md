@@ -17,7 +17,7 @@ Our final submission blends two halves per finding. The hybrid half fuses an eig
 
 Our labels set the ceiling. They came from the reports alone and score **0.909** macro AUC on the 58 expert studies. The 1st-place labels, read from the images as well as the reports, score **0.943** on the same studies.
 
-Thanks to RSNA, the annotating radiologists and Kaggle. Thanks also to @nartaa, @heliosli and @dreaddevelopment, whose public models and recipes carried much of our score.
+Thanks to RSNA, the annotating radiologists and Kaggle. Thanks also to [@nartaa](https://www.kaggle.com/nartaa), [@heliosli](https://www.kaggle.com/heliosli) and [@dreaddevelopment](https://www.kaggle.com/dreaddevelopment), whose public models and recipes carried much of our score.
 
 ### 1. Overview
 
