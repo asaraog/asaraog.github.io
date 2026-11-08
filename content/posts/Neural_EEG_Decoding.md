@@ -2,7 +2,7 @@
 title: Neural EEG Decoding
 date: 2026-03-24T00:09:00-06:00
 draft: false
-projects: neuroimaging
+projects: radiology
 featuredImage: /images/eeg_classification_flow.png
 featuredImagePreview: /images/eeg_classification_flow_preview.png
 ---

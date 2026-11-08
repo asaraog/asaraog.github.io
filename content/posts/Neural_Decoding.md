@@ -2,7 +2,7 @@
 title: Neural MRI Decoding
 date: 2024-05-23T00:09:00-06:00
 draft: false
-projects: neuroimaging
+projects: radiology
 featuredImage: /images/decoding3.png
 ---
 ## Neural MRI Decoding of Smell with Generative AI

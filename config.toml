@@ -48,14 +48,14 @@ defaultContentLanguage = "en"
       [languages.hi.menu.main.params]
         icon = "fa-solid fa-file"
     [[languages.hi.menu.main]]
-        identifier = "neuroimaging"
+        identifier = "radiology"
         parent = "projects"
-        name = "तंत्रिका-इमेजिंग"
-        url = "/projects/neuroimaging/"
-        title = "तंत्रिका-इमेजिंग"
+        name = "रेडियोलॉजी"
+        url = "/projects/radiology/"
+        title = "रेडियोलॉजी"
         weight = 2
       [languages.hi.menu.main.params]
-        icon = "fa-solid fa-brain"
+        icon = "fa-solid fa-x-ray"
     [[languages.hi.menu.main]]
         identifier = "biomolecules"
         parent = "projects"
@@ -147,13 +147,13 @@ enableEmoji = true
       # FixIt 0.2.16 | NEW set menu item type, optional values: ["mobile", "desktop"]
       type = ""
  [[menu.main]]
-    identifier = "neuroimaging"
+    identifier = "radiology"
     parent = "projects"
     pre = ""
     post = ""
-    name = "Neuroimaging"
-    url = "/projects/neuroimaging/"
-    title = "Neuroimaging"
+    name = "Radiology"
+    url = "/projects/radiology/"
+    title = "Radiology"
     weight = 2
    [menu.main.params]
       # add css class to a specific menu item
@@ -161,7 +161,7 @@ enableEmoji = true
       # whether set as a draft menu item whose function is similar to a draft post/page
       draft = false
       # FixIt 0.2.16 | NEW add fontawesome icon to a specific menu item
-      icon = "fa-solid fa-brain"
+      icon = "fa-solid fa-x-ray"
   [[menu.main]]
     identifier = "biomolecules"
     parent = "projects"
@@ -640,7 +640,7 @@ enableEmoji = true
       # URL of avatar shown in home page
       avatarURL = "/images/saraogeeapoorv.png"
       # FixIt 0.2.17 | NEW identifier of avatar menu link
-      avatarMenu = "neuroimaging"
+      avatarMenu = "radiology"
       # title shown in home page (HTML format is supported)
       title = "Apoorv Saraogee"
       # subtitle shown in home page

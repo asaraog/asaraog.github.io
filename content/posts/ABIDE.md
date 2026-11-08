@@ -2,7 +2,7 @@
 title: Predicting Autism from MRI
 date: 2022-05-13T00:09:00-06:00
 draft: false
-projects: neuroimaging
+projects: radiology
 featuredImage: /images/abide.png
 
 ---
