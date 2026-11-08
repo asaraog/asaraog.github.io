@@ -9,6 +9,8 @@ featuredImage: /images/rsna_knee/fig1_overview.png
 
 The [RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection) competition asked for a probability of twelve findings, from ACL tears to Baker's cysts, for each knee MRI study. Only 58 of the 4,407 training studies carried expert labels; the rest had a radiology report. This post is the solution I built with my teammate [huytngo](https://www.kaggle.com/huytngo), also published as a [Kaggle Writeup](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/writeups/111th-place-solution-18th-in-the-efficiency-track). Its distinctive part is a set of crop readers placed by U-Nets trained on SKM-TEA, a public knee segmentation set. Code: [github.com/asaraog/rsna-knee-silver](https://github.com/asaraog/rsna-knee-silver).
 
+Cite as: Saraogee A, huytngo. 111th Place Solution (18th in the Efficiency Track). Kaggle, 2026. [doi:10.34740/kaggle/w/124605](https://doi.org/10.34740/kaggle/w/124605).
+
 **Abstract**
 
 Only 58 of the 4,407 training studies carry expert labels. Every training study has a radiology report, and the test set has none. Like most teams, we read the reports into soft labels and trained image models on them.
