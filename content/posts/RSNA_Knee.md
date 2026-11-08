@@ -7,7 +7,7 @@ featuredImage: /images/rsna_knee/fig1_overview.png
 ---
 ## Silver medal in Kaggle's RSNA 2026 competition: 111th of 6,299 teams, 18th in the Efficiency Track
 
-The [RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection) competition asked for a probability of twelve findings, from ACL tears to Baker's cysts, for each knee MRI study. Only 58 of the 4,407 training studies carried expert labels; the rest had a radiology report. This post is our team's solution, also published as a [Kaggle Writeup](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/writeups/111th-place-solution-18th-in-the-efficiency-track). Its distinctive part is a set of crop readers placed by U-Nets trained on SKM-TEA, a public knee segmentation set. Code: [github.com/asaraog/rsna-knee-silver](https://github.com/asaraog/rsna-knee-silver).
+The [RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection) competition asked for a probability of twelve findings, from ACL tears to Baker's cysts, for each knee MRI study. Only 58 of the 4,407 training studies carried expert labels; the rest had a radiology report. This post is the solution I built with my teammate [huytngo](https://www.kaggle.com/huytngo), also published as a [Kaggle Writeup](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/writeups/111th-place-solution-18th-in-the-efficiency-track). Its distinctive part is a set of crop readers placed by U-Nets trained on SKM-TEA, a public knee segmentation set. Code: [github.com/asaraog/rsna-knee-silver](https://github.com/asaraog/rsna-knee-silver).
 
 **Abstract**
 
